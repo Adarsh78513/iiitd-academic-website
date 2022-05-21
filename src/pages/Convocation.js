@@ -1,8 +1,14 @@
 import React from 'react'
+import Marquee from '../components/Marquee'
+import Navbar from '../components/Navbar'
 
 const Convocation = () => {
     return (
-        <div>Convocation</div>
+        <div>
+            <Marquee />
+            <Navbar />
+            Convocation
+        </div>
     )
 }
 

@@ -1,8 +1,14 @@
 import React from 'react'
+import Marquee from '../components/Marquee'
+import Navbar from '../components/Navbar'
 
 const Student = () => {
     return (
-        <div>Student</div>
+        <div>
+            <Marquee />
+            <Navbar />
+            Student
+        </div>
     )
 }
 
