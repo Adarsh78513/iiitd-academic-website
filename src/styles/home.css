@@ -1,0 +1,17 @@
+.aboutUsContainer{
+    display: flex;
+    justify-content: space-between;
+    width:90vw;
+    border-bottom: 1px solid #dbdada;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 2vh;
+}
+.aboutUs{
+    text-align: left;
+    width: 40vw;
+}
+.heading{
+    font-size: 70px;
+    font-weight: bold;
+}

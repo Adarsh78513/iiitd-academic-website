@@ -24,7 +24,6 @@ function App() {
             <Route path="/faculty" element={<Faculty />} />
             <Route path="/reportStats" element={<ReportsStatistics />} />
             <Route path="/student" element={<Student />} />
-            <Route path='/studentProject' element={<StudentProjects />} />
           </Route>
         </Routes>
       </BrowserRouter>
