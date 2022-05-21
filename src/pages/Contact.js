@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/Footer'
 import Marquee from '../components/Marquee'
 import Navbar from '../components/Navbar'
 
@@ -8,6 +9,7 @@ const Contact = () => {
             <Marquee />
             <Navbar />
             Contact
+            <Footer />
         </div>
     )
 }

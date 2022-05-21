@@ -1,6 +1,7 @@
 import React from 'react'
 import Marquee from '../components/Marquee'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const Student = () => {
     return (
@@ -8,6 +9,7 @@ const Student = () => {
             <Marquee />
             <Navbar />
             Student
+            <Footer />
         </div>
     )
 }
