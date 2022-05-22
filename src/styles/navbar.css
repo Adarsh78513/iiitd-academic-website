@@ -1,9 +1,8 @@
 .navbar{
     padding-left: 4vw;
-    padding-right: 5.7vw;
+    padding-right: 4vw;
     justify-content: space-between;
     display: flex;
-    width: 90vw;
     align-items: center;
     border: 1px solid #dbdada;
     text-decoration: none;

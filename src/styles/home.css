@@ -1,10 +1,10 @@
 .aboutUsContainer{
     display: flex;
     justify-content: space-between;
-    width:90vw;
     border-bottom: 1px solid #dbdada;
     padding-left: 5vw;
     padding-right: 5vw;
+    padding-top: 2vh;
     padding-bottom: 2vh;
 }
 .aboutUs{
@@ -97,9 +97,9 @@
     display:flex;
     justify-content: space-between;
     padding-top: 3vh;
-    width: 70vw;
+    width: 90vw;
     padding-bottom: 3vh;
-    padding-left: 14.5vw;
+    padding-left: 20vw;
     padding-right: 10vw;
 }
 .internalForm{
