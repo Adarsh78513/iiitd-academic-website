@@ -9,6 +9,7 @@ import Faculty from './pages/Faculty';
 import ReportsStatistics from './pages/ReportsStatistics';
 import Student from './pages/Student';
 import StudentProjects from './pages/StudentProjects';
+import AcademicTeam from './pages/AcademicTeam';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
             <Route path="/faculty" element={<Faculty />} />
             <Route path="/reportStats" element={<ReportsStatistics />} />
             <Route path="/student" element={<Student />} />
+            <Route path="/studentProjects" element={<StudentProjects />} />
+            <Route path="/academicTeam" element={<AcademicTeam />} />
           </Route>
         </Routes>
       </BrowserRouter>

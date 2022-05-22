@@ -24,8 +24,50 @@ const Home = () => {
                     <img width='700vw' src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Iiitdelhi-building.jpg/501px-Iiitdelhi-building.jpg" alt="" />
                 </div>
             </div>
-            <div>
-
+            <div className="academics">
+                <div className='subHeading'>Academics</div>
+                <div className="academic">
+                    <div className="academicTeam">
+                        Academic Team
+                    </div>
+                    <div className="academicAdmin">
+                        Academic Administration
+                    </div>
+                    <div className="issueResolution">
+                        Issue Resolution
+                    </div>
+                    <div className="regulations">
+                        Regulations
+                    </div>
+                </div>
+            </div>
+            <div className="internals">
+                <div className="subHeading">Internal</div>
+                <div className="internal">
+                    <div className="internalForm">
+                        Internal Forms
+                    </div>
+                    <div className="erp">
+                        ERP
+                    </div>
+                    <div className="importantMinutes">
+                        Important Minutes
+                    </div>
+                </div>
+            </div>
+            <div className="resources">
+                <div className="subHeading">Resources</div>
+                <div className="resource">
+                    <div className="academicCalendar">
+                        Academic Calendar
+                    </div>
+                    <div className="timetable">
+                        Timetable
+                    </div>
+                    <div className="examinations">
+                        Examinations
+                    </div>
+                </div>
             </div>
             <Footer />
         </div>

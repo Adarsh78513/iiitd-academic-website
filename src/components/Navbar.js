@@ -12,6 +12,7 @@ const Navbar = () => {
             <div><Link to='/student' style={{ textDecoration: 'none' }}>Students</Link></div>
             <div><Link to='/faculty' style={{ textDecoration: 'none' }}>Faculty</Link></div>
             <div><Link to='/alumni' style={{ textDecoration: 'none' }}>Alumni</Link></div>
+            <div><Link to='/studentProjects' style={{ textDecoration: 'none' }}>Student's Projects</Link></div>
             <div><Link to='/reportStats' style={{ textDecoration: 'none' }}>Report & Statistics</Link></div>
             <div><Link to='/convocation' style={{ textDecoration: 'none' }}>Convocation</Link></div>
             <div><Link to='/classrooms' style={{ textDecoration: 'none' }}>Classrooms</Link></div>
