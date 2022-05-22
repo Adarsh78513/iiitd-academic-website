@@ -28,15 +28,27 @@ const Home = () => {
                 <div className='subHeading'>Academics</div>
                 <div className="academic">
                     <div className="academicTeam">
+                        <div className="team">
+                            <img src='./group.png' alt="" />
+                        </div>
                         Academic Team
                     </div>
                     <div className="academicAdmin">
+                        <div className="team">
+                            <img src='./team.png' alt="" />
+                        </div>
                         Academic Administration
                     </div>
                     <div className="issueResolution">
+                        <div className="team">
+                            <img src='./question.png' alt="" />
+                        </div>
                         Issue Resolution
                     </div>
                     <div className="regulations">
+                        <div className="team">
+                            <img src='./document.png' alt="" />
+                        </div>
                         Regulations
                     </div>
                 </div>

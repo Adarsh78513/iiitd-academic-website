@@ -37,6 +37,8 @@
     background-color: rgb(10, 1, 61);
     color:white;
     height: 30vh;
+    font-size: 20px;
+    font-weight: 500;
     width: 15vw;
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -44,11 +46,17 @@
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
 }
+.team{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
 .academicAdmin{
     background-color: rgb(10, 1, 61);
     color:white;
     height: 30vh;
     width: 15vw;
+    font-size: 18px;
+    font-weight: 500;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -60,6 +68,8 @@
     color:white;
     height: 30vh;
     width: 15vw;
+    font-size: 20px;
+    font-weight: 500;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -71,6 +81,8 @@
     color:white;
     height: 30vh;
     width: 15vw;
+    font-size: 20px;
+    font-weight: 500;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -95,6 +107,8 @@
     color:white;
     height: 20vh;
     width: 15vw;
+    font-size: 20px;
+    font-weight: 500;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -106,6 +120,8 @@
     color:white;
     height: 20vh;
     width: 15vw;
+    font-size: 20px;
+    font-weight: 500;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -117,6 +133,8 @@
     color:white;
     height: 20vh;
     width: 15vw;
+    font-size: 20px;
+    font-weight: 500;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -139,6 +157,8 @@
     color:white;
     height: 30vh;
     width: 15vw;
+    font-size: 20px;
+    font-weight: 500;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -150,6 +170,8 @@
     color:white;
     height: 30vh;
     width: 15vw;
+    font-size: 20px;
+    font-weight: 500;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -161,6 +183,8 @@
     color:white;
     height: 30vh;
     width: 15vw;
+    font-size: 20px;
+    font-weight: 500;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
