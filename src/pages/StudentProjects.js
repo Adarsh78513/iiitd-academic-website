@@ -1,4 +1,5 @@
 import React from 'react'
+import AdCarousel from '../components/AdCarousel'
 import Footer from '../components/Footer'
 import Marquee from '../components/Marquee'
 import Navbar from '../components/Navbar'
@@ -12,6 +13,8 @@ const StudentProjects = () => {
         <div>
             <Marquee />
             <Navbar />
+            <AdCarousel />
+
             {/* make divs to show the projects of all differetn sections in the website */}
             <div className="rows">
 

@@ -4,12 +4,15 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import '../styles/Student.css'
 
+import AdCarousel from '../components/AdCarousel'
 
 const Student = () => {
     return (
         <div>
             <Marquee />
             <Navbar />
+            <AdCarousel />
+
             <div className="rows">
 
                 <div className="section">
@@ -62,6 +65,7 @@ const Student = () => {
                     <a className = "projectLinks" href="https://docs.google.com/spreadsheets/d/1w85BGovNseeoUiKojVfF8NYx4NBOw_5UfrIc6ALt4Yo/edit#gid=1213820881">B.Tech.</a>
                 </div>
             </div>
+            Student
             <Footer />
         </div>
     )

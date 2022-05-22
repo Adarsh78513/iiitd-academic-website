@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../components/Footer'
 import Marquee from '../components/Marquee'
 import Navbar from '../components/Navbar'
-import Carousel from '../components/Carousel'
+import AdCarousel from '../components/AdCarousel'
 import '../styles/contact.css'
 
 const Contact = () => {
@@ -10,7 +10,7 @@ const Contact = () => {
         <div className="contactContainer">
             <Marquee />
             <Navbar />
-            <Carousel />
+            <AdCarousel />
             <div className='contact'>
                 <div className='contactForm'>
                     Enquire Us

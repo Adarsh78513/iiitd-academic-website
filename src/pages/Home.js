@@ -1,5 +1,5 @@
 import React from 'react'
-import ControlledCarousel from '../components/Carousel'
+import AdCarousel from '../components/AdCarousel'
 import Footer from '../components/Footer'
 import Marquee from '../components/Marquee'
 import Navbar from '../components/Navbar'
@@ -10,7 +10,7 @@ const Home = () => {
         <div>
             <Marquee />
             <Navbar />
-            <ControlledCarousel />
+            <AdCarousel />
             <div className="aboutUsContainer">
                 <div className="aboutUs">
                     <div className='heading'>About IIITD</div>
