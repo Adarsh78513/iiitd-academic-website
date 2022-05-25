@@ -10,7 +10,7 @@ const ReportsStatistics = () => {
             <Marquee />
             <Navbar />
             <AdCarousel />
-            ReportsStatistics
+            <div className="heading">Reports & Statistics</div>
             <Footer />
         </div>
     )

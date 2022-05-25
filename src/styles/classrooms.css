@@ -1,0 +1,30 @@
+.classContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5vh;
+}
+.cell{
+    background-color: #1b0055;
+    margin: 1vw;
+    border-radius: 7px;
+    width: 30vw;
+    height: 50vh;
+    text-decoration: none;
+    color:white;
+    font-size: 3vw;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+.old{
+    width: 25vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.lhc{
+    width: 25vw;
+    height: 32vh;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}

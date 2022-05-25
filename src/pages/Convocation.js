@@ -10,7 +10,7 @@ const Convocation = () => {
             <Marquee />
             <Navbar />
             <AdCarousel />
-            Convocation
+            <div className="heading">Convocation</div>
             <Footer />
         </div>
     )
