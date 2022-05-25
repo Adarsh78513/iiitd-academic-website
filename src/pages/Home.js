@@ -75,11 +75,17 @@ const Home = () => {
                     </a>
                     <a href="https://erp.iiitd.edu.in/" target="_blank" rel="noreferrer">
                         <div className="erp">
+                            <div className="team">
+                                <img src='./graduate-cap.png' alt="" />
+                            </div>
                             ERP
                         </div>
                     </a>
                     <a href="http://academics.iiitd.edu.in/meetings/list.php" target="_blank" rel="noreferrer">
                         <div className="importantMinutes">
+                            <div className="team">
+                                <img src='./online-meeting.png' alt="" />
+                            </div>
                             Important Minutes
                         </div>
                     </a>
@@ -89,13 +95,34 @@ const Home = () => {
                 <div className="subHeading">Resources</div>
                 <div className="resource">
                     <div className="academicCalendar">
-                        Academic Calendar
+                        <div className="tabHead">Academic Calendar</div>
+                        <div className="links">
+                            <div>
+                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2021/Academic%20Calendar%20Winter%202022_Final.pdf">Winter 2022</a>
+                            </div>
+                            <div>
+                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2021/Academic%20Calendar%20B.Tech.%201st%20Sem%20(2021-22%20Batch).pdf">B.Tech First Semester (2021-22 Batch)</a>
+                            </div>
+                        </div>
                     </div>
                     <div className="timetable">
-                        Timetable
+                        <div className="tabHead">Timetable</div>
+                        <div className="links">
+                            <div>
+                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/Add_Drop_TT_Winter%202022%20&%20BTech%201st%20Year_V3.pdf">Winter 2022 & BTech First Semester</a>
+                            </div>
+                        </div>
                     </div>
                     <div className="examinations">
-                        Examinations
+                        <div className="tabHead">Examinations</div>
+                        <div className="links">
+                            <div>
+                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/Mid%20Sem_UG%201st%20Year%20M21_V1.pdf">Schedule for BTech First Semester</a>
+                            </div>
+                            <div>
+                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/MidSemExamSchedule_BtechIISeniorUGPG.pdf">Schedule for BTech Second Year, Senior UG/PG</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

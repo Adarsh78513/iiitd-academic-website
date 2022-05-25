@@ -21,6 +21,7 @@
     font-weight: 500;
     color:  rgb(10, 1, 61);
     padding-bottom: 3vh;
+    text-decoration: none;
 }
 .academics{
     background-color:  rgb(239, 239, 240);
@@ -156,7 +157,7 @@
     background-color: rgb(10, 1, 61);
     color:white;
     height: 30vh;
-    width: 15vw;
+    width: 20vw;
     font-size: 20px;
     font-weight: 500;
     border-radius: 15px;
@@ -169,7 +170,7 @@
     background-color: rgb(10, 1, 61);
     color:white;
     height: 30vh;
-    width: 15vw;
+    width: 20vw;
     font-size: 20px;
     font-weight: 500;
     border-radius: 15px;
@@ -182,7 +183,7 @@
     background-color: rgb(10, 1, 61);
     color:white;
     height: 30vh;
-    width: 15vw;
+    width: 20vw;
     font-size: 20px;
     font-weight: 500;
     border-radius: 15px;
@@ -190,4 +191,11 @@
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+}
+.tabHead{
+    padding-top:2vh;
+}
+.links{
+    padding-top: 3vh;
+    font-size:15px;
 }

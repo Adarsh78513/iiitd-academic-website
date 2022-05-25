@@ -1,6 +1,92 @@
 .contact{
-    padding-left: 25vw;
+    padding-left: 22vw;
     display:flex;
     justify-content: space-between;
-    width: 50vw;
+    width: 80vw;
+}
+.contactInfo{
+    margin-top: 6vh;
+    margin-left: 12vw;
+}
+.contactForm{
+    float: left;
+}
+.sub{
+    padding-top: 3vh;
+    text-align: left;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    color:  rgb(10, 1, 61);
+}
+.content{
+    text-align: left;
+}
+.form{
+    width: 20vw;
+    float: left;
+}
+#name{
+    width: 30vw;
+    height: 5vh;
+    margin-top: 1vh;
+    border-radius: 5px;
+    border: 1px solid #555555;
+    padding-left: 1vw;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+#email{
+    width: 30vw;
+    height: 5vh;
+    margin-top: 2vh;
+    border-radius: 5px;
+    border: 1px solid #555555;
+    padding-left: 1vw;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+#subject{
+    width: 30vw;
+    height: 5vh;
+    margin-top: 2vh;
+    border-radius: 5px;
+    border: 1px solid #555555;
+    padding-left: 1vw;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.query{
+    width: 30vw;
+    height: 20vh;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    border-radius: 5px;
+    border: 1px solid #555555;
+    padding-left: 1vw;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.submit{
+    width:30vw;
+    font-weight: 500;
+    margin-bottom: 2vh;
+    font-size: 3vh;
+    color: white;
+    background-color: rgb(10, 1, 61);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
