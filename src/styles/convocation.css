@@ -1,0 +1,29 @@
+.convocation{
+    display: flex;
+    justify-content: center;
+}
+.convoCont{
+    width: 30vw;
+    height: 50vh;
+    padding-top: 1vh;
+    background-color:  rgb(10, 1, 61);
+    margin: 1vw;
+    margin-bottom: 8.4vh;
+    color:white;
+    font-weight: 600;
+    font-size: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.prev{
+    padding-top: 2vh;
+    width:25vw;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
