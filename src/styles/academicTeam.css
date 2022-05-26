@@ -1,0 +1,117 @@
+.containerTeam{
+    display: flex;
+    justify-content: center;
+}
+.cardContainer{
+    display:flex;
+    justify-content: center;
+}
+.subTeam{
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    padding-left: 1vw;
+}
+.dean{
+    width: 40vw;
+    height: 51vh;
+    margin: 1vw;
+    background-color: rgb(10, 1, 61);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.adminAcademic{
+    width: 40vw;
+    height: 51vh;
+    margin: 1vw;
+    background-color: rgb(10, 1, 61);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.adminBTech{
+    width: 82vw;
+    height: 51vh;
+    margin: 1vw;
+    background-color: rgb(10, 1, 61);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.adminMTech{
+    width: 40vw;
+    height: 51vh;
+    margin: 1vw;
+    background-color: rgb(10, 1, 61);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.adminPhD{
+    width: 40vw;
+    height: 51vh;
+    margin: 1vw;
+    background-color: rgb(10, 1, 61);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.adminInternational{
+    width: 25vw;
+    height: 51vh;
+    margin: 1vw;
+    background-color: rgb(10, 1, 61);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.support{
+    width: 60vw;
+    height: 51vh;
+    margin: 1vw;
+    background-color: rgb(10, 1, 61);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.card{
+    width: 18vw;
+    height: 40vh;
+    margin: 1vw;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.cardContainer img{
+    height: 30vh;
+    border-top: 10px;
+}
+.designation{
+    width: 18vw;
+    padding-top: 1vh;
+    color:white;
+    height: 12vh;
+    background-color: rgba(10, 1, 61, 0.824);;
+}
+.name{
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+}
