@@ -15,7 +15,7 @@
 }
 .dean{
     width: 40vw;
-    height: 51vh;
+    height: 52vh;
     margin: 1vw;
     background-color: rgb(10, 1, 61);
     border-radius: 10px;
@@ -26,7 +26,7 @@
 }
 .adminAcademic{
     width: 40vw;
-    height: 51vh;
+    height: 52vh;
     margin: 1vw;
     background-color: rgb(10, 1, 61);
     border-radius: 10px;
@@ -37,7 +37,7 @@
 }
 .adminBTech{
     width: 82vw;
-    height: 51vh;
+    height: 52vh;
     margin: 1vw;
     background-color: rgb(10, 1, 61);
     border-radius: 10px;
@@ -48,7 +48,7 @@
 }
 .adminMTech{
     width: 40vw;
-    height: 51vh;
+    height: 52vh;
     margin: 1vw;
     background-color: rgb(10, 1, 61);
     border-radius: 10px;
@@ -59,7 +59,7 @@
 }
 .adminPhD{
     width: 40vw;
-    height: 51vh;
+    height: 52vh;
     margin: 1vw;
     background-color: rgb(10, 1, 61);
     border-radius: 10px;
@@ -70,7 +70,7 @@
 }
 .adminInternational{
     width: 25vw;
-    height: 51vh;
+    height: 52vh;
     margin: 1vw;
     background-color: rgb(10, 1, 61);
     border-radius: 10px;
@@ -81,7 +81,7 @@
 }
 .support{
     width: 60vw;
-    height: 51vh;
+    height: 52vh;
     margin: 1vw;
     background-color: rgb(10, 1, 61);
     border-radius: 10px;
@@ -95,15 +95,29 @@
     height: 40vh;
     margin: 1vw;
     align-items: center;
+    background-color:  rgba(49, 36, 120, 0.705);;
+    transition: transform .2s;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    -webkit-transition: transform .2s;
+    -moz-transition: transform .2s;
+    -ms-transition: transform .2s;
+    -o-transition: transform .2s;
+}
+.card:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 .cardContainer img{
     height: 30vh;
     width: 15vw;
+    margin-top: 1vh;
     border: 2px;
     border-top: 10px;
 }
@@ -112,7 +126,7 @@
     padding-top: 1vh;
     color:white;
     height: 12vh;
-    background-color: rgba(10, 1, 61, 0.824);;
+    background-color: rgba(19, 9, 81, 0.705);;
 }
 .name{
     text-align: center;
