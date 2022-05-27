@@ -4,6 +4,7 @@
 }
 .cardContainer{
     display:flex;
+    background-color: rgb(10, 1, 61);;
     justify-content: center;
 }
 .subTeam{
@@ -93,6 +94,7 @@
     width: 18vw;
     height: 40vh;
     margin: 1vw;
+    align-items: center;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -101,12 +103,9 @@
 }
 .cardContainer img{
     height: 30vh;
+    width: 15vw;
+    border: 2px;
     border-top: 10px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 .designation{
     width: 18vw;
