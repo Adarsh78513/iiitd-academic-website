@@ -102,6 +102,11 @@
 .cardContainer img{
     height: 30vh;
     border-top: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .designation{
     width: 18vw;
@@ -112,6 +117,6 @@
 }
 .name{
     text-align: center;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 18px;
 }

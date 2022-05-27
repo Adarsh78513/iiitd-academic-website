@@ -8,6 +8,7 @@
     padding-top: 1vh;
     background-color:  rgb(10, 1, 61);
     margin: 1vw;
+    transition: transform .2s;
     margin-bottom: 8.4vh;
     color:white;
     font-weight: 600;
@@ -17,6 +18,17 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    -webkit-transition: transform .2s;
+    -moz-transition: transform .2s;
+    -ms-transition: transform .2s;
+    -o-transition: transform .2s;
+}
+.convoCont:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 .prev{
     padding-top: 2vh;
