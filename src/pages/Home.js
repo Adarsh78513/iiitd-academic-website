@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import AdCarousel from '../components/AdCarousel'
 import Footer from '../components/Footer'
@@ -15,12 +15,22 @@ import Classrooms from './Classrooms'
 import Contact from './Contact'
 
 const Home = () => {
+    const home = useRef(null);
+    const student = useRef(null);
+    const faculty = useRef(null);
+    const alumni = useRef(null);
+    const projects = useRef(null);
+    const report = useRef(null);
+    const convocation = useRef(null);
+    const classroom = useRef(null);
+    const contact = useRef(null);
+
     return (
         <div>
             <Marquee />
-            <Navbar />
+            <Navbar home={home} student={student} faculty={faculty} alumni={alumni} projects={projects} report={report} convocation={convocation} classroom={classroom} contact={contact} />
             <AdCarousel />
-            <div id='home' className="aboutUsContainer">
+            <div ref={home} className="aboutUsContainer">
                 <div className="aboutUs">
                     <div className='heading'>About IIITD</div>
                     <p className='para'>
@@ -131,15 +141,15 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <Student id='student' />
-            <Faculty id='faculty' />
-            <Alumni id='alumni' />
-            <StudentProjects id='projects' />
-            <ReportsStatistics id='report' />
-            <Convocation id='convocation' />
-            <Classrooms id='classroom' />
-            <Contact id='contact' />
-            <Footer id='footer' />
+            <Student ref={student} />
+            <Faculty ref={faculty} />
+            <Alumni ref={alumni} />
+            <StudentProjects ref={projects} />
+            <ReportsStatistics ref={report} />
+            <Convocation ref={convocation} />
+            <Classrooms ref={classroom} />
+            <Contact ref={contact} />
+            <Footer />
         </div>
     )
 }

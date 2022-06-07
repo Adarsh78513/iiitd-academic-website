@@ -2,7 +2,7 @@ import React, { useState, useEffect, Component } from 'react'
 import '../styles/navbar.css'
 import { Link } from 'react-scroll'
 
-const Navbar = () => {
+const Navbar = ({ home, student, faculty, alumni, projects, report, convocation, classroom, contact }) => {
     const [navbarHome, setNavbarHome] = useState(true);
     const [navbarStudent, setNavbarStudent] = useState(false);
     const [navbarFaculty, setNavbarFaculty] = useState(false);
@@ -108,9 +108,9 @@ const Navbar = () => {
     useEffect(() => {
         changeNavbar();
     }, []);
-    const scrollDown = (h) => {
+    const scrollDown = (curr) => {
         window.scrollTo({
-            top: h,
+            top: curr.current.scrollIntoView(),
             behavior: 'smooth',
         });
     };
@@ -119,15 +119,15 @@ const Navbar = () => {
             <div>
                 <img width="400vw" src="https://www.iiitd.ac.in/sites/default/files/style3colorsmall.png"></img>
             </div>
-            <Link to='home' activeClass="active" spy={true} smooth={true} className={navbarHome ? 'navbarHomeChange' : 'navbarHome'}>Home</Link>
-            <Link to='student' spy={true} smooth={true} className={navbarStudent ? 'navbarStudentChange' : 'navbarStudent'}>Students</Link>
-            <Link to='faculty' spy={true} smooth={true} className={navbarFaculty ? 'navbarFacultyChange' : 'navbarFaculty'}>Faculty</Link>
-            <Link to='alumni' spy={true} smooth={true} className={navbarAlumni ? 'navbarAlumniChange' : 'navbarAlumni'}>Alumni</Link>
-            <Link to='projects' spy={true} smooth={true} className={navbarProjects ? 'navbarProjectsChange' : 'navbarProjects'}>Student's Projects</Link>
-            <Link to='report' spy={true} smooth={true} className={navbarReport ? 'navbarReportChange' : 'navbarReport'}>Report & Statistics</Link>
-            <Link to='convocation' spy={true} smooth={true} className={navbarConvocation ? 'navbarConvocationChange' : 'navbarConvocation'}>Convocation</Link>
-            <Link to='classroom' spy={true} smooth={true} className={navbarClassroom ? 'navbarClassroomChange' : 'navbarClassroom'}>Classrooms</Link>
-            <Link to='contact' spy={true} smooth={true} className={navbarContact ? 'navbarContactChange' : 'navbarContact'}>Contact</Link>
+            <Link to='home' onClick={() => scrollDown(home)} className={navbarHome ? 'navbarHomeChange' : 'navbarHome'}>Home</Link>
+            <Link to='student' onClick={() => scrollDown(student)} className={navbarStudent ? 'navbarStudentChange' : 'navbarStudent'}>Students</Link>
+            <Link to='faculty' onClick={() => scrollDown(faculty)} className={navbarFaculty ? 'navbarFacultyChange' : 'navbarFaculty'}>Faculty</Link>
+            <Link to='alumni' onClick={() => scrollDown(alumni)} className={navbarAlumni ? 'navbarAlumniChange' : 'navbarAlumni'}>Alumni</Link>
+            <Link to='projects' onClick={() => scrollDown(projects)} className={navbarProjects ? 'navbarProjectsChange' : 'navbarProjects'}>Student's Projects</Link>
+            <Link to='report' onClick={() => scrollDown(report)} className={navbarReport ? 'navbarReportChange' : 'navbarReport'}>Report & Statistics</Link>
+            <Link to='convocation' onClick={() => scrollDown(convocation)} className={navbarConvocation ? 'navbarConvocationChange' : 'navbarConvocation'}>Convocation</Link>
+            <Link to='classroom' onClick={() => scrollDown(classroom)} className={navbarClassroom ? 'navbarClassroomChange' : 'navbarClassroom'}>Classrooms</Link>
+            <Link to='contact' onClick={() => scrollDown(contact)} className={navbarContact ? 'navbarContactChange' : 'navbarContact'}>Contact</Link>
         </div >
     )
 }
