@@ -108,11 +108,8 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
     useEffect(() => {
         changeNavbar();
     }, []);
-    const scrollDown = (curr) => {
-        window.scrollTo({
-            top: curr.current.scrollIntoView(),
-            behavior: 'smooth',
-        });
+    const scrollDown = (ref) => {
+        window.scrollTo({ top: ref.current.offsetTop - 100 });
     };
     return (
         <div className="navbar">

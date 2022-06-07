@@ -27,10 +27,11 @@ const Home = () => {
 
     return (
         <div>
+            <div ref={home}></div>
             <Marquee />
             <Navbar home={home} student={student} faculty={faculty} alumni={alumni} projects={projects} report={report} convocation={convocation} classroom={classroom} contact={contact} />
             <AdCarousel />
-            <div ref={home} className="aboutUsContainer">
+            <div className="aboutUsContainer">
                 <div className="aboutUs">
                     <div className='heading'>About IIITD</div>
                     <p className='para'>
@@ -141,14 +142,14 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <Student ref={student} />
-            <Faculty ref={faculty} />
-            <Alumni ref={alumni} />
-            <StudentProjects ref={projects} />
-            <ReportsStatistics ref={report} />
-            <Convocation ref={convocation} />
-            <Classrooms ref={classroom} />
-            <Contact ref={contact} />
+            <div ref={student}><Student /></div>
+            <div ref={faculty}><Faculty /></div>
+            <div ref={alumni} ><Alumni /></div>
+            <div ref={projects}><StudentProjects /></div>
+            <div ref={report}><ReportsStatistics /></div>
+            <div ref={convocation}><Convocation /></div>
+            <div ref={classroom} ><Classrooms /></div>
+            <div ref={contact} ><Contact /></div>
             <Footer />
         </div>
     )
