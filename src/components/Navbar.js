@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, Component } from 'react'
 import '../styles/navbar.css'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
     const [navbarHome, setNavbarHome] = useState(true);
@@ -119,15 +119,15 @@ const Navbar = () => {
             <div>
                 <img width="400vw" src="https://www.iiitd.ac.in/sites/default/files/style3colorsmall.png"></img>
             </div>
-            <Link to='/' onClick={() => scrollDown(0)} className={navbarHome ? 'navbarHomeChange' : 'navbarHome'}>Home</Link>
-            <Link to='/' onClick={() => scrollDown(1720)} className={navbarStudent ? 'navbarStudentChange' : 'navbarStudent'}>Students</Link>
-            <Link to='/' onClick={() => scrollDown(2300)} className={navbarFaculty ? 'navbarFacultyChange' : 'navbarFaculty'}>Faculty</Link>
-            <Link to='/' onClick={() => scrollDown(3300)} className={navbarAlumni ? 'navbarAlumniChange' : 'navbarAlumni'}>Alumni</Link>
-            <Link to='/' onClick={() => scrollDown(3920)} className={navbarProjects ? 'navbarProjectsChange' : 'navbarProjects'}>Student's Projects</Link>
-            <Link to='/' onClick={() => scrollDown(4300)} className={navbarReport ? 'navbarReportChange' : 'navbarReport'}>Report & Statistics</Link>
-            <Link to='/' onClick={() => scrollDown(4800)} className={navbarConvocation ? 'navbarConvocationChange' : 'navbarConvocation'}>Convocation</Link>
-            <Link to='/' onClick={() => scrollDown(5300)} className={navbarClassroom ? 'navbarClassroomChange' : 'navbarClassroom'}>Classrooms</Link>
-            <Link to='/' onClick={() => scrollDown(5800)} className={navbarContact ? 'navbarContactChange' : 'navbarContact'}>Contact</Link>
+            <Link to='home' activeClass="active" spy={true} smooth={true} className={navbarHome ? 'navbarHomeChange' : 'navbarHome'}>Home</Link>
+            <Link to='student' spy={true} smooth={true} className={navbarStudent ? 'navbarStudentChange' : 'navbarStudent'}>Students</Link>
+            <Link to='faculty' spy={true} smooth={true} className={navbarFaculty ? 'navbarFacultyChange' : 'navbarFaculty'}>Faculty</Link>
+            <Link to='alumni' spy={true} smooth={true} className={navbarAlumni ? 'navbarAlumniChange' : 'navbarAlumni'}>Alumni</Link>
+            <Link to='projects' spy={true} smooth={true} className={navbarProjects ? 'navbarProjectsChange' : 'navbarProjects'}>Student's Projects</Link>
+            <Link to='report' spy={true} smooth={true} className={navbarReport ? 'navbarReportChange' : 'navbarReport'}>Report & Statistics</Link>
+            <Link to='convocation' spy={true} smooth={true} className={navbarConvocation ? 'navbarConvocationChange' : 'navbarConvocation'}>Convocation</Link>
+            <Link to='classroom' spy={true} smooth={true} className={navbarClassroom ? 'navbarClassroomChange' : 'navbarClassroom'}>Classrooms</Link>
+            <Link to='contact' spy={true} smooth={true} className={navbarContact ? 'navbarContactChange' : 'navbarContact'}>Contact</Link>
         </div >
     )
 }

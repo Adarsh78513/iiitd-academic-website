@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import AdCarousel from '../components/AdCarousel'
 import Footer from '../components/Footer'
@@ -20,7 +20,7 @@ const Home = () => {
             <Marquee />
             <Navbar />
             <AdCarousel />
-            <div className="aboutUsContainer">
+            <div id='home' className="aboutUsContainer">
                 <div className="aboutUs">
                     <div className='heading'>About IIITD</div>
                     <p className='para'>
@@ -131,15 +131,15 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <Student />
-            <Faculty />
-            <Alumni />
-            <StudentProjects />
-            <ReportsStatistics />
-            <Convocation />
-            <Classrooms />
-            <Contact />
-            <Footer />
+            <Student id='student' />
+            <Faculty id='faculty' />
+            <Alumni id='alumni' />
+            <StudentProjects id='projects' />
+            <ReportsStatistics id='report' />
+            <Convocation id='convocation' />
+            <Classrooms id='classroom' />
+            <Contact id='contact' />
+            <Footer id='footer' />
         </div>
     )
 }
