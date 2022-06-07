@@ -94,7 +94,6 @@ const Home = () => {
                         </a>
                     </div>
                 </div>
-
             </ParallaxBanner>
 
 
