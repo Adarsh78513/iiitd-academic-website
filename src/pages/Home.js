@@ -13,6 +13,8 @@ import ReportsStatistics from './ReportsStatistics'
 import Convocation from './Convocation'
 import Classrooms from './Classrooms'
 import Contact from './Contact'
+import { ParallaxProvider, Parallax, ParallaxBanner  } from 'react-scroll-parallax';
+
 
 const Home = () => {
     const home = useRef(null);
@@ -41,43 +43,62 @@ const Home = () => {
                     </p>
                 </div>
             </div>
-            <div className="academics">
-                <div className='subHeading'>Academics</div>
-                <div className="academic">
-                    <Link to="/academicTeam" style={{ textDecoration: 'none' }} >
-                        <div className="academicTeam">
-                            <div className="team">
-                                <img src='./group.png' alt="" />
+
+
+
+
+            <ParallaxBanner
+                style={{ aspectRatio: '2 / 1' }}
+                layers={[
+                    {
+                    image:
+                        'https://s3-us-west-2.amazonaws.com/s.cdpn.io/105988/banner.jpg',
+                    speed: -30,
+                    },
+                ]}
+                >
+                    <div className="academics">
+                    <div className='subHeading'>Academics</div>
+                    <div className="academic">
+                        <Link to="/academicTeam" style={{ textDecoration: 'none' }} >
+                            <div className="academicTeam">
+                                <div className="team">
+                                    <img src='./group.png' alt="" />
+                                </div>
+                                Academic Team
                             </div>
-                            Academic Team
-                        </div>
-                    </Link>
-                    <a href='https://iiitd.ac.in/academics/academic-administration' style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer">
-                        <div className="academicAdmin">
-                            <div className="team">
-                                <img src='./team.png' alt="" />
+                        </Link>
+                        <a href='https://iiitd.ac.in/academics/academic-administration' style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer">
+                            <div className="academicAdmin">
+                                <div className="team">
+                                    <img src='./team.png' alt="" />
+                                </div>
+                                Academic Administration
                             </div>
-                            Academic Administration
-                        </div>
-                    </a>
-                    <a href='https://iiitd.ac.in/academics/issue-resolution' style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer">
-                        <div className="issueResolution">
-                            <div className="team">
-                                <img src='./question.png' alt="" />
+                        </a>
+                        <a href='https://iiitd.ac.in/academics/issue-resolution' style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer">
+                            <div className="issueResolution">
+                                <div className="team">
+                                    <img src='./question.png' alt="" />
+                                </div>
+                                Issue Resolution
                             </div>
-                            Issue Resolution
-                        </div>
-                    </a>
-                    <a href="https://iiitd.ac.in/academics/resources" style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer">
-                        <div className="regulations">
-                            <div className="team">
-                                <img src='./document.png' alt="" />
+                        </a>
+                        <a href="https://iiitd.ac.in/academics/resources" style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer">
+                            <div className="regulations">
+                                <div className="team">
+                                    <img src='./document.png' alt="" />
+                                </div>
+                                Regulations
                             </div>
-                            Regulations
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
-            </div>
+
+            </ParallaxBanner>
+
+
+
             <div className="internals">
                 <div className="subHeading">Internal</div>
                 <div className="internal">

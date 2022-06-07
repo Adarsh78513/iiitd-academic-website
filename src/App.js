@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
+import Index from './pages/Index';
 import Alumni from './pages/Alumni';
 import Contact from './pages/Contact';
 import Classrooms from './pages/Classrooms';
@@ -17,7 +18,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/">
-            <Route index element={<Home />} />
+            <Route index element={<Index />} />
           </Route>
         </Routes>
       </BrowserRouter>
