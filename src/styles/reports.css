@@ -1,0 +1,15 @@
+.reportContainer{
+    display: flex;
+    justify-content: center;
+}
+.admissionReport{
+    width: 40vw;
+    height: 52vh;
+    margin: 1vw;
+    background-color: rgb(10, 1, 61);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

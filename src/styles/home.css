@@ -4,15 +4,14 @@
     border-bottom: 1px solid #dbdada;
     padding-left: 5vw;
     padding-right: 5vw;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
 }
 .aboutUs{
-    text-align: left;
-    width: 40vw;
+    text-align: center;
 }
 .heading{
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 600;
     color:  rgb(10, 1, 61);
 }

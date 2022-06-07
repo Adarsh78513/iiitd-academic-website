@@ -8,9 +8,6 @@ import '../styles/classrooms.css'
 const Classrooms = () => {
     return (
         <div>
-            <Marquee />
-            <Navbar />
-            <AdCarousel />
             <div className='heading'>Classrooms</div>
             <hr />
             <div className="classContainer">
@@ -33,7 +30,6 @@ const Classrooms = () => {
                     </div>
                 </a>
             </div>
-            <Footer />
         </div>
     )
 }

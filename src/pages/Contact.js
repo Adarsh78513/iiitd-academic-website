@@ -8,9 +8,6 @@ import '../styles/contact.css'
 const Contact = () => {
     return (
         <div className="contactContainer">
-            <Marquee />
-            <Navbar />
-            <AdCarousel />
             <div className="heading">Contact Academic Department</div>
             <hr />
             <div className='contact'>
@@ -37,7 +34,6 @@ const Contact = () => {
                     <div className="content">admin-academics@iiitd.ac.in</div>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }

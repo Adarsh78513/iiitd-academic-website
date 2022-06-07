@@ -4,7 +4,15 @@ import AdCarousel from '../components/AdCarousel'
 import Footer from '../components/Footer'
 import Marquee from '../components/Marquee'
 import Navbar from '../components/Navbar'
+import Student from './Student'
 import '../styles/home.css'
+import Faculty from './Faculty'
+import Alumni from './Alumni'
+import StudentProjects from './StudentProjects'
+import ReportsStatistics from './ReportsStatistics'
+import Convocation from './Convocation'
+import Classrooms from './Classrooms'
+import Contact from './Contact'
 
 const Home = () => {
     return (
@@ -21,14 +29,11 @@ const Home = () => {
                         The vision is to be socially relevant, industry facing, and globally connected.
                     </p>
                 </div>
-                <div>
-                    <img width='700vw' src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Iiitdelhi-building.jpg/501px-Iiitdelhi-building.jpg" alt="" />
-                </div>
             </div>
             <div className="academics">
                 <div className='subHeading'>Academics</div>
                 <div className="academic">
-                    <Link to="/academicTeam">
+                    <Link to="/academicTeam" style={{ textDecoration: 'none' }} >
                         <div className="academicTeam">
                             <div className="team">
                                 <img src='./group.png' alt="" />
@@ -36,7 +41,7 @@ const Home = () => {
                             Academic Team
                         </div>
                     </Link>
-                    <a href='https://iiitd.ac.in/academics/academic-administration' target="_blank" rel="noreferrer">
+                    <a href='https://iiitd.ac.in/academics/academic-administration' style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer">
                         <div className="academicAdmin">
                             <div className="team">
                                 <img src='./team.png' alt="" />
@@ -44,7 +49,7 @@ const Home = () => {
                             Academic Administration
                         </div>
                     </a>
-                    <a href='https://iiitd.ac.in/academics/issue-resolution' target="_blank" rel="noreferrer">
+                    <a href='https://iiitd.ac.in/academics/issue-resolution' style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer">
                         <div className="issueResolution">
                             <div className="team">
                                 <img src='./question.png' alt="" />
@@ -52,7 +57,7 @@ const Home = () => {
                             Issue Resolution
                         </div>
                     </a>
-                    <a href="https://iiitd.ac.in/academics/resources" target="_blank" rel="noreferrer">
+                    <a href="https://iiitd.ac.in/academics/resources" style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer">
                         <div className="regulations">
                             <div className="team">
                                 <img src='./document.png' alt="" />
@@ -65,7 +70,7 @@ const Home = () => {
             <div className="internals">
                 <div className="subHeading">Internal</div>
                 <div className="internal">
-                    <a href="https://iiitd.ac.in/form_docs" target="_blank" rel="noreferrer">
+                    <a href="https://iiitd.ac.in/form_docs" style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer">
                         <div className="internalForm">
                             <div className="team">
                                 <img src='./form.png' alt="" />
@@ -73,7 +78,7 @@ const Home = () => {
                             Internal Forms
                         </div>
                     </a>
-                    <a href="https://erp.iiitd.edu.in/" target="_blank" rel="noreferrer">
+                    <a href="https://erp.iiitd.edu.in/" style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer">
                         <div className="erp">
                             <div className="team">
                                 <img src='./graduate-cap.png' alt="" />
@@ -81,7 +86,7 @@ const Home = () => {
                             ERP
                         </div>
                     </a>
-                    <a href="http://academics.iiitd.edu.in/meetings/list.php" target="_blank" rel="noreferrer">
+                    <a href="http://academics.iiitd.edu.in/meetings/list.php" style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer">
                         <div className="importantMinutes">
                             <div className="team">
                                 <img src='./online-meeting.png' alt="" />
@@ -98,10 +103,10 @@ const Home = () => {
                         <div className="tabHead">Academic Calendar</div>
                         <div className="links">
                             <div>
-                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2021/Academic%20Calendar%20Winter%202022_Final.pdf">Winter 2022</a>
+                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2021/Academic%20Calendar%20Winter%202022_Final.pdf" style={{ textDecoration: 'none' }}>Winter 2022</a>
                             </div>
                             <div>
-                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2021/Academic%20Calendar%20B.Tech.%201st%20Sem%20(2021-22%20Batch).pdf">B.Tech First Semester (2021-22 Batch)</a>
+                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2021/Academic%20Calendar%20B.Tech.%201st%20Sem%20(2021-22%20Batch).pdf" style={{ textDecoration: 'none' }}>B.Tech First Semester (2021-22 Batch)</a>
                             </div>
                         </div>
                     </div>
@@ -109,7 +114,7 @@ const Home = () => {
                         <div className="tabHead">Timetable</div>
                         <div className="links">
                             <div>
-                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/Add_Drop_TT_Winter%202022%20&%20BTech%201st%20Year_V3.pdf">Winter 2022 & BTech First Semester</a>
+                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/Add_Drop_TT_Winter%202022%20&%20BTech%201st%20Year_V3.pdf" style={{ textDecoration: 'none' }}>Winter 2022 & BTech First Semester</a>
                             </div>
                         </div>
                     </div>
@@ -117,15 +122,23 @@ const Home = () => {
                         <div className="tabHead">Examinations</div>
                         <div className="links">
                             <div>
-                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/Mid%20Sem_UG%201st%20Year%20M21_V1.pdf">Schedule for BTech First Semester</a>
+                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/Mid%20Sem_UG%201st%20Year%20M21_V1.pdf" style={{ textDecoration: 'none' }}>Schedule for BTech First Semester</a>
                             </div>
                             <div>
-                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/MidSemExamSchedule_BtechIISeniorUGPG.pdf">Schedule for BTech Second Year, Senior UG/PG</a>
+                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/MidSemExamSchedule_BtechIISeniorUGPG.pdf" style={{ textDecoration: 'none' }}>Schedule for BTech Second Year, Senior UG/PG</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <Student />
+            <Faculty />
+            <Alumni />
+            <StudentProjects />
+            <ReportsStatistics />
+            <Convocation />
+            <Classrooms />
+            <Contact />
             <Footer />
         </div>
     )

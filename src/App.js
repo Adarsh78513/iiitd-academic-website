@@ -18,15 +18,6 @@ function App() {
         <Routes>
           <Route path="/">
             <Route index element={<Home />} />
-            <Route path="/alumni" element={<Alumni />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/classrooms" element={<Classrooms />} />
-            <Route path="/convocation" element={<Convocation />} />
-            <Route path="/faculty" element={<Faculty />} />
-            <Route path="/reportStats" element={<ReportsStatistics />} />
-            <Route path="/student" element={<Student />} />
-            <Route path="/studentProjects" element={<StudentProjects />} />
-            <Route path="/academicTeam" element={<AcademicTeam />} />
           </Route>
         </Routes>
       </BrowserRouter>

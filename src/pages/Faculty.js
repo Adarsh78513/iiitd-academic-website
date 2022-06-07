@@ -7,9 +7,6 @@ import AdCarousel from '../components/AdCarousel'
 const Faculty = () => {
     return (
         <div>
-            <Marquee />
-            <Navbar />
-            <AdCarousel />
             <div className="heading">For IIITD Faculty</div>
             <div className="rows">
 
@@ -48,7 +45,6 @@ const Faculty = () => {
                     <a className="projectLinks" href="https://academics.iiitd.edu.in/iiitdfaculty.html#">FAQ</a>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }
