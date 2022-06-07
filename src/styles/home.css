@@ -1,20 +1,33 @@
 .aboutUsContainer{
     display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #dbdada;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    position: absolute;
+    margin: auto;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
 }
+
 .aboutUs{
     text-align: center;
+}
+.para{
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 .heading{
     font-size: 50px;
     font-weight: 600;
-    color:  rgb(10, 1, 61);
+    color:  black;
 }
+.aboutUsHeading{
+    color:  #ffffff;
+}
+
 .subHeading{
     font-size: 30px;
     font-weight: 500;
