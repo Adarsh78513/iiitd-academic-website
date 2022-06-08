@@ -3,7 +3,7 @@ import '../styles/reports.css'
 
 const ReportsStatistics = () => {
     return (
-        <div>
+        <div className='page'>
             <div className="heading">Reports & Statistics</div>
             <div className="reportContainer">
                 <div className="admissionReport">

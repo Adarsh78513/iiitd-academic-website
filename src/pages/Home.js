@@ -13,8 +13,7 @@ import ReportsStatistics from './ReportsStatistics'
 import Convocation from './Convocation'
 import Classrooms from './Classrooms'
 import Contact from './Contact'
-import { ParallaxProvider, Parallax, ParallaxBanner } from 'react-scroll-parallax';
-// import IIITDbuilding from '/IIITD_building.jpg'
+import { ParallaxProvider, Parallax, ParallaxBanner  } from 'react-scroll-parallax';
 
 
 const Home = () => {
@@ -43,24 +42,24 @@ const Home = () => {
                         speed: -30,
                     },
                 ]}
-            >
-
-                <div className="aboutUsContainer">
-                    <div className="aboutUs">
-                        <div className='heading aboutUsHeading'>About IIITD</div>
-                        <p className='para'>
-                            IIIT-Delhi is a research-led institute with thriving degree programs at the UG & PG levels.
-                            The Academics celebrate the culture of learning by doing. The approach is always to encourage analytical precision with curiosity, playful imagination and searching for ways to solve real life problems in service to the society.
-                            The vision is to be socially relevant, industry facing, and globally connected.
-                        </p>
-                    </div>
+                >
+            
+            <div className="aboutUsContainer">
+                <div className="aboutUs">
+                    <div className='heading'>About IIITD</div>
+                    <p className='para'>
+                        IIIT-Delhi is a research-led institute with thriving degree programs at the UG & PG levels.
+                        The Academics celebrate the culture of learning by doing. The approach is always to encourage analytical precision with curiosity, playful imagination and searching for ways to solve real life problems in service to the society.
+                        The vision is to be socially relevant, industry facing, and globally connected.
+                    </p>
                 </div>
+            </div>
 
             </ParallaxBanner>
 
 
             <ParallaxBanner
-                style={{ aspectRatio: '2 / 1' }}
+                style={{height: '450px' }}
                 layers={[
                     {
                         image:
