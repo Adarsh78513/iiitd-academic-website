@@ -33,7 +33,21 @@ const ReportsStatistics = () => {
 
                 <div className="section">
                     <div className="subHeading">Accrediation & Affiliation Report</div>
-                    <a className="projectLinks" href="https://www.iiitd.ac.in/shareacademicexperiences/">Share Your Experiennce</a>
+                    <a className="projectLinks" href="https://academics.iiitd.edu.in/docs/EOA_Report_2020-21.pdf">AICTE</a>
+                    <div className="projectLinks">NBA</div>
+                    <ul>
+                        <li>
+                            <a className="projectLinks" href="https://academics.iiitd.edu.in/docs/18-01-2018_NBA_CSE_PG.pdf">CSE-PG</a>
+                        </li>
+                        <li>
+                            <a className="projectLinks" href="https://academics.iiitd.edu.in/docs/30.09.2021_NBA_CSE_UG.pdf">CGE-UG</a>
+                        </li>
+                        <li>
+                            <a className="projectLinks" href="https://academics.iiitd.edu.in/docs/31-01-2020_NBA_ECE_UG.pdf">ECE-UG</a>
+                        </li>
+                    </ul>
+                    <a className="projectLinks" href="https://academics.iiitd.edu.in/docs/NAAC%20Letter%202015.pdf">NAAC</a>
+
                 </div>
 
             </div>
