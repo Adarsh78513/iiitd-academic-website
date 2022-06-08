@@ -73,7 +73,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
             setNavbarConvocation('navbarConvocation');
             setNavbarClassroom('navbarClassroom');
             setNavbarContact('navbarContact');
-        } else if (window.scrollY >= report.current.offsetTop + 620 && window.scrollY < convocation.current.offsetTop) {
+        } else if (window.scrollY >= report.current.offsetTop + 620 && window.scrollY < convocation.current.offsetTop + 100) {
             setNavbarHome('navbarHome');
             setNavbarStudent('navbarStudent');
             setNavbarFaculty('navbarFaculty');
@@ -83,7 +83,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
             setNavbarConvocation('navbarConvocationChange');
             setNavbarClassroom('navbarClassroom');
             setNavbarContact('navbarContact');
-        } else if (window.scrollY >= convocation.current.offsetTop + 300 && window.scrollY < classroom.current.offsetTop) {
+        } else if (window.scrollY >= convocation.current.offsetTop + 400 && window.scrollY < classroom.current.offsetTop) {
             setNavbarHome('navbarHome');
             setNavbarStudent('navbarStudent');
             setNavbarFaculty('navbarFaculty');
