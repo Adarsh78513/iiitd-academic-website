@@ -59,7 +59,7 @@ const Home = () => {
 
 
             <ParallaxBanner
-                style={{ aspectRatio: '4 / 1' }}
+                style={{height: '450px' }}
                 layers={[
                     {
                         image:
