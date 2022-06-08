@@ -1,6 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/Student.css'
+import { Parallax} from 'react-scroll-parallax';
 
 const StudentProjects = () => {
     return (
@@ -9,22 +10,47 @@ const StudentProjects = () => {
             <div className="heading">Student Projects</div>
             <div className="rows">
 
+            <Parallax
+                className="Parallax-module__smallLinear--MqSo+"
+                translateY={[
+                '60%',
+                '-70%'
+                ]}
+            >
                 <div className="section">
                     <div className="subHeading"><u>Ph.D. Thesis</u></div>
                     <a className="projectLinks" href="https://repository.iiitd.edu.in/xmlui/handle/123456789/716">Awarded Ph.D Thesis</a>
                 </div>
+                </Parallax>
 
+
+                <Parallax
+                    className="Parallax-module__smallLinear--MqSo+"
+                    translateY={[
+                    '30%',
+                    '-30%'
+                    ]}
+                >
                 <div className="section">
                     <div className="subHeading"><u>M.Tech. Thesis</u></div>
                     <a className="projectLinks" href="https://awards.iiitd.edu.in/">Awarded M.Tech. Thesis</a>
                     <a className="projectLinks" href="https://academics.iiitd.edu.in/mtechthesis.html">All Thesis Repository</a>
                 </div>
+                </Parallax>
 
+                <Parallax
+                    className="Parallax-module__smallLinear--MqSo+"
+                    translateY={[
+                    '-10%',
+                    '10%'
+                    ]}
+                >
                 <div className="section">
                     <div className="subHeading"><u>B.Tech. Project</u></div>
                     <a className="projectLinks" href="https://awards.iiitd.edu.in/">Awarded B.Tech. Project (BTP)</a>
                     <a className="projectLinks" href="https://iiitd.ac.in/academics/btps">All B.Tech. Rroject</a>
                 </div>
+                </Parallax>
 
             </div>
         </div>
