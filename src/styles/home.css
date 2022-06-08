@@ -26,7 +26,7 @@
 }
 
 
-.subHeading{
+.subHeadings{
     font-size: 30px;
     font-weight: 500;
     color: rgb(3, 168, 163);
@@ -101,6 +101,18 @@
     color: white;
 }
 .links{
-    padding-top: 3vh;
-    font-size:15px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a{
+    color: aliceblue;
+}
+.projectLinks{
+    display: flex;
+    justify-content: space-evenly;
+    color: aliceblue;
+    text-decoration: none;
+    /* padding-top: 2vh;
+    padding-bottom: 2vh; */
 }

@@ -58,7 +58,7 @@ const Home = () => {
             </ParallaxBanner>
 
             <div className="academics">
-                <div className='subHeading'>Academics</div>
+                <div className='subHeadings'>Academics</div>
                 <div className="academic">
                     <div className="section">
                         <Link to="/academicTeam" style={{ textDecoration: 'none', color: 'white' }} >
@@ -114,7 +114,7 @@ const Home = () => {
                 ]}
             >
                 <div className="internals">
-                    <div className="subHeading">Internal</div>
+                    <div className="subHeadings">Internal</div>
                     <div className="internal">
                         <Parallax
                             className="Parallax-module__smallLinear--MqSo+"
@@ -186,15 +186,15 @@ const Home = () => {
                 </div>
             </ParallaxBanner>
             <div className="resources">
-                <div className="subHeading">Resources</div>
+                <div className="subHeadings">Resources</div>
                 <div className="resource">
 
                     <Parallax
                         className="Parallax-module__smallLinear--MqSo+"
-                        translateX={[
-                            '40%',
-                            '-20%'
-                        ]}
+                        // translateX={[
+                        //     '40%',
+                        //     '-30%'
+                        // ]}
                         opacity={[
                             0,
                             1.5
@@ -214,10 +214,10 @@ const Home = () => {
                     </Parallax>
                     <Parallax
                         className="Parallax-module__smallLinear--MqSo+"
-                        translateX={[
-                            '-5%',
-                            '5%'
-                        ]}
+                        // translateX={[
+                        //     '-0%',
+                        //     '0%'
+                        // ]}
                         opacity={[
                             0,
                             1.5
@@ -235,10 +235,10 @@ const Home = () => {
                     </Parallax>
                     <Parallax
                         className="Parallax-module__smallLinear--MqSo+"
-                        translateX={[
-                            '-40%',
-                            '15%'
-                        ]}
+                        // translateX={[
+                        //     '-40%',
+                        //     '20%'
+                        // ]}
                         opacity={[
                             0,
                             1.5
