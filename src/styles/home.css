@@ -150,7 +150,7 @@
     padding-right: 10vw;
 }
 .internalForm{
-    background-color:rgba(0, 178, 77, 0.776);
+    background-color:rgba(3, 168, 163);
     color:white;
     height: 30vh;
     width: 15vw;
@@ -171,7 +171,7 @@
     -o-transform: scale(1.1);
 }
 .erp{
-    background-color: rgba(0, 178, 77, 0.776);
+    background-color: rgba(3, 168, 163);
     color:white;
     height: 30vh;
     width: 15vw;
@@ -192,7 +192,7 @@
     -o-transform: scale(1.1);
 }
 .importantMinutes{
-    background-color: rgba(0, 178, 77, 0.776);
+    background-color: rgba(3, 168, 163);
     color:white;
     height: 30vh;
     width: 15vw;
