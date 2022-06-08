@@ -1,9 +1,28 @@
 import React from 'react'
 import '../styles/classrooms.css'
+import { ParallaxBanner  } from 'react-scroll-parallax';
 
 const Classrooms = () => {
     return (
-        <div className='page'>
+    <ParallaxBanner
+      style={{ height: '100vh',
+      width: '100vw' }}
+      layers={[
+        {
+          speed: -0,
+          children: (
+            <video
+              autoPlay
+              loop
+              preload="auto"
+              muted
+              src="campustour.mp4"
+            />
+          ),
+        },
+      ]}
+    >
+        <div className='page classroom'>
             <div className='heading'>Classrooms</div>
             <hr />
             <div className="classContainer">
@@ -27,6 +46,8 @@ const Classrooms = () => {
                 </a>
             </div>
         </div>
+        </ParallaxBanner>
+
     )
 }
 
