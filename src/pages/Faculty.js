@@ -49,7 +49,7 @@ const Faculty = () => {
                     className="Parallax-module__smallLinear--MqSo+"
                     translateX={[
                         '-40%',
-                        '15%'
+                        '10%'
                     ]}
                     opacity={[
                         0,
@@ -102,7 +102,7 @@ const Faculty = () => {
                     className="Parallax-module__smallLinear--MqSo+"
                     translateX={[
                         '-20%',
-                        '15%'
+                        '10%'
                     ]}
                     opacity={[
                         0,
