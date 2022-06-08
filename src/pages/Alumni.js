@@ -6,7 +6,7 @@ const Alumni = () => {
     return (
         <div className='page'>
             <ParallaxBanner
-                style={{ height: '700px' }}
+                style={{ height: '100vh' }}
                 layers={[
                     {
                         image:

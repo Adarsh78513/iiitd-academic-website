@@ -6,7 +6,7 @@ const Student = () => {
     return (
         <div className='page' style={{ backgroundImage: '/IIITD_building.jpg' }}>
             <ParallaxBanner
-                style={{ height: '700px' }}
+                style={{ height: '100vh' }}
                 layers={[
                     {
                         image:
