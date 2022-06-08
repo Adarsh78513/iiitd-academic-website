@@ -58,7 +58,6 @@ const Home = () => {
             </ParallaxBanner>
 
             <div className="academics">
-                <div className='subHeadings'>Academics</div>
                 <div className="academic">
                     <div className="section">
                         <Link to="/academicTeam" style={{ textDecoration: 'none', color: 'white' }} >
@@ -104,7 +103,7 @@ const Home = () => {
             </div>
 
             <ParallaxBanner
-                style={{ height: '450px' }}
+                style={{ height: '300px' }}
                 layers={[
                     {
                         image:
@@ -114,7 +113,6 @@ const Home = () => {
                 ]}
             >
                 <div className="internals">
-                    <div className="subHeadings">Internal</div>
                     <div className="internal">
                         <Parallax
                             className="Parallax-module__smallLinear--MqSo+"
@@ -186,7 +184,6 @@ const Home = () => {
                 </div>
             </ParallaxBanner>
             <div className="resources">
-                <div className="subHeadings">Resources</div>
                 <div className="resource">
 
                     <Parallax
@@ -267,7 +264,7 @@ const Home = () => {
             <div ref={classroom} ><Classrooms /></div>
             <div ref={contact} ><Contact /></div>
             <Footer />
-        </div>
+        </div >
     )
 }
 
