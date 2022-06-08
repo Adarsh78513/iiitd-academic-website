@@ -50,7 +50,7 @@ const Student = () => {
 
                     >
                         <div className="section">
-                            <div className="subHeading">Accademic Matters</div>
+                            <div className="subHeading">Academic Matters</div>
                             <a className="projectLinks" href="https://iiitd.ac.in/academics/resources">Regulations</a>
                             <a className="projectLinks" href="https://academics.iiitd.edu.in/docs/Teaching%20and%20Evaluation.pdf">Examination & Assessment</a>
                             <a className="projectLinks" href="https://iiitd.ac.in/life/discipline-grievance/disciplinary-action">Student Conduct</a>

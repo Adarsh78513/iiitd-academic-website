@@ -33,17 +33,23 @@
 
 .section:hover{
     background-color:rgb(3, 168, 163);
+
     /* opacity: 0.8; */
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
+}
+.section:hover .subHeading{
+    color:rgb(8, 8, 8);
 }
 
 .subHeading{
     font-size: 30px;
     font-weight: 500;
-    color: aliceblue;
-    padding: 1.5vh;
-    
+    color: rgb(3, 168, 163);
+    text-decoration: none;
+    padding-bottom: 3vh;
+    text-decoration: none;
+    position: relative;
 }
 
 .projectLinks{

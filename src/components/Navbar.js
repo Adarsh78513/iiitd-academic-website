@@ -13,7 +13,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
     const [navbarClassroom, setNavbarClassroom] = useState('navbarClassroom');
     const [navbarContact, setNavbarContact] = useState('navbarContact');
     const changeNavbar = (e) => {
-        if (window.scrollY < home.current.offsetTop + 2000) {
+        if (window.scrollY < home.current.offsetTop + 200) {
             setNavbarHome('navbarHomeChange');
             setNavbarStudent('navbarStudent');
             setNavbarFaculty('navbarFaculty');
@@ -23,7 +23,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
             setNavbarConvocation('navbarConvocation');
             setNavbarClassroom('navbarClassroom');
             setNavbarContact('navbarContact');
-        } else if (window.scrollY >= home.current.offsetTop + 2000 && window.scrollY < student.current.offsetTop) {
+        } else if (window.scrollY >= home.current.offsetTop + 1650 && window.scrollY < student.current.offsetTop) {
             setNavbarHome('navbarHome');
             setNavbarStudent('navbarStudentChange');
             setNavbarFaculty('navbarFaculty');
@@ -73,7 +73,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
             setNavbarConvocation('navbarConvocation');
             setNavbarClassroom('navbarClassroom');
             setNavbarContact('navbarContact');
-        } else if (window.scrollY >= report.current.offsetTop + 150 && window.scrollY < convocation.current.offsetTop) {
+        } else if (window.scrollY >= report.current.offsetTop + 620 && window.scrollY < convocation.current.offsetTop) {
             setNavbarHome('navbarHome');
             setNavbarStudent('navbarStudent');
             setNavbarFaculty('navbarFaculty');
@@ -83,7 +83,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
             setNavbarConvocation('navbarConvocationChange');
             setNavbarClassroom('navbarClassroom');
             setNavbarContact('navbarContact');
-        } else if (window.scrollY >= convocation.current.offsetTop + 150 && window.scrollY < classroom.current.offsetTop) {
+        } else if (window.scrollY >= convocation.current.offsetTop + 300 && window.scrollY < classroom.current.offsetTop) {
             setNavbarHome('navbarHome');
             setNavbarStudent('navbarStudent');
             setNavbarFaculty('navbarFaculty');
@@ -93,7 +93,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
             setNavbarConvocation('navbarConvocation');
             setNavbarClassroom('navbarClassroomChange');
             setNavbarContact('navbarContact');
-        } else if (window.scrollY >= classroom.current.offsetTop + 300 && window.scrollY < contact.current.offsetTop) {
+        } else if (window.scrollY >= classroom.current.offsetTop && window.scrollY < contact.current.offsetTop) {
             setNavbarHome('navbarHome');
             setNavbarStudent('navbarStudent');
             setNavbarFaculty('navbarFaculty');
