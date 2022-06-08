@@ -16,6 +16,10 @@ const StudentProjects = () => {
                 '60%',
                 '-70%'
                 ]}
+                opacity={[
+                    0,
+                    2
+                ]}
             >
                 <div className="section">
                     <div className="subHeading"><u>Ph.D. Thesis</u></div>
@@ -30,6 +34,10 @@ const StudentProjects = () => {
                     '30%',
                     '-30%'
                     ]}
+                    opacity={[
+                        0,
+                        2
+                    ]}
                 >
                 <div className="section">
                     <div className="subHeading"><u>M.Tech. Thesis</u></div>
@@ -43,6 +51,10 @@ const StudentProjects = () => {
                     translateY={[
                     '-10%',
                     '10%'
+                    ]}
+                    opacity={[
+                        0,
+                        2
                     ]}
                 >
                 <div className="section">

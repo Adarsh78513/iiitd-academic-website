@@ -13,6 +13,11 @@ const Faculty = () => {
                     '40%',
                     '-20%'
                     ]}
+                    opacity={[
+                        0,
+                        1.5
+                    ]}
+
                 >
                 <div className="section">
                     <div className="subHeading">Teaching & Learning</div>
@@ -27,6 +32,10 @@ const Faculty = () => {
                     '-5%',
                     '5%'
                     ]}
+                    opacity={[
+                        0,
+                        1.5
+                    ]}
                 >
                 <div className="section">
                     <div className="subHeading">Important Guidelines</div>
@@ -40,6 +49,10 @@ const Faculty = () => {
                     translateX={[
                     '-40%',
                     '15%'
+                    ]}
+                    opacity={[
+                        0,
+                        1.5
                     ]}
                 >
                 <div className="section">
@@ -56,6 +69,10 @@ const Faculty = () => {
                     '20%',
                     '-20%'
                     ]}
+                    opacity={[
+                        0,
+                        2
+                    ]}
                 >
                 <div className="section">
                     <div className="subHeading">Meeting Minutes</div>
@@ -68,6 +85,10 @@ const Faculty = () => {
                     translateX={[
                     '0%',
                     '-0%'
+                    ]}
+                    opacity={[
+                        0,
+                        2
                     ]}
                 >
                 <div className="section">
@@ -82,6 +103,10 @@ const Faculty = () => {
                     '-20%',
                     '15%'
                     ]}
+                    opacity={[
+                        0,
+                        2
+                    ]}
                 >
                 <div className="section">
                     <div className="subHeading">Awards</div>
@@ -95,6 +120,10 @@ const Faculty = () => {
                     translateX={[
                     '0%',
                     '-0%'
+                    ]}
+                    opacity={[
+                        0.5,
+                        2
                     ]}
                 >
                 <div className="section">

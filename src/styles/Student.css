@@ -18,7 +18,7 @@
 }
 .section{
     background-color:rgb(8, 8, 8);
-    opacity: 0.6;
+    opacity: 0.8;
     height: auto;
     width: 27vw;
     padding-bottom: 2vh;
@@ -33,7 +33,7 @@
 
 .section:hover{
     background-color:rgb(3, 168, 163);
-    opacity: 0.8;
+    /* opacity: 0.8; */
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
 }

@@ -14,6 +14,10 @@ const Student = () => {
                     '40%',
                     '-20%'
                     ]}
+                    opacity={[
+                    0,
+                    1.5
+                    ]}
                 >
                 <div className="section">
                     <div className="subHeading"><u>New Students</u></div>
@@ -29,6 +33,11 @@ const Student = () => {
                     '-5%',
                     '5%'
                     ]}
+                    opacity={[
+                        0,
+                        1.5
+                    ]}
+                
                 >
                 <div className="section">
                     <div className="subHeading"><u>Accademic Matters</u></div>
@@ -46,6 +55,10 @@ const Student = () => {
                     translateX={[
                     '-40%',
                     '15%'
+                    ]}
+                    opacity={[
+                        0,
+                        1.5
                     ]}
                 >
                 <div className="section">
@@ -66,6 +79,10 @@ const Student = () => {
                     '20%',
                     '-20%'
                     ]}
+                    opacity={[
+                        0,
+                        2
+                    ]}
                 >
                 <div className="section">
                     <div className="subHeading"><u>Graduation & Leaving IIIT-D</u></div>
@@ -81,6 +98,10 @@ const Student = () => {
                     translateX={[
                     '0%',
                     '-0%'
+                    ]}
+                    opacity={[
+                        0,
+                        2
                     ]}
                 >
                 <div className="section">
@@ -98,6 +119,10 @@ const Student = () => {
                     translateX={[
                     '-20%',
                     '15%'
+                    ]}
+                    opacity={[
+                        0,
+                        2
                     ]}
                 >
                 <div className="section">
