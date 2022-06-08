@@ -5,7 +5,7 @@ import { ParallaxProvider, Parallax, ParallaxBanner  } from 'react-scroll-parall
 const Student = () => {
     return (
         <div className='page' style={{backgroundImage : '/IIITD_building.jpg'}}>
-            <div className="heading white">Students</div>
+            <div className="heading">Students</div>
             <div className="rows">
 
                 <Parallax

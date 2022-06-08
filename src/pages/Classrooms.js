@@ -6,7 +6,7 @@ const Classrooms = () => {
     return (
     <ParallaxBanner
       style={{ height: '100vh',
-      width: '100vw' }}
+      width: 'auto' }}
       layers={[
         {
           speed: -0,

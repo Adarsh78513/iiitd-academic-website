@@ -22,7 +22,7 @@
 .heading{
     font-size: 50px;
     font-weight: 600;
-    color: #ffffff;
+    color: rgb(3, 168, 163);
 }
 
 
@@ -150,7 +150,7 @@
     padding-right: 10vw;
 }
 .internalForm{
-    background-color:rgba(3, 168, 163);
+    background-color:rgb(3, 168, 163);
     color:white;
     height: 30vh;
     width: 15vw;
