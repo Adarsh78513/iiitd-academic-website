@@ -35,11 +35,11 @@ const Home = () => {
             <AdCarousel />
 
             <ParallaxBanner
-                style={{height: '400px' }}
+                style={{ height: '400px' }}
                 layers={[
                     {
-                    image: '/IIITD_building.jpg',
-                    speed: -30,
+                        image: '/IIITD_building.jpg',
+                        speed: -30,
                     },
                 ]}
                 >
@@ -62,13 +62,13 @@ const Home = () => {
                 style={{ aspectRatio: '4 / 1' }}
                 layers={[
                     {
-                    image:
-                        'https://s3-us-west-2.amazonaws.com/s.cdpn.io/105988/banner.jpg',
-                    speed: -30,
+                        image:
+                            'https://s3-us-west-2.amazonaws.com/s.cdpn.io/105988/banner.jpg',
+                        speed: -30,
                     },
                 ]}
-                >
-                    <div className="academics">
+            >
+                <div className="academics">
                     <div className='subHeading'>Academics</div>
                     <div className="academic">
                         <Link to="/academicTeam" style={{ textDecoration: 'none' }} >

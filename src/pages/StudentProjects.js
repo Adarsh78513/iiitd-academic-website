@@ -1,11 +1,5 @@
 import React from 'react'
-import AdCarousel from '../components/AdCarousel'
-import Footer from '../components/Footer'
-import Marquee from '../components/Marquee'
-import Navbar from '../components/Navbar'
 import 'bootstrap/dist/css/bootstrap.css';
-
-import { link } from 'react-router-dom'
 import '../styles/Student.css'
 
 const StudentProjects = () => {
