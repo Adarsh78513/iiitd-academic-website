@@ -45,7 +45,7 @@ const Student = () => {
                     className="Parallax-module__smallLinear--MqSo+"
                     translateX={[
                     '-40%',
-                    '20%'
+                    '15%'
                     ]}
                 >
                 <div className="section">
@@ -97,7 +97,7 @@ const Student = () => {
                     className="Parallax-module__smallLinear--MqSo+"
                     translateX={[
                     '-20%',
-                    '20%'
+                    '15%'
                     ]}
                 >
                 <div className="section">
