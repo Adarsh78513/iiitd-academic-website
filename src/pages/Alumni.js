@@ -7,7 +7,7 @@ import '../styles/Student.css'
 
 const Alumni = () => {
     return (
-        <div>
+        <div className='page'>
             <div className="heading">Alumni</div>
             <div className="rows">
 

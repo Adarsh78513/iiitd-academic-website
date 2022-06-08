@@ -7,7 +7,7 @@ import '../styles/classrooms.css'
 
 const Classrooms = () => {
     return (
-        <div>
+        <div className='page'>
             <div className='heading'>Classrooms</div>
             <hr />
             <div className="classContainer">

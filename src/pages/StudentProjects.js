@@ -10,7 +10,7 @@ import '../styles/Student.css'
 
 const StudentProjects = () => {
     return (
-        <div>
+        <div className='page'>
             {/* make divs to show the projects of all differetn sections in the website */}
             <div className="heading">Student Projects</div>
             <div className="rows">

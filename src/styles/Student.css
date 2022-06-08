@@ -5,22 +5,35 @@
     padding-bottom: 5vh;
 
 }
-
+.page{
+    background-color: rgb(216, 197, 197);
+    /* background-color: rgb(8, 8, 8); */
+    color: white;
+    height: 100vh;
+    width: auto;
+    font-size: 20px;
+    font-weight: 500;
+}
+.white{
+    color: #ffffff;
+}
 .section{
-    background-color:rgb(10, 176, 112);
+    background-color:rgb(8, 8, 8);
+    opacity: 0.6;
     height: auto;
     width: 27vw;
     font-size: 20px;
     font-weight: 500;
-    border-radius: 15px;
+    /* border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+    -o-border-radius: 15px; */
 }
 
 .section:hover{
-    background-color:rgb(9, 209, 132);
+    background-color:rgb(178, 222, 220);
+    opacity: 0.8;
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
 }
@@ -30,7 +43,7 @@
     text-decoration: underline;
 
     font-weight: 500;
-    color:  rgb(10, 1, 61);
+    color: aliceblue;
     padding: 1.5vh;
     
 }

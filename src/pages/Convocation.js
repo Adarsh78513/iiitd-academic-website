@@ -7,7 +7,7 @@ import '../styles/convocation.css'
 
 const Convocation = () => {
     return (
-        <div>
+        <div className='page'>
             <div className="heading">Convocation</div>
             <div className="convocation">
                 <a href="https://iiitd.ac.in/convocation21/" style={{ textDecoration: 'none' }}>
