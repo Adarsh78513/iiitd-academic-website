@@ -1,17 +1,18 @@
 import React from 'react'
-import { ParallaxProvider, Parallax, ParallaxBanner  } from 'react-scroll-parallax';
+import { ParallaxProvider, Parallax, ParallaxBanner } from 'react-scroll-parallax';
 
 const Faculty = () => {
     return (
-        <div className='page'>
+        <div className='page' style={{ backgroundColor: " rgb(239, 239, 240)" }}>
+
             <div className="heading">For IIITD Faculty</div>
             <div className="rows">
 
                 <Parallax
                     className="Parallax-module__smallLinear--MqSo+"
                     translateX={[
-                    '40%',
-                    '-20%'
+                        '40%',
+                        '-20%'
                     ]}
                     opacity={[
                         0,
@@ -19,46 +20,46 @@ const Faculty = () => {
                     ]}
 
                 >
-                <div className="section">
-                    <div className="subHeading">Teaching & Learning</div>
-                    <a className="projectLinks" href="https://iiitd.ac.in/iqac">IQAC</a>
-                </div>
+                    <div className="section">
+                        <div className="subHeading">Teaching & Learning</div>
+                        <a className="projectLinks" href="https://iiitd.ac.in/iqac">IQAC</a>
+                    </div>
                 </Parallax>
 
 
                 <Parallax
                     className="Parallax-module__smallLinear--MqSo+"
                     translateX={[
-                    '-5%',
-                    '5%'
+                        '-5%',
+                        '5%'
                     ]}
                     opacity={[
                         0,
                         1.5
                     ]}
                 >
-                <div className="section">
-                    <div className="subHeading">Important Guidelines</div>
-                    <a className="projectLinks" href="https://academics.iiitd.edu.in/iiitdfaculty.html">SOP</a>
-                </div>
+                    <div className="section">
+                        <div className="subHeading">Important Guidelines</div>
+                        <a className="projectLinks" href="https://academics.iiitd.edu.in/iiitdfaculty.html">SOP</a>
+                    </div>
                 </Parallax>
 
 
                 <Parallax
                     className="Parallax-module__smallLinear--MqSo+"
                     translateX={[
-                    '-40%',
-                    '15%'
+                        '-40%',
+                        '15%'
                     ]}
                     opacity={[
                         0,
                         1.5
                     ]}
                 >
-                <div className="section">
-                    <div className="subHeading">Academic Regulations</div>
-                    <a className="projectLinks" href="https://iiitd.ac.in/academics/resources">Regulations</a>
-                </div>
+                    <div className="section">
+                        <div className="subHeading">Academic Regulations</div>
+                        <a className="projectLinks" href="https://iiitd.ac.in/academics/resources">Regulations</a>
+                    </div>
                 </Parallax>
             </div>
 
@@ -66,70 +67,70 @@ const Faculty = () => {
                 <Parallax
                     className="Parallax-module__smallLinear--MqSo+"
                     translateX={[
-                    '20%',
-                    '-20%'
+                        '20%',
+                        '-20%'
                     ]}
                     opacity={[
                         0,
                         2
                     ]}
                 >
-                <div className="section">
-                    <div className="subHeading">Meeting Minutes</div>
-                    <a className="projectLinks" href="https://academics.iiitd.edu.in/meetings/list.php">Minutes</a>
-                </div>
+                    <div className="section">
+                        <div className="subHeading">Meeting Minutes</div>
+                        <a className="projectLinks" href="https://academics.iiitd.edu.in/meetings/list.php">Minutes</a>
+                    </div>
                 </Parallax>
 
                 <Parallax
                     className="Parallax-module__smallLinear--MqSo+"
                     translateX={[
-                    '0%',
-                    '-0%'
+                        '0%',
+                        '-0%'
                     ]}
                     opacity={[
                         0,
                         2
                     ]}
                 >
-                <div className="section">
-                    <div className="subHeading">Important Point of Contact</div>
-                    <a className="projectLinks" href="https://academics.iiitd.edu.in/iiitd-acad-team.html">Academic Team</a>
-                </div>
+                    <div className="section">
+                        <div className="subHeading">Important Point of Contact</div>
+                        <a className="projectLinks" href="https://academics.iiitd.edu.in/iiitd-acad-team.html">Academic Team</a>
+                    </div>
                 </Parallax>
 
                 <Parallax
                     className="Parallax-module__smallLinear--MqSo+"
                     translateX={[
-                    '-20%',
-                    '15%'
+                        '-20%',
+                        '15%'
                     ]}
                     opacity={[
                         0,
                         2
                     ]}
                 >
-                <div className="section">
-                    <div className="subHeading">Awards</div>
-                    <a className="projectLinks" href="https://awards.iiitd.edu.in/">Awards</a>
-                </div>
+                    <div className="section">
+                        <div className="subHeading">Awards</div>
+                        <a className="projectLinks" href="https://awards.iiitd.edu.in/">Awards</a>
+                    </div>
                 </Parallax>
             </div>
             <div className="rows">
                 <Parallax
                     className="Parallax-module__smallLinear--MqSo+"
                     translateX={[
-                    '0%',
-                    '-0%'
+                        '0%',
+                        '-0%'
                     ]}
                     opacity={[
                         0.5,
                         2
                     ]}
                 >
-                <div className="section">
-                    <div className="subHeading">FAQs</div>
-                    <a className="projectLinks" href="https://academics.iiitd.edu.in/iiitdfaculty.html#">FAQ</a>
-                </div>
+                    <div className="section">
+                        <div className="subHeading">FAQs</div>
+                        <a className="projectLinks" href="https://academics.iiitd.edu.in/iiitdfaculty.html#">FAQ</a>
+                    </div>
                 </Parallax>
             </div>
         </div>

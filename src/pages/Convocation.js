@@ -3,7 +3,7 @@ import '../styles/convocation.css'
 
 const Convocation = () => {
     return (
-        <div className='page'>
+        <div className='page' style={{ backgroundColor: " rgb(239, 239, 240)" }}>
             <div className="heading">Convocation</div>
             <div className="convocation">
                 <a href="https://iiitd.ac.in/convocation21/" style={{ textDecoration: 'none' }}>

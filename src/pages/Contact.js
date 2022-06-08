@@ -3,7 +3,7 @@ import '../styles/contact.css'
 
 const Contact = () => {
     return (
-        <div className="contactContainer page">
+        <div className="contactContainer page" style={{ backgroundColor: " rgb(239, 239, 240)" }}>
             <div className="heading">Contact Academic Department</div>
             <hr />
             <div className='contact'>

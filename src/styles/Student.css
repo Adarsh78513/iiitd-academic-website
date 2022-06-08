@@ -6,9 +6,8 @@
 
 }
 .page{
-    background-color: rgb(245, 245, 245);
+    background-color:white;
     color: white;
-    height: 100vh;
     width: auto;
     font-size: 20px;
     font-weight: 500;
@@ -19,6 +18,7 @@
 .section{
     background-color:rgb(8, 8, 8);
     opacity: 0.8;
+    margin: 1vw;
     height: auto;
     width: 27vw;
     padding-bottom: 2vh;
@@ -40,7 +40,6 @@
 
 .subHeading{
     font-size: 30px;
-    text-decoration: underline;
     font-weight: 500;
     color: aliceblue;
     padding: 1.5vh;

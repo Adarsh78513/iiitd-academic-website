@@ -73,69 +73,7 @@
     padding-top: 2vh;
     padding-bottom: 2vh;
 }
-.academicAdmin{
-    background-color: rgb(10, 1, 61);
-    color:white;
-    height: 30vh;
-    width: 15vw;
-    font-size: 18px;
-    font-weight: 500;
-    transition: transform .2s;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-}
-.academicAdmin:hover{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
-.issueResolution{
-    background-color: rgb(10, 1, 61);
-    color:white;
-    height: 30vh;
-    width: 15vw;
-    font-size: 20px;
-    font-weight: 500;
-    transition: transform .2s;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-}
-.issueResolution:hover{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
-.regulations{
-    background-color: rgb(10, 1, 61);
-    color:white;
-    height: 30vh;
-    width: 15vw;
-    font-size: 20px;
-    font-weight: 500;
-    transition: transform .2s;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-}
-.regulations:hover{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
+
 .internals{
     padding-top: 3vh;
     padding-bottom: 4vh;
@@ -143,74 +81,8 @@
 .internal{
     display:flex;
     justify-content: space-between;
-    padding-top: 3vh;
     width: 90vw;
-    padding-bottom: 3vh;
-    padding-left: 20vw;
-    padding-right: 10vw;
-}
-.internalForm{
-    background-color:rgb(3, 168, 163);
-    color:white;
-    height: 30vh;
-    width: 15vw;
-    font-size: 20px;
-    font-weight: 500;
-    transition: transform .2s;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-}
-.internalForm:hover{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
-.erp{
-    background-color: rgba(3, 168, 163);
-    color:white;
-    height: 30vh;
-    width: 15vw;
-    font-size: 20px;
-    font-weight: 500;
-    transition: transform .2s;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-}
-.erp:hover{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
-.importantMinutes{
-    background-color: rgba(3, 168, 163);
-    color:white;
-    height: 30vh;
-    width: 15vw;
-    font-size: 20px;
-    font-weight: 500;
-    transition: transform .2s;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-}
-.importantMinutes:hover{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
+    padding-left: 6vw;
 }
 .resources{
     background-color:  rgb(239, 239, 240);

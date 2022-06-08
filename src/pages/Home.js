@@ -13,7 +13,7 @@ import ReportsStatistics from './ReportsStatistics'
 import Convocation from './Convocation'
 import Classrooms from './Classrooms'
 import Contact from './Contact'
-import { ParallaxProvider, Parallax, ParallaxBanner  } from 'react-scroll-parallax';
+import { ParallaxProvider, Parallax, ParallaxBanner } from 'react-scroll-parallax';
 
 
 const Home = () => {
@@ -42,61 +42,57 @@ const Home = () => {
                         speed: -30,
                     },
                 ]}
-                >
-            
-            <div className="aboutUsContainer">
-                <div className="aboutUs">
-                    <div className='heading'>About IIITD</div>
-                    <p className='para'>
-                        IIIT-Delhi is a research-led institute with thriving degree programs at the UG & PG levels.
-                        The Academics celebrate the culture of learning by doing. The approach is always to encourage analytical precision with curiosity, playful imagination and searching for ways to solve real life problems in service to the society.
-                        The vision is to be socially relevant, industry facing, and globally connected.
-                    </p>
+            >
+
+                <div className="aboutUsContainer">
+                    <div className="aboutUs">
+                        <div className='heading'>About IIITD</div>
+                        <p className='para'>
+                            IIIT-Delhi is a research-led institute with thriving degree programs at the UG & PG levels.
+                            The Academics celebrate the culture of learning by doing. The approach is always to encourage analytical precision with curiosity, playful imagination and searching for ways to solve real life problems in service to the society.
+                            The vision is to be socially relevant, industry facing, and globally connected.
+                        </p>
+                    </div>
                 </div>
-            </div>
 
             </ParallaxBanner>
 
-
-            <ParallaxBanner
-                style={{height: '450px' }}
-                layers={[
-                    {
-                        image:
-                            'https://s3-us-west-2.amazonaws.com/s.cdpn.io/105988/banner.jpg',
-                        speed: -30,
-                    },
-                ]}
-            >
-                <div className="academics">
-                    <div className='subHeading'>Academics</div>
-                    <div className="academic">
-                        <Link to="/academicTeam" style={{ textDecoration: 'none' }} >
-                            <div className="academicTeam">
+            <div className="academics">
+                <div className='subHeading'>Academics</div>
+                <div className="academic">
+                    <div className="section">
+                        <Link to="/academicTeam" style={{ textDecoration: 'none', color: 'white' }} >
+                            <div className="">
                                 <div className="team">
                                     <img src='./group.png' alt="" />
                                 </div>
                                 Academic Team
                             </div>
                         </Link>
-                        <a href='https://iiitd.ac.in/academics/academic-administration' style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer">
-                            <div className="academicAdmin">
+                    </div>
+                    <div className="section">
+                        <a href='https://iiitd.ac.in/academics/academic-administration' style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                            <div className="">
                                 <div className="team">
                                     <img src='./team.png' alt="" />
                                 </div>
                                 Academic Administration
                             </div>
                         </a>
-                        <a href='https://iiitd.ac.in/academics/issue-resolution' style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer">
-                            <div className="issueResolution">
+                    </div>
+                    <div className="section">
+                        <a href='https://iiitd.ac.in/academics/issue-resolution' style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                            <div className="">
                                 <div className="team">
                                     <img src='./question.png' alt="" />
                                 </div>
                                 Issue Resolution
                             </div>
                         </a>
-                        <a href="https://iiitd.ac.in/academics/resources" style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer">
-                            <div className="regulations">
+                    </div>
+                    <div className="section">
+                        <a href="https://iiitd.ac.in/academics/resources" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                            <div className="">
                                 <div className="team">
                                     <img src='./document.png' alt="" />
                                 </div>
@@ -105,39 +101,90 @@ const Home = () => {
                         </a>
                     </div>
                 </div>
-            </ParallaxBanner>
-
-
-
-            <div className="internals">
-                <div className="subHeading">Internal</div>
-                <div className="internal">
-                    <a href="https://iiitd.ac.in/form_docs" style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer">
-                        <div className="internalForm">
-                            <div className="team">
-                                <img src='./form.png' alt="" />
-                            </div>
-                            Internal Forms
-                        </div>
-                    </a>
-                    <a href="https://erp.iiitd.edu.in/" style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer">
-                        <div className="erp">
-                            <div className="team">
-                                <img src='./graduate-cap.png' alt="" />
-                            </div>
-                            ERP
-                        </div>
-                    </a>
-                    <a href="http://academics.iiitd.edu.in/meetings/list.php" style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer">
-                        <div className="importantMinutes">
-                            <div className="team">
-                                <img src='./online-meeting.png' alt="" />
-                            </div>
-                            Important Minutes
-                        </div>
-                    </a>
-                </div>
             </div>
+
+            <ParallaxBanner
+                style={{ height: '450px' }}
+                layers={[
+                    {
+                        image:
+                            './IIITD_night.jpg',
+                        speed: -30,
+                    },
+                ]}
+            >
+                <div className="internals">
+                    <div className="subHeading">Internal</div>
+                    <div className="internal">
+                        <Parallax
+                            className="Parallax-module__smallLinear--MqSo+"
+                            translateX={[
+                                '-40%',
+                                '15%'
+                            ]}
+                            opacity={[
+                                0,
+                                1.5
+                            ]}
+                        >
+                            <div className="section">
+                                <a href="https://iiitd.ac.in/form_docs" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                                    <div className="">
+                                        <div className="team">
+                                            <img src='./form.png' alt="" />
+                                        </div>
+                                        Internal Forms
+                                    </div>
+                                </a>
+                            </div>
+                        </Parallax>
+                        <Parallax
+                            className="Parallax-module__smallLinear--MqSo+"
+                            translateX={[
+                                '5%',
+                                '-5%'
+                            ]}
+                            opacity={[
+                                0,
+                                1.5
+                            ]}
+                        >
+                            <div className="section">
+                                <a href="https://erp.iiitd.edu.in/" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                                    <div className="">
+                                        <div className="team">
+                                            <img src='./graduate-cap.png' alt="" />
+                                        </div>
+                                        ERP
+                                    </div>
+                                </a>
+                            </div>
+                        </Parallax>
+                        <Parallax
+                            className="Parallax-module__smallLinear--MqSo+"
+                            translateX={[
+                                '40%',
+                                '-15%'
+                            ]}
+                            opacity={[
+                                0,
+                                1.5
+                            ]}
+                        >
+                            <div className="section">
+                                <a href="http://academics.iiitd.edu.in/meetings/list.php" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                                    <div className="">
+                                        <div className="team">
+                                            <img src='./online-meeting.png' alt="" />
+                                        </div>
+                                        Important Minutes
+                                    </div>
+                                </a>
+                            </div>
+                        </Parallax>
+                    </div>
+                </div>
+            </ParallaxBanner>
             <div className="resources">
                 <div className="subHeading">Resources</div>
                 <div className="resource">
