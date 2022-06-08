@@ -1,8 +1,4 @@
 import React from 'react'
-import AdCarousel from '../components/AdCarousel'
-import Footer from '../components/Footer'
-import Marquee from '../components/Marquee'
-import Navbar from '../components/Navbar'
 import '../styles/reports.css'
 
 const ReportsStatistics = () => {

@@ -8,7 +8,7 @@ const AcademicTeam = () => {
     return (
         <div>
             <Marquee />
-            <Navbar />
+            <Navbar AcademicTeam={true} />
             <div className="heading">Academic Team</div>
             <hr></hr>
             <div className="containerTeam">

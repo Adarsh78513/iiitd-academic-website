@@ -13,7 +13,7 @@ import ReportsStatistics from './ReportsStatistics'
 import Convocation from './Convocation'
 import Classrooms from './Classrooms'
 import Contact from './Contact'
-import { ParallaxProvider, Parallax, ParallaxBanner  } from 'react-scroll-parallax';
+import { ParallaxProvider, Parallax, ParallaxBanner } from 'react-scroll-parallax';
 // import IIITDbuilding from '/IIITD_building.jpg'
 
 
@@ -36,25 +36,25 @@ const Home = () => {
             <AdCarousel />
 
             <ParallaxBanner
-                style={{height: '400px' }}
+                style={{ height: '400px' }}
                 layers={[
                     {
-                    image: '/IIITD_building.jpg',
-                    speed: -30,
+                        image: '/IIITD_building.jpg',
+                        speed: -30,
                     },
                 ]}
-                >
-            
-            <div className="aboutUsContainer">
-                <div className="aboutUs">
-                    <div className='heading aboutUsHeading'>About IIITD</div>
-                    <p className='para'>
-                        IIIT-Delhi is a research-led institute with thriving degree programs at the UG & PG levels.
-                        The Academics celebrate the culture of learning by doing. The approach is always to encourage analytical precision with curiosity, playful imagination and searching for ways to solve real life problems in service to the society.
-                        The vision is to be socially relevant, industry facing, and globally connected.
-                    </p>
+            >
+
+                <div className="aboutUsContainer">
+                    <div className="aboutUs">
+                        <div className='heading aboutUsHeading'>About IIITD</div>
+                        <p className='para'>
+                            IIIT-Delhi is a research-led institute with thriving degree programs at the UG & PG levels.
+                            The Academics celebrate the culture of learning by doing. The approach is always to encourage analytical precision with curiosity, playful imagination and searching for ways to solve real life problems in service to the society.
+                            The vision is to be socially relevant, industry facing, and globally connected.
+                        </p>
+                    </div>
                 </div>
-            </div>
 
             </ParallaxBanner>
 
@@ -63,13 +63,13 @@ const Home = () => {
                 style={{ aspectRatio: '2 / 1' }}
                 layers={[
                     {
-                    image:
-                        'https://s3-us-west-2.amazonaws.com/s.cdpn.io/105988/banner.jpg',
-                    speed: -30,
+                        image:
+                            'https://s3-us-west-2.amazonaws.com/s.cdpn.io/105988/banner.jpg',
+                        speed: -30,
                     },
                 ]}
-                >
-                    <div className="academics">
+            >
+                <div className="academics">
                     <div className='subHeading'>Academics</div>
                     <div className="academic">
                         <Link to="/academicTeam" style={{ textDecoration: 'none' }} >

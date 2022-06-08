@@ -2,7 +2,7 @@ import React, { useState, useEffect, Component } from 'react'
 import '../styles/navbar.css'
 import { Link } from 'react-scroll'
 
-const Navbar = ({ home, student, faculty, alumni, projects, report, convocation, classroom, contact }) => {
+const Navbar = ({ home, student, faculty, alumni, projects, report, convocation, classroom, contact, AcademicTeam }) => {
     const [navbarHome, setNavbarHome] = useState(true);
     const [navbarStudent, setNavbarStudent] = useState(false);
     const [navbarFaculty, setNavbarFaculty] = useState(false);
@@ -114,9 +114,11 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
     return (
         <div className="navbar">
             <div>
-                <img width="400vw" src="https://www.iiitd.ac.in/sites/default/files/style3colorsmall.png"></img>
+                <Link to='/'>
+                    <img width="400vw" src="https://www.iiitd.ac.in/sites/default/files/style3colorsmall.png"></img>
+                </Link>
             </div>
-            <Link to='home' onClick={() => scrollDown(home)} className={navbarHome ? 'navbarHomeChange' : 'navbarHome'}>Home</Link>
+            <Link to={AcademicTeam ? '/' : 'home'} onClick={() => scrollDown(home)} className={navbarHome ? 'navbarHomeChange' : 'navbarHome'}>Home</Link>
             <Link to='student' onClick={() => scrollDown(student)} className={navbarStudent ? 'navbarStudentChange' : 'navbarStudent'}>Students</Link>
             <Link to='faculty' onClick={() => scrollDown(faculty)} className={navbarFaculty ? 'navbarFacultyChange' : 'navbarFaculty'}>Faculty</Link>
             <Link to='alumni' onClick={() => scrollDown(alumni)} className={navbarAlumni ? 'navbarAlumniChange' : 'navbarAlumni'}>Alumni</Link>
