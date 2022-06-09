@@ -1,7 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/Student.css'
-import { Parallax, ParallaxBanner } from 'react-scroll-parallax';
+import { Parallax } from 'react-scroll-parallax';
 
 const StudentProjects = () => {
     return (

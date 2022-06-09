@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/Student.css'
-import { ParallaxProvider, Parallax, ParallaxBanner } from 'react-scroll-parallax';
+import { Parallax, ParallaxBanner } from 'react-scroll-parallax';
 
 const Student = () => {
     return (

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import '../styles/home.css'
 import Home from './Home'
-import { ParallaxProvider, Parallax, ParallaxBanner } from 'react-scroll-parallax';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 
 

@@ -13,7 +13,7 @@ import ReportsStatistics from './ReportsStatistics'
 import Convocation from './Convocation'
 import Classrooms from './Classrooms'
 import Contact from './Contact'
-import { ParallaxProvider, Parallax, ParallaxBanner } from 'react-scroll-parallax';
+import { Parallax, ParallaxBanner } from 'react-scroll-parallax';
 
 
 const Home = () => {

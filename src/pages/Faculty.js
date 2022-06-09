@@ -1,5 +1,5 @@
 import React from 'react'
-import { ParallaxProvider, Parallax, ParallaxBanner } from 'react-scroll-parallax';
+import { Parallax } from 'react-scroll-parallax';
 
 const Faculty = () => {
     return (
