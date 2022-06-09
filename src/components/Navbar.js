@@ -126,15 +126,23 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
     return (
         <div className='navContainer'>
             <div className="navbar">
-                <div>
-                    <a href='/' style={{ cursor: 'pointer' }}>
-                        <img width="400vw" src="https://www.iiitd.ac.in/sites/default/files/style3colorsmall.png"></img>
-                    </a>
-                </div>
-                {size > 590 ? (size < 1490 ?
+                {size < 590 ?
+                    <div>
+                        <a href='/' style={{ cursor: 'pointer' }}>
+                            <img width="100vw" src="https://www.sarkarijobalert.co.in/wp-content/uploads/2021/02/logo-of-iiit-delhi-Recruitmentlogo.jpg"></img>
+                        </a>
+                    </div>
+                    :
+                    <div>
+                        <a href='/' style={{ cursor: 'pointer' }}>
+                            <img width="400vw" src="https://www.iiitd.ac.in/sites/default/files/style3colorsmall.png"></img>
+                        </a>
+                    </div>}
+                {(size < 1490 ?
                     <div>
                         <img src="./more.png" onClick={(e) => { console.log(isOpened); isOpened ? setIsOpened(false) : setIsOpened(true) }} width="50vw" alt="" />
-                    </div> : null) : null}
+                    </div> : null)
+                }
                 {size > 1490 ?
                     <a href={AcademicTeam ? '/' : '#'} onClick={() => scrollDown(home)} className={navbarHome}
                         style={{
