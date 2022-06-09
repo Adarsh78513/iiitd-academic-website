@@ -115,25 +115,27 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
     return (
         <div className="navbar">
             <div>
-                <Link to='/'>
+                <a href='/' style={{ cursor: 'pointer' }}>
                     <img width="400vw" src="https://www.iiitd.ac.in/sites/default/files/style3colorsmall.png"></img>
-                </Link>
+                </a>
             </div>
-            <Link to={AcademicTeam ? '/' : 'home'} onClick={() => scrollDown(home)} className={navbarHome}
+            <a href={AcademicTeam ? '/' : '#'} onClick={() => scrollDown(home)} className={navbarHome}
                 style={{
                     transition: 'background-color 1s',
                     padding: '1.5vh',
                     backgroundColor: navbarHome === 'navbarHome' ? 'white' : 'rgb(3, 168, 163)',
                     color: navbarHome === 'navbarHome' ? 'black' : 'white',
+                    cursor: 'pointer'
                 }}>
                 HOME
-            </Link>
+            </a>
             <Link to='student' onClick={() => scrollDown(student)} className={navbarStudent}
                 style={{
                     transition: 'background-color 1s',
                     padding: '1.5vh',
                     backgroundColor: navbarStudent === 'navbarStudent' ? 'white' : 'rgb(3, 168, 163)',
                     color: navbarStudent === 'navbarStudent' ? 'black' : 'white',
+                    cursor: 'pointer'
                 }}>
                 STUDENTS
             </Link>
@@ -143,6 +145,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                     padding: '1.5vh',
                     backgroundColor: navbarFaculty === 'navbarFaculty' ? 'white' : 'rgb(3, 168, 163)',
                     color: navbarFaculty === 'navbarFaculty' ? 'black' : 'white',
+                    cursor: 'pointer'
                 }}>
                 FACULTY
             </Link>
@@ -152,6 +155,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                     padding: '1.5vh',
                     backgroundColor: navbarAlumni === 'navbarAlumni' ? 'white' : 'rgb(3, 168, 163)',
                     color: navbarAlumni === 'navbarAlumni' ? 'black' : 'white',
+                    cursor: 'pointer'
                 }}>
                 ALUMNI
             </Link>
@@ -161,6 +165,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                     padding: '1.5vh',
                     backgroundColor: navbarProjects === 'navbarProjects' ? 'white' : 'rgb(3, 168, 163)',
                     color: navbarProjects === 'navbarProjects' ? 'black' : 'white',
+                    cursor: 'pointer'
                 }}>
                 STUDENT'S PROJECTS
             </Link>
@@ -170,6 +175,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                     padding: '1.5vh',
                     backgroundColor: navbarReport === 'navbarReport' ? 'white' : 'rgb(3, 168, 163)',
                     color: navbarReport === 'navbarReport' ? 'black' : 'white',
+                    cursor: 'pointer'
                 }}>
                 REPORT & STATISTICS
             </Link>
@@ -179,6 +185,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                     padding: '1.5vh',
                     backgroundColor: navbarConvocation === 'navbarConvocation' ? 'white' : 'rgb(3, 168, 163)',
                     color: navbarConvocation === 'navbarConvocation' ? 'black' : 'white',
+                    cursor: 'pointer'
                 }}>
                 CONVOCATION
             </Link>
@@ -188,6 +195,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                     padding: '1.5vh',
                     backgroundColor: navbarClassroom === 'navbarClassroom' ? 'white' : 'rgb(3, 168, 163)',
                     color: navbarClassroom === 'navbarClassroom' ? 'black' : 'white',
+                    cursor: 'pointer'
                 }}>
                 CLASSROOMS
             </Link>
@@ -197,6 +205,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                     padding: '1.5vh',
                     backgroundColor: navbarContact === 'navbarContact' ? 'white' : 'rgb(3, 168, 163)',
                     color: navbarContact === 'navbarContact' ? 'black' : 'white',
+                    cursor: 'pointer'
                 }}>
                 CONTACT
             </Link>

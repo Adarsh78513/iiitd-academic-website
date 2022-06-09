@@ -5,7 +5,7 @@
     background-color: white;
     display: flex;
     align-items: center;
-    border: 1px solid #dbdada;
+    border-bottom: 2px solid #dbdada;
     text-decoration: none;
     position: sticky; top: 0;
     z-index: 9;
