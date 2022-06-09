@@ -103,7 +103,7 @@ const Home = () => {
             </div>
 
             <ParallaxBanner
-                style={{ height: '300px' }}
+                style={{ height: '40vh' }}
                 layers={[
                     {
                         image:

@@ -10,6 +10,11 @@
     position: sticky; top: 0;
     z-index: 9;
 }
+.navContainer{
+    position: sticky; top: 0;
+    z-index: 9;
+}
+
 .navbarHome{
     color: black;
     text-decoration: none;
