@@ -6,16 +6,22 @@ const Classrooms = () => {
   return (
     <ParallaxBanner
       style={{
-        height: '80vh',
+        height: '100vh',
         width: 'auto'
       }}
       layers={[
         {
-          speed: -0,
           children: (
             <video
               autoPlay
               loop
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%'
+              }}
               preload="auto"
               muted
               src="campustour.mp4"

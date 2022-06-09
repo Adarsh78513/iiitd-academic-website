@@ -28,7 +28,7 @@ const Home = () => {
     const contact = useRef(null);
 
     return (
-        <div>
+        <div className='homepage'>
             <div ref={home}></div>
             <Marquee />
             <Navbar home={home} student={student} faculty={faculty} alumni={alumni} projects={projects} report={report} convocation={convocation} classroom={classroom} contact={contact} />
