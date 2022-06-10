@@ -134,7 +134,7 @@ const Home = () => {
                         ]}
                     >
                         <div className="section">
-                            <div className="tabHead">Academic Calendar</div>
+                            <div className="subHeading">Academic Calendar</div>
                             <div className="links">
                                 <div>
                                     <a href="https://iiitd.ac.in/sites/default/files/docs/education/2021/Academic%20Calendar%20Winter%202022_Final.pdf" style={{ textDecoration: 'none' }}>Winter 2022</a>
@@ -158,7 +158,7 @@ const Home = () => {
 
                     >
                         <div className="section" style={{ paddingBottom: '6vh' }}>
-                            <div className="tabHead">Timetable</div>
+                            <div className="subHeading">Timetable</div>
                             <div className="links">
                                 <div>
                                     <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/Add_Drop_TT_Winter%202022%20&%20BTech%201st%20Year_V3.pdf" style={{ textDecoration: 'none' }}>Winter 2022 & BTech First Semester</a>
@@ -178,7 +178,7 @@ const Home = () => {
                         ]}
                     >
                         <div className="section">
-                            <div className="tabHead">Examinations</div>
+                            <div className="subHeading">Examinations</div>
                             <div className="links">
                                 <div>
                                     <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/Mid%20Sem_UG%201st%20Year%20M21_V1.pdf" style={{ textDecoration: 'none' }}>Schedule for BTech First Semester</a>
