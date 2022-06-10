@@ -5,7 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 const AdCarousel = () => {
     return (
         <div>
-            <Carousel fade>
+            {/* <Carousel fade>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
@@ -38,7 +38,7 @@ const AdCarousel = () => {
                         <h3></h3>
                     </Carousel.Caption>
                 </Carousel.Item>
-            </Carousel>
+            </Carousel> */}
         </div>
     )
 }
