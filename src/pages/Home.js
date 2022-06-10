@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import AdCarousel from '../components/AdCarousel'
 import Footer from '../components/Footer'
@@ -26,6 +26,17 @@ const Home = () => {
     const convocation = useRef(null);
     const classroom = useRef(null);
     const contact = useRef(null);
+    const [size, setSize] = useState(window.innerWidth)
+
+
+    useEffect(() => {
+        const updateWindowDimensions = () => {
+            setSize(window.innerWidth)
+        }
+        window.addEventListener('resize', updateWindowDimensions)
+        console.log(size);
+        return () => window.removeEventListener('resize', updateWindowDimensions)
+    }, [window.innerWidth])
 
     return (
         <div className='homepage'>
@@ -43,27 +54,25 @@ const Home = () => {
                     },
                 ]}
             >
-
-                <div className="aboutUsContainer">
-                    <div className="aboutUs">
-                        <div className='heading'>About IIITD</div>
-                        <p className='para'>
-                            IIIT-Delhi is a research-led institute with thriving degree programs at the UG & PG levels.
-                            The Academics celebrate the culture of learning by doing. The approach is always to encourage analytical precision with curiosity, playful imagination and searching for ways to solve real life problems in service to the society.
-                            The vision is to be socially relevant, industry facing, and globally connected.
-                        </p>
-                    </div>
+                <div className={size > 700 ? "aboutUsContainer" : "about"}>
+                    <div className='heading'>About IIITD</div>
+                    <p className={size > 700 ? 'para' : 'paraSmall'}>
+                        IIIT-Delhi is a research-led institute with thriving degree programs at the UG & PG levels.
+                        The Academics celebrate the culture of learning by doing. The approach is always to encourage analytical precision with curiosity, playful imagination and searching for ways to solve real life problems in service to the society.
+                    </p>
                 </div>
-
             </ParallaxBanner>
 
             <div className="academics">
-                <div className="academic">
+                <div className={size > 885 ? "academic" : "academicSmall"}>
                     <div className="section">
                         <Link to="/academicTeam" style={{ textDecoration: 'none', color: 'white' }} >
                             <div className="">
                                 <div className="team">
-                                    <img src='./group.png' alt="" />
+                                    <img style={{
+                                        maxWidth: '100%',
+                                        height: 'auto'
+                                    }} src='./group.png' alt="" />
                                 </div>
                                 Academic Team
                             </div>
@@ -73,7 +82,10 @@ const Home = () => {
                         <a href='https://iiitd.ac.in/academics/academic-administration' style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
                             <div className="">
                                 <div className="team">
-                                    <img src='./team.png' alt="" />
+                                    <img style={{
+                                        maxWidth: '100%',
+                                        height: 'auto'
+                                    }} src='./team.png' alt="" />
                                 </div>
                                 Academic Administration
                             </div>
@@ -83,7 +95,10 @@ const Home = () => {
                         <a href='https://iiitd.ac.in/academics/issue-resolution' style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
                             <div className="">
                                 <div className="team">
-                                    <img src='./question.png' alt="" />
+                                    <img style={{
+                                        maxWidth: '100%',
+                                        height: 'auto'
+                                    }} src='./question.png' alt="" />
                                 </div>
                                 Issue Resolution
                             </div>
@@ -93,7 +108,10 @@ const Home = () => {
                         <a href="https://iiitd.ac.in/academics/resources" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
                             <div className="">
                                 <div className="team">
-                                    <img src='./document.png' alt="" />
+                                    <img style={{
+                                        maxWidth: '100%',
+                                        height: 'auto'
+                                    }} src='./document.png' alt="" />
                                 </div>
                                 Regulations
                             </div>
@@ -103,7 +121,7 @@ const Home = () => {
             </div>
 
             <ParallaxBanner
-                style={{ height: '40vh' }}
+                style={{ height: size > 680 ? '40vh' : '100vh', paddingTop: '1vh' }}
                 layers={[
                     {
                         image:
@@ -112,75 +130,82 @@ const Home = () => {
                     },
                 ]}
             >
-                <div className="internals">
-                    <div className="internal">
-                        <Parallax
-                            className="Parallax-module__smallLinear--MqSo+"
-                            translateX={[
-                                '-40%',
-                                '15%'
-                            ]}
-                            opacity={[
-                                0,
-                                2.5
-                            ]}
-                        >
-                            <div className="section">
-                                <a href="https://iiitd.ac.in/form_docs" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
-                                    <div className="">
-                                        <div className="team">
-                                            <img src='./form.png' alt="" />
-                                        </div>
-                                        Internal Forms
+                <div className={size > 680 ? "internal" : "internalSmall"}>
+                    <Parallax
+                        className="Parallax-module__smallLinear--MqSo+"
+                        translateX={[
+                            '-40%',
+                            '15%'
+                        ]}
+                        opacity={[
+                            0,
+                            2.5
+                        ]}
+                    >
+                        <div className="section">
+                            <a href="https://iiitd.ac.in/form_docs" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                                <div className="">
+                                    <div className="team">
+                                        <img style={{
+                                            maxWidth: '100%',
+                                            height: 'auto'
+                                        }} src='./form.png' alt="" />
                                     </div>
-                                </a>
-                            </div>
-                        </Parallax>
-                        <Parallax
-                            className="Parallax-module__smallLinear--MqSo+"
-                            translateX={[
-                                '5%',
-                                '-5%'
-                            ]}
-                            opacity={[
-                                0,
-                                2.5
-                            ]}
-                        >
-                            <div className="section">
-                                <a href="https://erp.iiitd.edu.in/" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
-                                    <div className="">
-                                        <div className="team">
-                                            <img src='./graduate-cap.png' alt="" />
-                                        </div>
-                                        ERP
+                                    Internal Forms
+                                </div>
+                            </a>
+                        </div>
+                    </Parallax>
+                    <Parallax
+                        className="Parallax-module__smallLinear--MqSo+"
+                        translateX={[
+                            '5%',
+                            '-5%'
+                        ]}
+                        opacity={[
+                            0,
+                            2.5
+                        ]}
+                    >
+                        <div className="section">
+                            <a href="https://erp.iiitd.edu.in/" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                                <div className="">
+                                    <div className="team">
+                                        <img style={{
+                                            maxWidth: '100%',
+                                            height: 'auto'
+                                        }} src='./graduate-cap.png' alt="" />
                                     </div>
-                                </a>
-                            </div>
-                        </Parallax>
-                        <Parallax
-                            className="Parallax-module__smallLinear--MqSo+"
-                            translateX={[
-                                '40%',
-                                '-15%'
-                            ]}
-                            opacity={[
-                                0,
-                                2.5
-                            ]}
-                        >
-                            <div className="section">
-                                <a href="http://academics.iiitd.edu.in/meetings/list.php" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
-                                    <div className="">
-                                        <div className="team">
-                                            <img src='./online-meeting.png' alt="" />
-                                        </div>
-                                        Important Minutes
+                                    ERP
+                                </div>
+                            </a>
+                        </div>
+                    </Parallax>
+                    <Parallax
+                        className="Parallax-module__smallLinear--MqSo+"
+                        translateX={[
+                            '40%',
+                            '-15%'
+                        ]}
+                        opacity={[
+                            0,
+                            2.5
+                        ]}
+                    >
+                        <div className="section">
+                            <a href="http://academics.iiitd.edu.in/meetings/list.php" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                                <div className="">
+                                    <div className="team">
+                                        <img style={{
+                                            maxWidth: '100%',
+                                            height: 'auto'
+                                        }} src='./online-meeting.png' alt="" />
                                     </div>
-                                </a>
-                            </div>
-                        </Parallax>
-                    </div>
+                                    Important Minutes
+                                </div>
+                            </a>
+                        </div>
+                    </Parallax>
                 </div>
             </ParallaxBanner>
             <div className="resources">

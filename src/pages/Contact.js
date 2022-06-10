@@ -1,7 +1,19 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import '../styles/contact.css'
 
 const Contact = () => {
+    const [size, setSize] = useState(window.innerWidth)
+
+
+    useEffect(() => {
+        const updateWindowDimensions = () => {
+            setSize(window.innerWidth)
+        }
+        window.addEventListener('resize', updateWindowDimensions)
+        console.log(size);
+        return () => window.removeEventListener('resize', updateWindowDimensions)
+    }, [window.innerWidth])
+
     return (
         <div className="contactContainer page" style={{ backgroundColor: " rgb(239, 239, 240)" }}>
             <div className="heading">Contact Academic Department</div>
