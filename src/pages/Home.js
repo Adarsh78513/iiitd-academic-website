@@ -46,7 +46,7 @@ const Home = () => {
             <AdCarousel />
 
             <ParallaxBanner
-                style={{ height: '400px', paddingTop: '5vh' }}
+                style={{ height: '700px', paddingTop: '5vh' }}
                 layers={[
                     {
                         image: '/IIITD_building.jpg',
@@ -56,8 +56,15 @@ const Home = () => {
             >
                 <div className={size > 700 ? "aboutUsContainer" : "about"}>
                     <div className='heading'>About Academics Office</div>
-                    <p className={size > 700 ? 'para' : 'paraSmall'}>
-                        The Academic Office exists to help facilitate, initiate and co-ordinate the academic work of the Institute starting from admission, course registration, examination, and convocation; basically the teaching and assessment of students. It acts as the repository of grades and academic records of all students, both past and present. It provides administrative support to the Senate, which is the highest academic body of the Institute.</p>
+                    <div className={size > 700 ? 'para' : 'paraSmall'}>
+                        <p>The Academic Office exists to help facilitate, initiate and co-ordinate the academic work of the Institute starting from admission, course registration, examination, and convocation; basically the teaching and assessment of students. It acts as the repository of grades and academic records of all students, both past and present. It provides administrative support to the Senate, which is the highest academic body of the Institute.</p>
+
+                        <p>The Head of the Academic Office is the Dean of Academic Affairs (DOAA), who is a senior professor of the Institute. The Dean is helped by a permanent administrative set-up headed by Admin-Academics. Each program allocated separate Admins (i.e B.Tech. - Admin-BTech, M.Tech. - Admin-MTech and Ph.D. - Admin-PhD). Admin-Academics leads the Academic Office under the guidance of DOAA and Registrar of the Insitute.</p>
+
+                        <p>The IIIT-Delhi Academic Office is Friendly, but strict on compliance with all Academic norms. All stakeholders are treated equally. So one can visit the Academic office without any hesitation for any Academic support. </p>
+
+                        <p>If you have any feedback about the Academic Office of IIIT-Delhi, do share your experience <a href='https://www.iiitd.ac.in/shareacademicexperiences/'>here</a>.</p>
+                    </div>
                 </div>
             </ParallaxBanner>
 
