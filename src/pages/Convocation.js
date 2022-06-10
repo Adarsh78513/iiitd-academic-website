@@ -11,7 +11,7 @@ const Convocation = () => {
                     className="Parallax-module__smallLinear--MqSo+"
                     translateX={[
                         '-40%',
-                        '25%'
+                        '18%'
                     ]}
                     opacity={[
                         0,
@@ -29,7 +29,7 @@ const Convocation = () => {
                     className="Parallax-module__smallLinear--MqSo+"
                     translateX={[
                         '40%',
-                        '-25%'
+                        '-18%'
                     ]}
                     opacity={[
                         0,

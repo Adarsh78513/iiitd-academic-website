@@ -46,7 +46,7 @@ const Home = () => {
             <AdCarousel />
 
             <ParallaxBanner
-                style={{ height: '400px' }}
+                style={{ height: '400px', paddingTop: '5vh' }}
                 layers={[
                     {
                         image: '/IIITD_building.jpg',
@@ -55,11 +55,9 @@ const Home = () => {
                 ]}
             >
                 <div className={size > 700 ? "aboutUsContainer" : "about"}>
-                    <div className='heading'>About Academics Department</div>
+                    <div className='heading'>About Academics Office</div>
                     <p className={size > 700 ? 'para' : 'paraSmall'}>
-                        IIIT-Delhi is a research-led institute with thriving degree programs at the UG & PG levels.
-                        The Academics celebrate the culture of learning by doing. The approach is always to encourage analytical precision with curiosity, playful imagination and searching for ways to solve real life problems in service to the society.
-                    </p>
+                        The Academic Office exists to help facilitate, initiate and co-ordinate the academic work of the Institute starting from admission, course registration, examination, and convocation; basically the teaching and assessment of students. It acts as the repository of grades and academic records of all students, both past and present. It provides administrative support to the Senate, which is the highest academic body of the Institute.</p>
                 </div>
             </ParallaxBanner>
 
@@ -126,9 +124,6 @@ const Home = () => {
                         image:
                             './IIITD_night.jpg',
                         speed: -30,
-                        props: {
-                            style: { filter: 'brightness(0.5)' }
-                        }
                     },
                 ]}
             >
@@ -210,7 +205,7 @@ const Home = () => {
                 <Parallax
                     className="Parallax-module__smallLinear--MqSo+"
                     translateX={[
-                        '-40%',
+                        '-20%',
                         '15%'
                     ]}
                     opacity={[
@@ -235,8 +230,8 @@ const Home = () => {
                 <Parallax
                     className="Parallax-module__smallLinear--MqSo+"
                     translateX={[
-                        '5%',
-                        '-5%'
+                        '0%',
+                        '0%'
                     ]}
                     opacity={[
                         0,
@@ -260,7 +255,7 @@ const Home = () => {
                 <Parallax
                     className="Parallax-module__smallLinear--MqSo+"
                     translateX={[
-                        '40%',
+                        '20%',
                         '-15%'
                     ]}
                     opacity={[

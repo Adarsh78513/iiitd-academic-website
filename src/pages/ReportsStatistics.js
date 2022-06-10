@@ -6,7 +6,7 @@ const ReportsStatistics = () => {
     return (
         <div className='page'>
             <ParallaxBanner
-                style={{ height: '105vh' }}
+                style={{ height: '110vh' }}
                 layers={[
                     {
                         image:

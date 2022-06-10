@@ -24,6 +24,13 @@ const Contact = () => {
                         <input type="text" name="name" id="name" placeholder='Enter Your Name' />
                         <input type="text" name="email" id="email" placeholder="Enter Your Email" />
                         <input type="text" name="subject" id="subject" placeholder='Enter Subject' />
+                        <select name="dropdown" id="dropdown">
+                            <option value="">Select Program</option>
+                            <option name="others" id="others">Others</option>
+                            <option name="btech" id="btech">B.Tech</option>
+                            <option name="mtech" id="mtech">M.Tech</option>
+                            <option name="phd" id="phd">PhD</option>
+                        </select>
                         <textarea className='query'>
 
                         </textarea>

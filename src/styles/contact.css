@@ -51,6 +51,18 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+#dropdown{
+    margin-top: 2vh;
+    width: 30vw;
+    height: 5vh;
+    border-radius: 5px;
+    border: 1px solid #555555;
+    padding-left: 1vw;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
 #subject{
     width: 30vw;
     height: 5vh;
