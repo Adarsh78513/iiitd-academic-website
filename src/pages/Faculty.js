@@ -16,7 +16,7 @@ const Faculty = () => {
                     ]}
                     opacity={[
                         0,
-                        1.5
+                        2
                     ]}
 
                 >
@@ -35,7 +35,7 @@ const Faculty = () => {
                     ]}
                     opacity={[
                         0,
-                        1.5
+                        2
                     ]}
                 >
                     <div className="section">
@@ -53,7 +53,7 @@ const Faculty = () => {
                     ]}
                     opacity={[
                         0,
-                        1.5
+                        2
                     ]}
                 >
                     <div className="section">

@@ -122,7 +122,7 @@ const Home = () => {
                             ]}
                             opacity={[
                                 0,
-                                1.5
+                                2.5
                             ]}
                         >
                             <div className="section">
@@ -144,7 +144,7 @@ const Home = () => {
                             ]}
                             opacity={[
                                 0,
-                                1.5
+                                2.5
                             ]}
                         >
                             <div className="section">
@@ -166,7 +166,7 @@ const Home = () => {
                             ]}
                             opacity={[
                                 0,
-                                1.5
+                                2.5
                             ]}
                         >
                             <div className="section">
@@ -262,6 +262,7 @@ const Home = () => {
             <div ref={report}><ReportsStatistics /></div>
             <div ref={convocation}><Convocation /></div>
             <div ref={classroom} ><Classrooms /></div>
+            {/* <br /> */}
             <div ref={contact} ><Contact /></div>
             <Footer />
         </div >

@@ -17,7 +17,7 @@
     text-decoration: none;
     font-size: 30px;
     font-weight: 500;
-    color:  rgb(10, 1, 61);
+    color:  rgb(8,8,8);
 }
 .content{
     text-align: left;
@@ -81,8 +81,10 @@
     font-weight: 500;
     margin-bottom: 2vh;
     font-size: 3vh;
+    background-color: rgb(3, 168, 163);
     color: white;
-    background-color: rgb(10, 1, 61);
+    transition: background-color 0.5s;
+    transition: color 0.5s;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 8px;
@@ -90,4 +92,12 @@
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.submit:hover{
+    color: rgb(3, 168, 163);
+    background-color: rgb(8,8,8);
 }

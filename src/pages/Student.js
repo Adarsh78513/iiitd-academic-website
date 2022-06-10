@@ -26,7 +26,7 @@ const Student = () => {
                         ]}
                         opacity={[
                             0,
-                            1.5
+                            2
                         ]}
                     >
                         <div className="section">
@@ -45,7 +45,7 @@ const Student = () => {
                         ]}
                         opacity={[
                             0,
-                            1.5
+                            2
                         ]}
 
                     >
@@ -68,7 +68,7 @@ const Student = () => {
                         ]}
                         opacity={[
                             0,
-                            1.5
+                            2
                         ]}
                     >
                         <div className="section">
