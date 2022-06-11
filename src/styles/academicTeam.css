@@ -4,11 +4,11 @@
 }
 .cardContainer{
     display:flex;
-    /* background-color: rgb(10, 1, 61);; */
     justify-content: center;
 }
 .subTeam{
     font-size: 30px;
+    font-weight: 700;
     color: black;
     text-align: left;
     padding-left: 1vw;
@@ -17,91 +17,52 @@
     width: 40vw;
     height: 52vh;
     margin: 1vw;
-    /* background-color: rgb(10, 1, 61); */
-    /* border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px; */
 }
 .adminAcademic{
     width: 40vw;
     height: 52vh;
     margin: 1vw;
-    /* background-color: rgb(10, 1, 61); */
-    /* border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px; */
 }
 .adminBTech{
     width: 82vw;
     height: 52vh;
     margin: 1vw;
-    /* background-color: rgb(10, 1, 61); */
-    /* border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px; */
 }
 .adminMTech{
     width: 40vw;
     height: 52vh;
     margin: 1vw;
-    /* background-color: rgb(10, 1, 61); */
-    /* border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px; */
 }
 .adminPhD{
     width: 40vw;
     height: 52vh;
     margin: 1vw;
-    /* background-color: rgb(10, 1, 61); */
-    /* border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px; */
 }
+
 .adminInternational{
-    width: 25vw;
+    width: 30vw;
     height: 52vh;
     margin: 1vw;
-    /* background-color: rgb(10, 1, 61); */
-    /* border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px; */
+}
+.adminInternational .subTeam{
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    text-align: left;
 }
 .support{
-    width: 60vw;
+    width: 50vw;
     height: 52vh;
     margin: 1vw;
-    /* background-color: rgb(10, 1, 61); */
-    /* border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px; */
 }
 .card{
     width: 18vw;
-    height: 40vh;
+    height: 42vh;
+    padding-top: 1vh;
     margin: 1vw;
+    background-color: rgb(8, 8, 8);
     align-items: center;
-    /* background-color:  rgba(49, 36, 120, 0.705);; */
     transition: transform .2s;
-    /* border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px; */
     -webkit-transition: transform .2s;
     -moz-transition: transform .2s;
     -ms-transition: transform .2s;
@@ -109,6 +70,7 @@
 }
 .card:hover{
     transform: scale(1.1);
+    background-color:  rgb(3, 168, 163);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -124,9 +86,8 @@
 .designation{
     width: 18vw;
     padding-top: 1vh;
-    color:black;
+    color: white;;
     height: 12vh;
-    /* background-color: rgba(19, 9, 81, 0.705);; */
 }
 .name{
     text-align: center;
