@@ -257,8 +257,11 @@ const Certificates = () => {
                                 </ol>
                             </td>
                         </tr>
+                        <tr>
+                            <td colspan="4">Respective Admin: <a href='mailto: admin-btech@iiitd.ac.in'>admin-btech@iiitd.ac.in</a>, <a href='mailto: admin-mtech@iiitd.ac.in'>admin-mtech@iiitd.ac.in</a>, <a href='mailto: admin-phd@iiitd.ac.in'>admin-phd@iiitd.ac.in</a></td>
+                        </tr>
                     </table>
-                    Respective Admin: <a href='mailto: admin-btech@iiitd.ac.in'>admin-btech@iiitd.ac.in</a>, <a href='mailto: admin-mtech@iiitd.ac.in'>admin-mtech@iiitd.ac.in</a>, <a href='mailto: admin-phd@iiitd.ac.in'>admin-phd@iiitd.ac.in</a>
+                    
 
                 </div>
             </div>
