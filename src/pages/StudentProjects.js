@@ -1,14 +1,25 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/Student.css'
 import { Parallax } from 'react-scroll-parallax';
 
 const StudentProjects = () => {
+
+    const [size, setSize] = useState(window.innerWidth)
+
+    useEffect(() => {
+        const updateWindowDimensions = () => {
+            setSize(window.innerWidth)
+        }
+        window.addEventListener('resize', updateWindowDimensions)
+        console.log(size);
+        return () => window.removeEventListener('resize', updateWindowDimensions)
+    }, [window.innerWidth])
     return (
         <div className='page'>
             {/* make divs to show the projects of all differetn sections in the website */}
 
-            <div className="heading" style={{ margin: '3vh' }}>Student Projects</div>
+            <div className={size > 800 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'} style={{ margin: '3vh' }}>Student Projects</div>
             <div className="rows">
                 <Parallax
                     className="Parallax-module__smallLinear--MqSo+"

@@ -13,14 +13,16 @@ const Contact = () => {
         console.log(size);
         return () => window.removeEventListener('resize', updateWindowDimensions)
     }, [window.innerWidth])
+    const handleSubmit = () => {
 
+    }
     return (
         <div className="contactContainer page" style={{ backgroundColor: " rgb(239, 239, 240)" }}>
-            <div className="heading">Contact Academic Department</div>
-            <div className='contact'>
-                <div className='contactForm'>
-                    <div className='sub'>Enquire Us</div>
-                    <form className="form" onSubmit="">
+            <div className={size > 800 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'}>Contact Academic Department</div>
+            <div className={size > 730 ? 'contact' : 'contactSmall'}>
+                <div className={size > 730 ? 'contactForm' : 'contactFormSmall'}>
+                    <div className={size > 730 ? 'sub' : 'subSmall'}>Enquire Us</div>
+                    <form className="form" onSubmit={handleSubmit}>
                         <input type="text" name="name" id="name" placeholder='Enter Your Name' />
                         <input type="text" name="email" id="email" placeholder="Enter Your Email" />
                         <input type="text" name="subject" id="subject" placeholder='Enter Subject' />
@@ -37,15 +39,21 @@ const Contact = () => {
                         <button className='submit'>SEND</button>
                     </form>
                 </div>
-                <div className='contactInfo'>
-                    <div className='sub'>Location</div>
-                    <div className="content">Academic Building, 2nd Floor
-                        Indraprastha Institute of Information Technology,
-                        Okhla Phase -III, New Delhi - 110020</div>
-                    <div className='sub'>Contact Info</div>
-                    <div className="content">011-26907 400</div>
-                    <div className='sub'>Mail Info</div>
-                    <div className="content">admin-academics@iiitd.ac.in</div>
+                <div className={size > 730 ? 'contactInfo' : 'contactInfoSmall'}>
+                    <div>
+                        <div className={size > 730 ? 'sub' : 'subSmall'}>Location</div>
+                        <div className={size > 730 ? "content" : "contentSmall"}>Academic Building, 2nd Floor
+                            IIIT,
+                            Okhla Phase -III, New Delhi - 110020</div>
+                    </div>
+                    <div>
+                        <div className={size > 730 ? 'sub' : 'subSmall'}>Contact Info</div>
+                        <div className={size > 730 ? "content" : "contentSmall"}>011-26907 400</div>
+                    </div>
+                    <div>
+                        <div className={size > 730 ? 'sub' : 'subSmall'}>Mail Info</div>
+                        <div className={size > 730 ? "content" : "contentSmall"}>admin-academics@iiitd.ac.in</div>
+                    </div>
                 </div>
             </div>
         </div>

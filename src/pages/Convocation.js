@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import '../styles/convocation.css'
 import { Parallax } from 'react-scroll-parallax';
 
 const Convocation = () => {
+
+    const [size, setSize] = useState(window.innerWidth)
+
+    useEffect(() => {
+        const updateWindowDimensions = () => {
+            setSize(window.innerWidth)
+        }
+        window.addEventListener('resize', updateWindowDimensions)
+        console.log(size);
+        return () => window.removeEventListener('resize', updateWindowDimensions)
+    }, [window.innerWidth])
     return (
         <div className='page' style={{ backgroundColor: " rgb(239, 239, 240)" }}>
             <div className="heading">Convocation</div>

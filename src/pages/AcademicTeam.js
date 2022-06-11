@@ -1,15 +1,21 @@
-import React from 'react'
-import Marquee from '../components/Marquee'
-import Navbar from '../components/Navbar'
+import React, { useState, useEffect } from 'react'
 import Footer from '../components/Footer'
 import '../styles/academicTeam.css'
 
 const AcademicTeam = () => {
+    const [size, setSize] = useState(window.innerWidth)
+
+    useEffect(() => {
+        const updateWindowDimensions = () => {
+            setSize(window.innerWidth)
+        }
+        window.addEventListener('resize', updateWindowDimensions)
+        console.log(size);
+        return () => window.removeEventListener('resize', updateWindowDimensions)
+    }, [window.innerWidth])
     return (
         <div>
-            <Marquee />
-            <Navbar AcademicTeam={true} />
-            <div className="heading">Academic Team</div>
+            <div className={size > 800 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'}>Academic Team</div>
             <hr></hr>
             <div className="containerTeam">
                 <div className="dean">

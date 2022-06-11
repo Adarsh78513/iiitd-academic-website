@@ -14,6 +14,7 @@ import Convocation from './Convocation'
 import Classrooms from './Classrooms'
 import Contact from './Contact'
 import { Parallax, ParallaxBanner } from 'react-scroll-parallax';
+import AcademicTeam from './AcademicTeam'
 
 
 const Home = () => {
@@ -27,7 +28,7 @@ const Home = () => {
     const classroom = useRef(null);
     const contact = useRef(null);
     const [size, setSize] = useState(window.innerWidth)
-
+    const [academicTeam, setAcademicTeam] = useState(false)
 
     useEffect(() => {
         const updateWindowDimensions = () => {
@@ -37,264 +38,258 @@ const Home = () => {
         console.log(size);
         return () => window.removeEventListener('resize', updateWindowDimensions)
     }, [window.innerWidth])
-
     return (
         <div className='homepage'>
-            <div ref={home}></div>
             <Marquee />
-            <Navbar home={home} student={student} faculty={faculty} alumni={alumni} projects={projects} report={report} convocation={convocation} classroom={classroom} contact={contact} />
-            <AdCarousel />
-
-            <ParallaxBanner
-                style={{ height: '700px', paddingTop: '5vh' }}
-                layers={[
-                    {
-                        image: '/IIITD_building.jpg',
-                        speed: -30,
-                    },
-                ]}
-            >
-                <div className={size > 700 ? "aboutUsContainer" : "about"}>
-                    <div className='heading'>About Academics Office</div>
-                    <div className={size > 700 ? 'para' : 'paraSmall'}>
-                        <p>The Academic Office exists to help facilitate, initiate and co-ordinate the academic work of the Institute starting from admission, course registration, examination, and convocation; basically the teaching and assessment of students. It acts as the repository of grades and academic records of all students, both past and present. It provides administrative support to the Senate, which is the highest academic body of the Institute.</p>
-
-                        <p>The Head of the Academic Office is the Dean of Academic Affairs (DOAA), who is a senior professor of the Institute. The Dean is helped by a permanent administrative set-up headed by Admin-Academics. Each program allocated separate Admins (i.e B.Tech. - Admin-BTech, M.Tech. - Admin-MTech and Ph.D. - Admin-PhD). Admin-Academics leads the Academic Office under the guidance of DOAA and Registrar of the Insitute.</p>
-
-                        <p>The IIIT-Delhi Academic Office is Friendly, but strict on compliance with all Academic norms. All stakeholders are treated equally. So one can visit the Academic office without any hesitation for any Academic support. </p>
-
-                        <p>If you have any feedback about the Academic Office of IIIT-Delhi, do share your experience <a href='https://www.iiitd.ac.in/shareacademicexperiences/'>here</a>.</p>
-                    </div>
-                </div>
-            </ParallaxBanner>
-
-            <div className="academics">
-                <div className={size > 885 ? "academic" : "academicSmall"}>
-                    <div className="section">
-                        <Link to="/academicTeam" style={{ textDecoration: 'none', color: 'white' }} >
-                            <div className="">
-                                <div className="team">
-                                    <img style={{
-                                        maxWidth: '100%',
-                                        height: 'auto'
-                                    }} src='./group.png' alt="" />
-                                </div>
-                                Academic Team
+            <Navbar home={home} student={student} faculty={faculty} alumni={alumni} projects={projects} report={report} convocation={convocation} classroom={classroom} contact={contact} academicTeam={academicTeam} setAcademicTeam={setAcademicTeam} />
+            {academicTeam ? <AcademicTeam /> :
+                <div className='homepage-container'>
+                    <div ref={home}></div>
+                    <AdCarousel />
+                    <ParallaxBanner
+                        style={{ height: size > 800 ? '400px' : size > 500 ? '300px' : '200px', paddingTop: '5vh' }}
+                        layers={[
+                            {
+                                image: '/IIITD_building.jpg',
+                                speed: -30,
+                            },
+                        ]}
+                    >
+                        <div className={size > 800 ? "aboutUsContainer" : size > 500 ? "smallAbout" : "vSmallAbout"}>
+                            <div className={size > 800 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'}>About Academics Office</div>
+                            <div className={size > 800 ? 'para' : size > 500 ? 'paraSmall' : 'vParaSmall'}>
+                                <p>The Academic Office exists to help facilitate, initiate and co-ordinate the academic work of the Institute starting from admission, course registration, examination, and convocation; basically the teaching and assessment of students. It acts as the repository of grades and academic records of all students, both past and present. It provides administrative support to the Senate, which is the highest academic body of the Institute.</p>
                             </div>
-                        </Link>
-                    </div>
-                    <div className="section">
-                        <a href='https://iiitd.ac.in/academics/academic-administration' style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
-                            <div className="">
-                                <div className="team">
-                                    <img style={{
-                                        maxWidth: '100%',
-                                        height: 'auto'
-                                    }} src='./team.png' alt="" />
-                                </div>
-                                Academic Administration
-                            </div>
-                        </a>
-                    </div>
-                    <div className="section">
-                        <a href='https://iiitd.ac.in/academics/issue-resolution' style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
-                            <div className="">
-                                <div className="team">
-                                    <img style={{
-                                        maxWidth: '100%',
-                                        height: 'auto'
-                                    }} src='./question.png' alt="" />
-                                </div>
-                                Issue Resolution
-                            </div>
-                        </a>
-                    </div>
-                    <div className="section">
-                        <a href="https://iiitd.ac.in/academics/resources" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
-                            <div className="">
-                                <div className="team">
-                                    <img style={{
-                                        maxWidth: '100%',
-                                        height: 'auto'
-                                    }} src='./document.png' alt="" />
-                                </div>
-                                Regulations
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <ParallaxBanner
-                style={{ height: size > 680 ? '40vh' : '100vh', paddingTop: '1vh' }}
-                layers={[
-                    {
-                        image:
-                            './IIITD_night.jpg',
-                        speed: -30,
-                    },
-                ]}
-            >
-                <div className="resources">
-                    <div className="resource">
+                        </div>
+                    </ParallaxBanner>
 
+                    <div className="academics">
+                        <div className={size > 885 ? "academic" : "academicSmall"}>
+                            <div className="section">
+                                <div to="/academicTeam" style={{ textDecoration: 'none', color: 'white' }}
+                                    onClick={() => { setAcademicTeam(true) }}>
+                                    <div className="team">
+                                        <img style={{
+                                            maxWidth: '100%',
+                                            height: 'auto'
+                                        }} src='./group.png' alt="" />
+                                    </div>
+                                    Academic Team
+                                </div>
+                            </div>
+                            <div className="section">
+                                <a href='https://iiitd.ac.in/academics/academic-administration' style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                                    <div className="">
+                                        <div className="team">
+                                            <img style={{
+                                                maxWidth: '100%',
+                                                height: 'auto'
+                                            }} src='./team.png' alt="" />
+                                        </div>
+                                        Academic Administration
+                                    </div>
+                                </a>
+                            </div>
+                            <div className="section">
+                                <a href='https://iiitd.ac.in/academics/issue-resolution' style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                                    <div className="">
+                                        <div className="team">
+                                            <img style={{
+                                                maxWidth: '100%',
+                                                height: 'auto'
+                                            }} src='./question.png' alt="" />
+                                        </div>
+                                        Issue Resolution
+                                    </div>
+                                </a>
+                            </div>
+                            <div className="section">
+                                <a href="https://iiitd.ac.in/academics/resources" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                                    <div className="">
+                                        <div className="team">
+                                            <img style={{
+                                                maxWidth: '100%',
+                                                height: 'auto'
+                                            }} src='./document.png' alt="" />
+                                        </div>
+                                        Regulations
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <ParallaxBanner
+                        style={{ height: size > 680 ? '40vh' : '100vh', paddingTop: '1vh' }}
+                        layers={[
+                            {
+                                image:
+                                    './IIITD_night.jpg',
+                                speed: -30,
+                            },
+                        ]}
+                    >
+                        <div className="resources">
+                            <div className="resource">
+
+                                <Parallax
+                                    className="Parallax-module__smallLinear--MqSo+"
+                                    // translateX={[
+                                    //     '40%',
+                                    //     '-30%'
+                                    // ]}
+                                    opacity={[
+                                        0,
+                                        2.5
+                                    ]}
+                                >
+                                    <div className="section">
+                                        <div className="subHeading">Academic Calendar</div>
+                                        <div className="links">
+                                            <div>
+                                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2021/Academic%20Calendar%20Winter%202022_Final.pdf" style={{ textDecoration: 'none' }}>Winter 2022</a>
+                                            </div>
+                                            <div>
+                                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2021/Academic%20Calendar%20B.Tech.%201st%20Sem%20(2021-22%20Batch).pdf" style={{ textDecoration: 'none' }}>B.Tech First Semester (2021-22 Batch)</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Parallax>
+                                <Parallax
+                                    className="Parallax-module__smallLinear--MqSo+"
+                                    // translateX={[
+                                    //     '-0%',
+                                    //     '0%'
+                                    // ]}
+                                    opacity={[
+                                        0,
+                                        2.5
+                                    ]}
+
+                                >
+                                    <div className="section" style={{ paddingBottom: '6vh' }}>
+                                        <div className="subHeading">Timetable</div>
+                                        <div className="links">
+                                            <div>
+                                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/Add_Drop_TT_Winter%202022%20&%20BTech%201st%20Year_V3.pdf" style={{ textDecoration: 'none' }}>Winter 2022 & BTech First Semester</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Parallax>
+                                <Parallax
+                                    className="Parallax-module__smallLinear--MqSo+"
+                                    // translateX={[
+                                    //     '-40%',
+                                    //     '20%'
+                                    // ]}
+                                    opacity={[
+                                        0,
+                                        2.5
+                                    ]}
+                                >
+                                    <div className="section">
+                                        <div className="subHeading">Examinations</div>
+                                        <div className="links">
+                                            <div>
+                                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/Mid%20Sem_UG%201st%20Year%20M21_V1.pdf" style={{ textDecoration: 'none' }}>Schedule for BTech First Semester</a>
+                                            </div>
+                                            <div>
+                                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/MidSemExamSchedule_BtechIISeniorUGPG.pdf" style={{ textDecoration: 'none' }}>Schedule for BTech Second Year, Senior UG/PG</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Parallax>
+                            </div>
+                        </div>
+                    </ParallaxBanner>
+
+                    <div className={size > 680 ? "internal" : "internalSmall"}>
                         <Parallax
                             className="Parallax-module__smallLinear--MqSo+"
-                            // translateX={[
-                            //     '40%',
-                            //     '-30%'
-                            // ]}
+                            translateX={[
+                                '-20%',
+                                '15%'
+                            ]}
                             opacity={[
                                 0,
                                 2.5
                             ]}
                         >
                             <div className="section">
-                                <div className="subHeading">Academic Calendar</div>
-                                <div className="links">
-                                    <div>
-                                        <a href="https://iiitd.ac.in/sites/default/files/docs/education/2021/Academic%20Calendar%20Winter%202022_Final.pdf" style={{ textDecoration: 'none' }}>Winter 2022</a>
+                                <a href="https://iiitd.ac.in/form_docs" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                                    <div className="">
+                                        <div className="team">
+                                            <img style={{
+                                                maxWidth: '100%',
+                                                height: 'auto'
+                                            }} src='./form.png' alt="" />
+                                        </div>
+                                        Internal Forms
                                     </div>
-                                    <div>
-                                        <a href="https://iiitd.ac.in/sites/default/files/docs/education/2021/Academic%20Calendar%20B.Tech.%201st%20Sem%20(2021-22%20Batch).pdf" style={{ textDecoration: 'none' }}>B.Tech First Semester (2021-22 Batch)</a>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
                         </Parallax>
                         <Parallax
                             className="Parallax-module__smallLinear--MqSo+"
-                            // translateX={[
-                            //     '-0%',
-                            //     '0%'
-                            // ]}
-                            opacity={[
-                                0,
-                                2.5
+                            translateX={[
+                                '0%',
+                                '0%'
                             ]}
-
-                        >
-                            <div className="section" style={{ paddingBottom: '6vh' }}>
-                                <div className="subHeading">Timetable</div>
-                                <div className="links">
-                                    <div>
-                                        <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/Add_Drop_TT_Winter%202022%20&%20BTech%201st%20Year_V3.pdf" style={{ textDecoration: 'none' }}>Winter 2022 & BTech First Semester</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </Parallax>
-                        <Parallax
-                            className="Parallax-module__smallLinear--MqSo+"
-                            // translateX={[
-                            //     '-40%',
-                            //     '20%'
-                            // ]}
                             opacity={[
                                 0,
                                 2.5
                             ]}
                         >
                             <div className="section">
-                                <div className="subHeading">Examinations</div>
-                                <div className="links">
-                                    <div>
-                                        <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/Mid%20Sem_UG%201st%20Year%20M21_V1.pdf" style={{ textDecoration: 'none' }}>Schedule for BTech First Semester</a>
+                                <a href="https://erp.iiitd.edu.in/" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                                    <div className="">
+                                        <div className="team">
+                                            <img style={{
+                                                maxWidth: '100%',
+                                                height: 'auto'
+                                            }} src='./graduate-cap.png' alt="" />
+                                        </div>
+                                        ERP
                                     </div>
-                                    <div>
-                                        <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/MidSemExamSchedule_BtechIISeniorUGPG.pdf" style={{ textDecoration: 'none' }}>Schedule for BTech Second Year, Senior UG/PG</a>
+                                </a>
+                            </div>
+                        </Parallax>
+                        <Parallax
+                            className="Parallax-module__smallLinear--MqSo+"
+                            translateX={[
+                                '20%',
+                                '-15%'
+                            ]}
+                            opacity={[
+                                0,
+                                2.5
+                            ]}
+                        >
+                            <div className="section">
+                                <a href="http://academics.iiitd.edu.in/meetings/list.php" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                                    <div className="">
+                                        <div className="team">
+                                            <img style={{
+                                                maxWidth: '100%',
+                                                height: 'auto'
+                                            }} src='./online-meeting.png' alt="" />
+                                        </div>
+                                        Important Minutes
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </Parallax>
                     </div>
-                </div>
-            </ParallaxBanner>
-
-            <div className={size > 680 ? "internal" : "internalSmall"}>
-                <Parallax
-                    className="Parallax-module__smallLinear--MqSo+"
-                    translateX={[
-                        '-20%',
-                        '15%'
-                    ]}
-                    opacity={[
-                        0,
-                        2.5
-                    ]}
-                >
-                    <div className="section">
-                        <a href="https://iiitd.ac.in/form_docs" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
-                            <div className="">
-                                <div className="team">
-                                    <img style={{
-                                        maxWidth: '100%',
-                                        height: 'auto'
-                                    }} src='./form.png' alt="" />
-                                </div>
-                                Internal Forms
-                            </div>
-                        </a>
-                    </div>
-                </Parallax>
-                <Parallax
-                    className="Parallax-module__smallLinear--MqSo+"
-                    translateX={[
-                        '0%',
-                        '0%'
-                    ]}
-                    opacity={[
-                        0,
-                        2.5
-                    ]}
-                >
-                    <div className="section">
-                        <a href="https://erp.iiitd.edu.in/" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
-                            <div className="">
-                                <div className="team">
-                                    <img style={{
-                                        maxWidth: '100%',
-                                        height: 'auto'
-                                    }} src='./graduate-cap.png' alt="" />
-                                </div>
-                                ERP
-                            </div>
-                        </a>
-                    </div>
-                </Parallax>
-                <Parallax
-                    className="Parallax-module__smallLinear--MqSo+"
-                    translateX={[
-                        '20%',
-                        '-15%'
-                    ]}
-                    opacity={[
-                        0,
-                        2.5
-                    ]}
-                >
-                    <div className="section">
-                        <a href="http://academics.iiitd.edu.in/meetings/list.php" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
-                            <div className="">
-                                <div className="team">
-                                    <img style={{
-                                        maxWidth: '100%',
-                                        height: 'auto'
-                                    }} src='./online-meeting.png' alt="" />
-                                </div>
-                                Important Minutes
-                            </div>
-                        </a>
-                    </div>
-                </Parallax>
-            </div>
-            <div ref={student}><Student /></div>
-            <div ref={faculty}><Faculty /></div>
-            <div ref={alumni} ><Alumni /></div>
-            <div ref={projects}><StudentProjects /></div>
-            <div ref={report}><ReportsStatistics /></div>
-            <div ref={convocation}><Convocation /></div>
-            <div ref={classroom} ><Classrooms /></div>
-            {/* <br /> */}
-            <div ref={contact} ><Contact /></div>
-            <Footer />
+                    <div ref={student}><Student /></div>
+                    <div ref={faculty}><Faculty /></div>
+                    <div ref={alumni} ><Alumni /></div>
+                    <div ref={projects}><StudentProjects /></div>
+                    <div ref={report}><ReportsStatistics /></div>
+                    <div ref={convocation}><Convocation /></div>
+                    <div ref={classroom} ><Classrooms /></div>
+                    {/* <br /> */}
+                    <div ref={contact} ><Contact /></div>
+                    <Footer />
+                </div>}
         </div >
     )
 }

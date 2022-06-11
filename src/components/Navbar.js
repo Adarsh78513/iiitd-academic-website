@@ -1,9 +1,10 @@
 import React, { useState, useEffect, Component } from 'react'
 import '../styles/navbar.css'
 import { Link } from 'react-scroll'
+import { Link as LINK } from 'react-router-dom'
 import { Collapse } from 'react-collapse';
 
-const Navbar = ({ home, student, faculty, alumni, projects, report, convocation, classroom, contact, AcademicTeam }) => {
+const Navbar = ({ home, student, faculty, alumni, projects, report, convocation, classroom, contact, academicTeam, setAcademicTeam }) => {
     const [size, setSize] = useState(window.innerWidth)
     const [isOpened, setIsOpened] = useState(false)
     const [navbarHome, setNavbarHome] = useState('navbarHomeChange');
@@ -112,8 +113,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
         window.addEventListener('scroll', changeNavbar);
         return () => window.removeEventListener('scroll', changeNavbar);
     }, []);
-    const scrollDown = (ref) => {
+    const scrollDown = (e, ref) => {
         window.scrollTo({ top: ref.current.offsetTop - 100 });
+        setIsOpened(false);
     };
     useEffect(() => {
         const updateWindowDimensions = () => {
@@ -140,11 +142,18 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                     </div>}
                 {(size < 1490 ?
                     <div>
-                        <img src="./more.png" onClick={(e) => { console.log(isOpened); isOpened ? setIsOpened(false) : setIsOpened(true) }} width="50vw" alt="" />
+                        <img src="./more.png" onClick={(ee) => { console.log(isOpened); isOpened ? setIsOpened(false) : setIsOpened(true) }} width="50vw" alt="" />
                     </div> : null)
                 }
                 {size > 1490 ?
-                    <a href={AcademicTeam ? '/' : '#'} onClick={() => scrollDown(home)} className={navbarHome}
+                    <Link
+                        onClick={(e) => {
+                            if (academicTeam) {
+                                setAcademicTeam(false);
+                            }
+                            scrollDown(e, home)
+                        }}
+                        className={navbarHome}
                         style={{
                             transition: 'background-color 1s',
                             padding: '1.5vh',
@@ -153,9 +162,16 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             cursor: 'pointer'
                         }}>
                         HOME
-                    </a> : null}
+                    </Link> : null}
                 {size > 1490 ?
-                    <Link to='student' onClick={() => scrollDown(student)} className={navbarStudent}
+                    <Link
+                        onClick={(e) => {
+                            if (academicTeam) {
+                                setAcademicTeam(false);
+                            }
+                            scrollDown(e, student)
+                        }}
+                        className={navbarStudent}
                         style={{
                             transition: 'background-color 1s',
                             padding: '1.5vh',
@@ -166,7 +182,14 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         STUDENTS
                     </Link> : null}
                 {size > 1490 ?
-                    <Link to='faculty' onClick={() => scrollDown(faculty)} className={navbarFaculty}
+                    <Link
+                        onClick={(e) => {
+                            if (academicTeam) {
+                                setAcademicTeam(false);
+                            }
+                            scrollDown(e, faculty)
+                        }}
+                        className={navbarFaculty}
                         style={{
                             transition: 'background-color 1s',
                             padding: '1.5vh',
@@ -177,7 +200,14 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         FACULTY
                     </Link> : null}
                 {size > 1490 ?
-                    <Link to='alumni' onClick={() => scrollDown(alumni)} className={navbarAlumni}
+                    <Link
+                        onClick={(e) => {
+                            if (academicTeam) {
+                                setAcademicTeam(false);
+                            }
+                            scrollDown(e, alumni)
+                        }}
+                        className={navbarAlumni}
                         style={{
                             transition: 'background-color 1s',
                             padding: '1.5vh',
@@ -188,7 +218,14 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         ALUMNI
                     </Link> : null}
                 {size > 1490 ?
-                    <Link to='projects' onClick={() => scrollDown(projects)} className={navbarProjects}
+                    <Link
+                        onClick={(e) => {
+                            if (academicTeam) {
+                                setAcademicTeam(false);
+                            }
+                            scrollDown(e, projects)
+                        }}
+                        className={navbarProjects}
                         style={{
                             transition: 'background-color 1s',
                             padding: '1.5vh',
@@ -199,7 +236,14 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         STUDENT'S PROJECTS
                     </Link> : null}
                 {size > 1490 ?
-                    <Link to='report' onClick={() => scrollDown(report)} className={navbarReport}
+                    <Link
+                        onClick={(e) => {
+                            if (academicTeam) {
+                                setAcademicTeam(false);
+                            }
+                            scrollDown(e, report)
+                        }}
+                        className={navbarReport}
                         style={{
                             transition: 'background-color 1s',
                             padding: '1.5vh',
@@ -210,7 +254,14 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         REPORT & STATISTICS
                     </Link> : null}
                 {size > 1490 ?
-                    <Link to='convocation' onClick={() => scrollDown(convocation)} className={navbarConvocation}
+                    <Link
+                        onClick={(e) => {
+                            if (academicTeam) {
+                                setAcademicTeam(false);
+                            }
+                            scrollDown(e, convocation)
+                        }}
+                        className={navbarConvocation}
                         style={{
                             transition: 'background-color 1s',
                             padding: '1.5vh',
@@ -221,7 +272,14 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         CONVOCATION
                     </Link> : null}
                 {size > 1490 ?
-                    <Link to='classroom' onClick={() => scrollDown(classroom)} className={navbarClassroom}
+                    <Link
+                        onClick={(e) => {
+                            if (academicTeam) {
+                                setAcademicTeam(false);
+                            }
+                            scrollDown(e, classroom)
+                        }}
+                        className={navbarClassroom}
                         style={{
                             transition: 'background-color 1s',
                             padding: '1.5vh',
@@ -232,7 +290,14 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         CLASSROOMS
                     </Link> : null}
                 {size > 1490 ?
-                    <Link to='contact' onClick={() => scrollDown(contact)} className={navbarContact}
+                    <Link
+                        onClick={(e) => {
+                            if (academicTeam) {
+                                setAcademicTeam(false);
+                            }
+                            scrollDown(e, contact)
+                        }}
+                        className={navbarContact}
                         style={{
                             transition: 'background-color 1s',
                             padding: '1.5vh',
@@ -246,7 +311,13 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
             <Collapse isOpened={isOpened}>
                 <div style={{ backgroundColor: 'white', paddingBottom: '1vh' }}>
                     <div style={{ marginBottom: '3vh' }}>
-                        <a href={AcademicTeam ? '/' : '#'} onClick={() => scrollDown(home)}
+                        <Link
+                            onClick={(e) => {
+                                if (academicTeam) {
+                                    setAcademicTeam(false);
+                                }
+                                scrollDown(e, home)
+                            }}
                             style={{
                                 transition: 'background-color 1s',
                                 textDecoration: 'none',
@@ -256,10 +327,17 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 cursor: 'pointer'
                             }}>
                             HOME
-                        </a>
+                        </Link>
                     </div>
                     <div style={{ marginBottom: '3vh' }}>
-                        <Link to='student' onClick={() => scrollDown(student)} className={navbarStudent}
+                        <Link
+                            onClick={(e) => {
+                                if (academicTeam) {
+                                    setAcademicTeam(false);
+                                }
+                                scrollDown(e, student)
+                            }}
+                            className={navbarStudent}
                             style={{
                                 paddingLeft: '1vh',
                                 paddingRight: '1vh',
@@ -273,7 +351,14 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         </Link>
                     </div>
                     <div style={{ marginBottom: '3vh' }}>
-                        <Link to='faculty' onClick={() => scrollDown(faculty)} className={navbarFaculty}
+                        <Link
+                            onClick={(e) => {
+                                if (academicTeam) {
+                                    setAcademicTeam(false);
+                                }
+                                scrollDown(e, faculty)
+                            }}
+                            className={navbarFaculty}
                             style={{
                                 paddingLeft: '1vh',
                                 paddingRight: '1vh',
@@ -287,7 +372,13 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         </Link>
                     </div>
                     <div style={{ marginBottom: '3vh' }}>
-                        <Link to='alumni' onClick={() => scrollDown(alumni)} className={navbarAlumni}
+                        <Link
+                            onClick={(e) => {
+                                if (academicTeam) {
+                                    setAcademicTeam(false);
+                                } scrollDown(e, alumni)
+                            }}
+                            className={navbarAlumni}
                             style={{
                                 paddingLeft: '1vh',
                                 paddingRight: '1vh',
@@ -301,7 +392,14 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         </Link>
                     </div>
                     <div style={{ marginBottom: '3vh' }}>
-                        <Link to='projects' onClick={() => scrollDown(projects)} className={navbarProjects}
+                        <Link
+                            onClick={(e) => {
+                                if (academicTeam) {
+                                    setAcademicTeam(false);
+                                }
+                                scrollDown(e, projects)
+                            }}
+                            className={navbarProjects}
                             style={{
                                 paddingLeft: '1vh',
                                 paddingRight: '1vh',
@@ -315,7 +413,14 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         </Link>
                     </div>
                     <div style={{ marginBottom: '3vh' }}>
-                        <Link to='report' onClick={() => scrollDown(report)} className={navbarReport}
+                        <Link
+                            onClick={(e) => {
+                                if (academicTeam) {
+                                    setAcademicTeam(false);
+                                }
+                                scrollDown(e, report)
+                            }}
+                            className={navbarReport}
                             style={{
                                 paddingLeft: '1vh',
                                 paddingRight: '1vh',
@@ -329,7 +434,14 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         </Link>
                     </div>
                     <div style={{ marginBottom: '3vh' }}>
-                        <Link to='convocation' onClick={() => scrollDown(convocation)} className={navbarConvocation}
+                        <Link
+                            onClick={(e) => {
+                                if (academicTeam) {
+                                    setAcademicTeam(false);
+                                }
+                                scrollDown(e, convocation)
+                            }}
+                            className={navbarConvocation}
                             style={{
                                 paddingLeft: '1vh',
                                 paddingRight: '1vh',
@@ -343,7 +455,14 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         </Link>
                     </div>
                     <div style={{ marginBottom: '3vh' }}>
-                        <Link to='classroom' onClick={() => scrollDown(classroom)} className={navbarClassroom}
+                        <Link
+                            onClick={(e) => {
+                                if (academicTeam) {
+                                    setAcademicTeam(false);
+                                }
+                                scrollDown(e, classroom)
+                            }}
+                            className={navbarClassroom}
                             style={{
                                 paddingLeft: '1vh',
                                 paddingRight: '1vh',
@@ -357,7 +476,14 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         </Link>
                     </div>
                     <div style={{ marginBottom: '3vh' }}>
-                        <Link to='contact' onClick={() => scrollDown(contact)} className={navbarContact}
+                        <Link
+                            onClick={(e) => {
+                                if (academicTeam) {
+                                    setAcademicTeam(false);
+                                }
+                                scrollDown(e, contact)
+                            }}
+                            className={navbarContact}
                             style={{
                                 paddingLeft: '1vh',
                                 paddingRight: '1vh',
@@ -374,9 +500,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
 
                     </div>
                 </div>
-            </Collapse>
+            </Collapse >
 
-        </div>
+        </div >
     )
 }
 

@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/classrooms.css'
 import { ParallaxBanner } from 'react-scroll-parallax';
 
 
 const Classrooms = () => {
+
+  const [size, setSize] = useState(window.innerWidth)
+
+  useEffect(() => {
+    const updateWindowDimensions = () => {
+      setSize(window.innerWidth)
+    }
+    window.addEventListener('resize', updateWindowDimensions)
+    console.log(size);
+    return () => window.removeEventListener('resize', updateWindowDimensions)
+  }, [window.innerWidth])
   return (
     <ParallaxBanner
       style={{

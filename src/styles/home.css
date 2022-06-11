@@ -1,6 +1,6 @@
 .aboutUsContainer{
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
     padding-left: 15vw;
     padding-right: 15vw;
     position: absolute;
@@ -9,7 +9,7 @@
     align-items: center;
     text-align: center;
 }
-.about{
+.smallAbout{
     padding-top: 3vh;
     padding-bottom: 3vh;
     padding-left: 10vw;
@@ -19,6 +19,27 @@
     align-items: center;
     text-align: center;
 }
+.vSmallAbout{
+    padding-bottom: 2vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    position: absolute;
+    height: 60vh;
+    align-items: center;
+    text-align: center;
+}
+.vSmallHeading{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(3, 168, 163);
+}
+.vParaSmall{
+    font-size: 10px;
+    font-weight: 500;
+    color: #ffffff;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
 .para{
     font-size: 20px;
     font-weight: 500;
@@ -27,7 +48,7 @@
     padding-bottom: 1vh;
 }
 .paraSmall{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     color: #ffffff;
     padding-top: 1vh;
@@ -35,6 +56,11 @@
 }
 .heading{
     font-size: 50px;
+    font-weight: 600;
+    color: rgb(3, 168, 163);
+}
+.smallHeading{
+    font-size: 30px;
     font-weight: 600;
     color: rgb(3, 168, 163);
 }

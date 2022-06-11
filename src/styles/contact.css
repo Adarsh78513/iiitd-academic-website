@@ -2,14 +2,26 @@
     padding-left: 22vw;
     display:flex;
     justify-content: space-between;
-    width: 80vw;
+    width: 75vw;
+}
+.contactSmall{
+    width: 75vw;
 }
 .contactInfo{
     margin-top: 6vh;
-    margin-left: 12vw;
+}
+.contactInfoSmall{
+    padding-left: 22vw;
+    display: flex;
+    justify-content: space-evenly;
+    width: 75vw;
 }
 .contactForm{
     float: left;
+    margin-right: 12vw;
+}
+.contactFormSmall{
+    padding-left: 20vw;
 }
 .sub{
     padding-top: 3vh;
@@ -19,9 +31,22 @@
     font-weight: 500;
     color:  rgb(8,8,8);
 }
+.subSmall{
+    padding-top: 3vh;
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color:  rgb(8,8,8);
+}
 .content{
     text-align: left;
     color: #555555;
+}
+.contentSmall{
+    text-align: left;
+    color: #555555;
+    font-size: 12px;
 }
 .form{
     width: 20vw;
@@ -39,6 +64,10 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+.contactFormSmall #name{
+    width: 55vw;
+    font-size: 15px;
+}
 #email{
     width: 30vw;
     height: 5vh;
@@ -50,6 +79,10 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+.contactFormSmall #email{
+    width: 55vw;
+    font-size: 15px;
 }
 #dropdown{
     margin-top: 2vh;
@@ -63,6 +96,10 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+.contactFormSmall #dropdown{
+    width: 55vw;
+    font-size: 15px;
+}
 #subject{
     width: 30vw;
     height: 5vh;
@@ -74,6 +111,10 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+.contactFormSmall #subject{
+    width: 55vw;
+    font-size: 15px;
 }
 .query{
     width: 30vw;
@@ -87,6 +128,10 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+.contactFormSmall .query{
+    width: 55vw;
+    font-size: 15px;
 }
 .submit{
     width:30vw;
@@ -108,6 +153,9 @@
     -moz-transition: color 0.5s;
     -ms-transition: color 0.5s;
     -o-transition: color 0.5s;
+}
+.contactFormSmall .submit{
+    width: 55vw;
 }
 .submit:hover{
     color: rgb(3, 168, 163);
