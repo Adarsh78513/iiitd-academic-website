@@ -26,7 +26,7 @@ const Student = () => {
                     },
                 ]}
             >
-                <div className="heading">Students</div>
+                <div className={size > 800 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'}>Students</div>
                 <div className="rows">
 
                     <Parallax

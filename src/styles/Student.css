@@ -12,9 +12,6 @@
     font-size: 20px;
     font-weight: 500;
 }
-.white{
-    color: #ffffff;
-}
 .section{
     background-color:rgb(8, 8, 8);
     opacity: 0.8;
@@ -62,4 +59,19 @@
     text-decoration: none;
     /* padding-top: 2vh;
     padding-bottom: 2vh; */
+}
+.heading{
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(3, 168, 163);
+}
+.smallHeading{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(3, 168, 163);
+}
+.vSmallHeading{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(3, 168, 163);
 }
