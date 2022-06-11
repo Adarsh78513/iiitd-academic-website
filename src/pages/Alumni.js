@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import '../styles/Student.css'
 import { ParallaxBanner } from 'react-scroll-parallax';
+import { Link } from 'react-router-dom'
 
 const Alumni = () => {
     const [size, setSize] = useState(window.innerWidth)
@@ -30,7 +31,7 @@ const Alumni = () => {
 
                     <div className="section">
                         <div className="subHeading">Issue of Various Certificates</div>
-                        <a className="projectLinks" href="https://academics.iiitd.edu.in/docs/Final%20Document%20for%20Issue%20of%20Various%20Certificates.pdf">Transcript, Duplicate Degree, Other Certificates</a>
+                        <a className="projectLinks" href="/certificates">Transcript, Duplicate Degree, Other Certificates</a>
                     </div>
 
                     <div className="section">
