@@ -38,20 +38,15 @@ const Certificates = () => {
                 <div className='info'>
                 Duplicate Degree is issued subject to the following conditions and guidelines;
                     <ol>
-                        <li>
-                            Final Degree is a one time document.
-                        </li>
+                        <li>Final Degree is a one time document.</li>
                         <li>The loss of degree should firstly be notified by the student in the column of leading “News Paper” of the country.</li>
-                        <li>FIR should be lodged with the police and a copy thereof be attached with the request.</li>
+                        <li>FIR should be lodged with the police and a copy thereof be attached with the request.(<a style={{ textDecoration: 'none' }} href="./Format_of_declaration.pdf">Format of declaration</a>)</li>
                         <li>Declaration (Affidavit) on Non Judicial Stamp Paper of Rs.100/-, duly attested by a <b>First Class Magistrate</b> or <b>Notary Public</b> should be executed at the student’s cost.</li>
                         <li>A photocopy of the degree/grade sheet, if available, should be attached.</li>
                         <li>A demand draft of Rs.2950/- (Rs.2500/- + 18% GST i.e. Rs.450) or US $250 (for abroad) in favour of “IIIT Delhi Collection Account” towards fee for the issue of duplicate degree. It can be paid <span style={{color: "blue"}}>online</span></li>
                         <li>Make a request to <a href='mailto: admin-mtech@iiitd.ac.in'>admin-mtech@iiitd.ac.in</a>, <a href='mailto: admin-academics@iiitd.ac.in'>admin-academics@iiitd.ac.in</a> for issue of Duplicate degree after 15 days of the press release.</li>
                         <li><b>Timeline: It takes substantial time at least four weeks to complete all process.</b></li>
                     </ol>
-                    <div>
-                        TODO: ////Give the pdf for download for the point c.
-                    </div>
                 </div>
                 <div className='subHeading'>Transcript</div>
                 <div className='info'>
