@@ -225,6 +225,42 @@ const Certificates = () => {
                     </ol>
                     <i><b>For the above certificates (except TA Experience Certificate) you just need to fill this <span style={{color: "red"}}>Google form</span>. Before filling the form, please ensure you have the payment receipt (if required for that certificate). [<span style={{color: "blue"}}>Online payment Link</span>]</b></i>
                 </div>
+                <div className='subHeading'>Change/Correction of Name</div>
+                <div className='info'>
+                    <p><b>Name</b> is the most important thing while issuance of any kind of document. <u>Hence all the students are advised to check their name on ERP,</u> as all the documents (all kind of certificates/transcript) will be issued as per the name mentioned on ERP.</p>
+                    <p>Name should be as per your previous degree/exam i.e. (i) For B.Tech. students, name should be as per class 12th Certificate/Marksheet (ii) For M.Tech. and Ph.D. students, name should be as per the previous highest qualification like B.E./B.Tech, MCA, M.Sc/M.Tech etc.</p>
+                    <p>For Change/Correction in name, students need to follow the following processes;</p>
+                    <table>
+                        <tr>
+                            <th>Type of student</th>
+                            <th>Type of change</th>
+                            <th>Charges</th>
+                            <th>Process</th>
+                        </tr>
+                        <tr>
+                            <td>Existing</td>
+                            <td>Correction in ERP name</td>
+                            <td>Nil</td>
+                            <td>Need to email a copy of previous degree/exam with a request to update the name to respective admin.</td>
+                        </tr>
+                        <tr>
+                            <td>Existing</td>
+                            <td>Name change request</td>
+                            <td>Nil</td>
+                            <td>Need to request to respective admins with the following documents;
+                                <ol>
+                                    <li>Application</li>
+                                    <li>Gazette of India</li>
+                                    <li>Non-Judicial Affidavit</li>
+                                    <li>copy of Newspaper advertisement</li>
+                                    <li>Updated Aadhar Card</li>
+                                </ol>
+                            </td>
+                        </tr>
+                    </table>
+                    Respective Admin: <a href='mailto: admin-btech@iiitd.ac.in'>admin-btech@iiitd.ac.in</a>, <a href='mailto: admin-mtech@iiitd.ac.in'>admin-mtech@iiitd.ac.in</a>, <a href='mailto: admin-phd@iiitd.ac.in'>admin-phd@iiitd.ac.in</a>
+
+                </div>
             </div>
             </div>
             <Footer />
