@@ -6,7 +6,15 @@ const Certificates = () => {
     return (
         <div>
             <Navbar />
-            <div className='Certificates'>
+            <div className='sidenav'>
+                <a href="">Degree & Provisional Certificate</a>
+                <a href="">Duplicate Degree</a>
+                <a href="">Transcript</a>
+                <a href="">Sending official Academic Record through Institute</a>
+                <a href="">Other Miscellaneous documents:</a>
+                <a href="">Change/Correction of Name</a>
+            </div>
+            <div className='Certificates main'>
             <div className='part'>
                 <div className='subHeading'>Degree & Provisional Certificate</div>
                 <div className='info'>
@@ -176,7 +184,7 @@ const Certificates = () => {
                         Process : Same as above</i></p>
 
                 </div>
-                <div className='subHeading'>Other Miscellaneous documents:</div>
+                <div className='subHeading'>Other Miscellaneous documents</div>
                 <div className='info'>
                     <p>During the program or after completion the students/alumni require various types of certificates, 
                     which are issued only on request from the students/alumni. The document list is as below;</p>
