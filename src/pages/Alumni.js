@@ -25,7 +25,7 @@ const Alumni = () => {
                     },
                 ]}
             >
-                <div className="heading" style={{ margin: "3vh" }}>Alumni</div>
+                <div className={size > 800 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'} style={{ margin: "3vh" }}>Alumni</div>
                 <div className="rows">
 
                     <div className="section">

@@ -28,11 +28,7 @@
     align-items: center;
     text-align: center;
 }
-.vSmallHeading{
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(3, 168, 163);
-}
+
 .vParaSmall{
     font-size: 10px;
     font-weight: 500;
@@ -61,6 +57,11 @@
 }
 .smallHeading{
     font-size: 30px;
+    font-weight: 600;
+    color: rgb(3, 168, 163);
+}
+.vSmallHeading{
+    font-size: 20px;
     font-weight: 600;
     color: rgb(3, 168, 163);
 }

@@ -26,7 +26,7 @@ const ReportsStatistics = () => {
                     },
                 ]}
             >
-                <div className="heading">Report & Statistics</div>
+                <div className={size > 800 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'}>Report & Statistics</div>
                 <div className="rows">
 
                     <div className="section">
