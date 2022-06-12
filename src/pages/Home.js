@@ -15,6 +15,7 @@ import Classrooms from './Classrooms'
 import Contact from './Contact'
 import { Parallax, ParallaxBanner } from 'react-scroll-parallax';
 import AcademicTeam from './AcademicTeam'
+import Certificates from './Certificates'
 
 
 const Home = () => {
@@ -29,7 +30,7 @@ const Home = () => {
     const contact = useRef(null);
     const [size, setSize] = useState(window.innerWidth)
     const [academicTeam, setAcademicTeam] = useState(false)
-
+    const [certificate, setCertificate] = useState(false)
     useEffect(() => {
         const updateWindowDimensions = () => {
             setSize(window.innerWidth)
@@ -41,8 +42,8 @@ const Home = () => {
     return (
         <div className='homepage'>
             <Marquee />
-            <Navbar home={home} student={student} faculty={faculty} alumni={alumni} projects={projects} report={report} convocation={convocation} classroom={classroom} contact={contact} academicTeam={academicTeam} setAcademicTeam={setAcademicTeam} />
-            {academicTeam ? <AcademicTeam /> :
+            <Navbar home={home} student={student} faculty={faculty} alumni={alumni} projects={projects} report={report} convocation={convocation} classroom={classroom} contact={contact} academicTeam={academicTeam} setAcademicTeam={setAcademicTeam} certificate={certificate} setCertificate={setCertificate} />
+            {academicTeam ? <AcademicTeam /> : certificate ? <Certificates /> :
                 <div className='homepage-container'>
                     <div ref={home}></div>
                     <AdCarousel />
@@ -119,7 +120,7 @@ const Home = () => {
                         </div>
                     </div>
                     <ParallaxBanner
-                        style={{ height: size > 680 ? '40vh' : '100vh', paddingTop: '1vh' }}
+                        style={{ height: size > 700 ? '40vh' : '70vh', paddingTop: '1vh' }}
                         layers={[
                             {
                                 image:
@@ -128,77 +129,75 @@ const Home = () => {
                             },
                         ]}
                     >
-                        <div className="resources">
-                            <div className="resource">
+                        <div className={size > 1000 ? "resource" : size > 700 ? "smallResource" : "vSmallResource"}>
 
-                                <Parallax
-                                    className="Parallax-module__smallLinear--MqSo+"
-                                    // translateX={[
-                                    //     '40%',
-                                    //     '-30%'
-                                    // ]}
-                                    opacity={[
-                                        0,
-                                        2.5
-                                    ]}
-                                >
-                                    <div className="section">
-                                        <div className="subHeading">Academic Calendar</div>
-                                        <div className="links">
-                                            <div>
-                                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2021/Academic%20Calendar%20Winter%202022_Final.pdf" style={{ textDecoration: 'none' }}>Winter 2022</a>
-                                            </div>
-                                            <div>
-                                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2021/Academic%20Calendar%20B.Tech.%201st%20Sem%20(2021-22%20Batch).pdf" style={{ textDecoration: 'none' }}>B.Tech First Semester (2021-22 Batch)</a>
-                                            </div>
+                            <Parallax
+                                className="Parallax-module__smallLinear--MqSo+"
+                                // translateX={[
+                                //     '40%',
+                                //     '-30%'
+                                // ]}
+                                opacity={[
+                                    0,
+                                    2.5
+                                ]}
+                            >
+                                <div className="section">
+                                    <div className="subHeading">Academic Calendar</div>
+                                    <div className="links">
+                                        <div>
+                                            <a href="https://iiitd.ac.in/sites/default/files/docs/education/2021/Academic%20Calendar%20Winter%202022_Final.pdf" style={{ textDecoration: 'none' }}>Winter 2022</a>
+                                        </div>
+                                        <div>
+                                            <a href="https://iiitd.ac.in/sites/default/files/docs/education/2021/Academic%20Calendar%20B.Tech.%201st%20Sem%20(2021-22%20Batch).pdf" style={{ textDecoration: 'none' }}>B.Tech First Semester (2021-22 Batch)</a>
                                         </div>
                                     </div>
-                                </Parallax>
-                                <Parallax
-                                    className="Parallax-module__smallLinear--MqSo+"
-                                    // translateX={[
-                                    //     '-0%',
-                                    //     '0%'
-                                    // ]}
-                                    opacity={[
-                                        0,
-                                        2.5
-                                    ]}
+                                </div>
+                            </Parallax>
+                            <Parallax
+                                className="Parallax-module__smallLinear--MqSo+"
+                                // translateX={[
+                                //     '-0%',
+                                //     '0%'
+                                // ]}
+                                opacity={[
+                                    0,
+                                    2.5
+                                ]}
 
-                                >
-                                    <div className="section" style={{ paddingBottom: '6vh' }}>
-                                        <div className="subHeading">Timetable</div>
-                                        <div className="links">
-                                            <div>
-                                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/Add_Drop_TT_Winter%202022%20&%20BTech%201st%20Year_V3.pdf" style={{ textDecoration: 'none' }}>Winter 2022 & BTech First Semester</a>
-                                            </div>
+                            >
+                                <div className="section" style={{ paddingBottom: '6vh' }}>
+                                    <div className="subHeading">Timetable</div>
+                                    <div className="links">
+                                        <div>
+                                            <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/Add_Drop_TT_Winter%202022%20&%20BTech%201st%20Year_V3.pdf" style={{ textDecoration: 'none' }}>Winter 2022 & BTech First Semester</a>
                                         </div>
                                     </div>
-                                </Parallax>
-                                <Parallax
-                                    className="Parallax-module__smallLinear--MqSo+"
-                                    // translateX={[
-                                    //     '-40%',
-                                    //     '20%'
-                                    // ]}
-                                    opacity={[
-                                        0,
-                                        2.5
-                                    ]}
-                                >
-                                    <div className="section">
-                                        <div className="subHeading">Examinations</div>
-                                        <div className="links">
-                                            <div>
-                                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/Mid%20Sem_UG%201st%20Year%20M21_V1.pdf" style={{ textDecoration: 'none' }}>Schedule for BTech First Semester</a>
-                                            </div>
-                                            <div>
-                                                <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/MidSemExamSchedule_BtechIISeniorUGPG.pdf" style={{ textDecoration: 'none' }}>Schedule for BTech Second Year, Senior UG/PG</a>
-                                            </div>
+                                </div>
+                            </Parallax>
+                            <Parallax
+                                className="Parallax-module__smallLinear--MqSo+"
+                                // translateX={[
+                                //     '-40%',
+                                //     '20%'
+                                // ]}
+                                opacity={[
+                                    0,
+                                    2.5
+                                ]}
+                            >
+                                <div className="section">
+                                    <div className="subHeading">Examinations</div>
+                                    <div className="links">
+                                        <div>
+                                            <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/Mid%20Sem_UG%201st%20Year%20M21_V1.pdf" style={{ textDecoration: 'none' }}>Schedule for BTech First Semester</a>
+                                        </div>
+                                        <div>
+                                            <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/MidSemExamSchedule_BtechIISeniorUGPG.pdf" style={{ textDecoration: 'none' }}>Schedule for BTech Second Year, Senior UG/PG</a>
                                         </div>
                                     </div>
-                                </Parallax>
-                            </div>
+                                </div>
+                            </Parallax>
                         </div>
                     </ParallaxBanner>
 
@@ -281,7 +280,7 @@ const Home = () => {
                     </div>
                     <div ref={student}><Student /></div>
                     <div ref={faculty}><Faculty /></div>
-                    <div ref={alumni} ><Alumni /></div>
+                    <div ref={alumni} ><Alumni certificate={certificate} setCertificate={setCertificate} /></div>
                     <div ref={projects}><StudentProjects /></div>
                     <div ref={report}><ReportsStatistics /></div>
                     <div ref={convocation}><Convocation /></div>

@@ -16,7 +16,7 @@ const Convocation = () => {
     }, [window.innerWidth])
     return (
         <div className='page' style={{ backgroundColor: " rgb(239, 239, 240)" }}>
-            <div className="heading">Convocation</div>
+            <div className={size > 800 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'}>Convocation</div>
             <div className="convocation">
                 <Parallax
                     className="Parallax-module__smallLinear--MqSo+"
@@ -30,8 +30,8 @@ const Convocation = () => {
                     ]}
                 >
                     <a href="https://iiitd.ac.in/convocation21/" style={{ textDecoration: 'none' }}>
-                        <div className="convoCont">
-                            Recently Held 10th Convocation
+                        <div className={size > 800 ? 'convoCont' : size > 500 ? 'smallConvoCont' : 'vSmallConvoCont'}>
+                            Recent 10th Convocation
                             <img className="prev" src="https://www.iiitd.ac.in/convocation21/assets/images/galleryslider/IMG_3927.jpg" alt="" />
                         </div>
                     </a>
@@ -48,7 +48,7 @@ const Convocation = () => {
                     ]}
                 >
                     <a href="https://iiitd.ac.in/academics/pastconvocations" style={{ textDecoration: 'none' }}>
-                        <div className="convoCont">
+                        <div className={size > 800 ? 'convoCont' : size > 500 ? 'smallConvoCont' : 'vSmallConvoCont'}>
                             Previous Convocations
                             <img className="prev" src="https://www.iiitd.ac.in/convocation21/assets/images/galleryslider/IMG_3511.jpg" alt="" />
                         </div>

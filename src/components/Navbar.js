@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 import { Link as LINK } from 'react-router-dom'
 import { Collapse } from 'react-collapse';
 
-const Navbar = ({ home, student, faculty, alumni, projects, report, convocation, classroom, contact, academicTeam, setAcademicTeam }) => {
+const Navbar = ({ home, student, faculty, alumni, projects, report, convocation, classroom, contact, academicTeam, setAcademicTeam, certificate, setCertificate }) => {
     const [size, setSize] = useState(window.innerWidth)
     const [isOpened, setIsOpened] = useState(false)
     const [navbarHome, setNavbarHome] = useState('navbarHomeChange');
@@ -114,8 +114,10 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
         return () => window.removeEventListener('scroll', changeNavbar);
     }, []);
     const scrollDown = (e, ref) => {
-        window.scrollTo({ top: ref.current.offsetTop - 100 });
         setIsOpened(false);
+        window.history.replaceState('', '', '/');
+        window.scrollTo({ top: ref.current.offsetTop - 100 });
+
     };
     useEffect(() => {
         const updateWindowDimensions = () => {
@@ -151,7 +153,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             if (academicTeam) {
                                 setAcademicTeam(false);
                             }
-                            scrollDown(e, home)
+                            if (certificate) {
+                                setCertificate(false);
+                            } scrollDown(e, home)
                         }}
                         className={navbarHome}
                         style={{
@@ -168,6 +172,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         onClick={(e) => {
                             if (academicTeam) {
                                 setAcademicTeam(false);
+                            }
+                            if (certificate) {
+                                setCertificate(false);
                             }
                             scrollDown(e, student)
                         }}
@@ -187,6 +194,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             if (academicTeam) {
                                 setAcademicTeam(false);
                             }
+                            if (certificate) {
+                                setCertificate(false);
+                            }
                             scrollDown(e, faculty)
                         }}
                         className={navbarFaculty}
@@ -204,6 +214,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         onClick={(e) => {
                             if (academicTeam) {
                                 setAcademicTeam(false);
+                            }
+                            if (certificate) {
+                                setCertificate(false);
                             }
                             scrollDown(e, alumni)
                         }}
@@ -223,6 +236,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             if (academicTeam) {
                                 setAcademicTeam(false);
                             }
+                            if (certificate) {
+                                setCertificate(false);
+                            }
                             scrollDown(e, projects)
                         }}
                         className={navbarProjects}
@@ -240,6 +256,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         onClick={(e) => {
                             if (academicTeam) {
                                 setAcademicTeam(false);
+                            }
+                            if (certificate) {
+                                setCertificate(false);
                             }
                             scrollDown(e, report)
                         }}
@@ -259,6 +278,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             if (academicTeam) {
                                 setAcademicTeam(false);
                             }
+                            if (certificate) {
+                                setCertificate(false);
+                            }
                             scrollDown(e, convocation)
                         }}
                         className={navbarConvocation}
@@ -277,6 +299,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             if (academicTeam) {
                                 setAcademicTeam(false);
                             }
+                            if (certificate) {
+                                setCertificate(false);
+                            }
                             scrollDown(e, classroom)
                         }}
                         className={navbarClassroom}
@@ -294,6 +319,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         onClick={(e) => {
                             if (academicTeam) {
                                 setAcademicTeam(false);
+                            }
+                            if (certificate) {
+                                setCertificate(false);
                             }
                             scrollDown(e, contact)
                         }}
@@ -316,6 +344,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 if (academicTeam) {
                                     setAcademicTeam(false);
                                 }
+                                if (certificate) {
+                                    setCertificate(false);
+                                }
                                 scrollDown(e, home)
                             }}
                             style={{
@@ -334,6 +365,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             onClick={(e) => {
                                 if (academicTeam) {
                                     setAcademicTeam(false);
+                                }
+                                if (certificate) {
+                                    setCertificate(false);
                                 }
                                 scrollDown(e, student)
                             }}
@@ -356,6 +390,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 if (academicTeam) {
                                     setAcademicTeam(false);
                                 }
+                                if (certificate) {
+                                    setCertificate(false);
+                                }
                                 scrollDown(e, faculty)
                             }}
                             className={navbarFaculty}
@@ -376,7 +413,10 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             onClick={(e) => {
                                 if (academicTeam) {
                                     setAcademicTeam(false);
-                                } scrollDown(e, alumni)
+                                } if (certificate) {
+                                    setCertificate(false);
+                                }
+                                scrollDown(e, alumni)
                             }}
                             className={navbarAlumni}
                             style={{
@@ -396,6 +436,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             onClick={(e) => {
                                 if (academicTeam) {
                                     setAcademicTeam(false);
+                                }
+                                if (certificate) {
+                                    setCertificate(false);
                                 }
                                 scrollDown(e, projects)
                             }}
@@ -418,6 +461,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 if (academicTeam) {
                                     setAcademicTeam(false);
                                 }
+                                if (certificate) {
+                                    setCertificate(false);
+                                }
                                 scrollDown(e, report)
                             }}
                             className={navbarReport}
@@ -438,6 +484,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             onClick={(e) => {
                                 if (academicTeam) {
                                     setAcademicTeam(false);
+                                }
+                                if (certificate) {
+                                    setCertificate(false);
                                 }
                                 scrollDown(e, convocation)
                             }}
@@ -460,6 +509,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 if (academicTeam) {
                                     setAcademicTeam(false);
                                 }
+                                if (certificate) {
+                                    setCertificate(false);
+                                }
                                 scrollDown(e, classroom)
                             }}
                             className={navbarClassroom}
@@ -480,6 +532,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             onClick={(e) => {
                                 if (academicTeam) {
                                     setAcademicTeam(false);
+                                }
+                                if (certificate) {
+                                    setCertificate(false);
                                 }
                                 scrollDown(e, contact)
                             }}

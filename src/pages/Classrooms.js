@@ -43,7 +43,7 @@ const Classrooms = () => {
       ]}
     >
       <div className='page classroom'>
-        <div className='heading' style={{ marginBottom: "35vh" }}>Classrooms</div>
+        <div className={size > 800 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'} style={{ marginBottom: "35vh" }}>Classrooms</div>
         <div className="classContainer">
           <a style={{ textDecoration: 'none' }} href='./Old.jpg'>
             <div className="cell">

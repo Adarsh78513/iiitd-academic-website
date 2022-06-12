@@ -1,0 +1,18 @@
+.smallFaculty .subHeading{
+    font-size: 20px;
+}
+.smallFaculty .section{
+    margin: 0;
+}
+.smallFaculty .projectLinks{
+    font-size: 15px;
+}
+.vSmallFaculty .subHeading{
+    font-size: 15px;
+}
+.vSmallFaculty .section{
+    margin: 0;
+}
+.vSmallFaculty .projectLinks{
+    font-size: 10px;
+}

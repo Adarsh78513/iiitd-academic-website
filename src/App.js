@@ -1,7 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from './pages/Index';
-import AcademicTeam from './pages/AcademicTeam';
 import Certificates from './pages/Certificates';
 
 function App() {

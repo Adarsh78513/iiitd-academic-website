@@ -3,7 +3,7 @@ import '../styles/Student.css'
 import { ParallaxBanner } from 'react-scroll-parallax';
 import { Link } from 'react-router-dom'
 
-const Alumni = () => {
+const Alumni = ({ certificate, setCertificate }) => {
     const [size, setSize] = useState(window.innerWidth)
 
     useEffect(() => {
@@ -17,7 +17,7 @@ const Alumni = () => {
     return (
         <div className='page'>
             <ParallaxBanner
-                style={{ height: '100vh' }}
+                style={{ height: '80vh' }}
                 layers={[
                     {
                         image:
@@ -31,7 +31,7 @@ const Alumni = () => {
 
                     <div className="section">
                         <div className="subHeading">Issue of Various Certificates</div>
-                        <a className="projectLinks" href="/certificates">Transcript, Duplicate Degree, Other Certificates</a>
+                        <div className="projectLinks" style={{ cursor: 'pointer' }} onClick={() => { setCertificate(true) }}>Transcript, Duplicate Degree, Other Certificates</div>
                     </div>
 
                     <div className="section">
@@ -40,7 +40,7 @@ const Alumni = () => {
                         <a className="projectLinks" href="https://iiitdelhi.almaconnect.com/">Join Alumni Community</a>
                         <a className="projectLinks" href="https://www.iiitd.ac.in/sites/default/files/alumnifaq.html">FAQs</a>
                     </div>
-                </div>
+                </div >
 
                 <div className="rows">
 
@@ -55,8 +55,8 @@ const Alumni = () => {
                     </div>
 
                 </div>
-            </ParallaxBanner>
-        </div>
+            </ParallaxBanner >
+        </div >
     )
 }
 

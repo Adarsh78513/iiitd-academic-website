@@ -11,10 +11,10 @@
     margin-top: 6vh;
 }
 .contactInfoSmall{
-    padding-left: 22vw;
+    padding-left: 10vw;
     display: flex;
     justify-content: space-evenly;
-    width: 75vw;
+    width: 90vw;
 }
 .contactForm{
     float: left;
@@ -32,10 +32,18 @@
     color:  rgb(8,8,8);
 }
 .subSmall{
-    padding-top: 3vh;
+    padding-top: 2vh;
     text-align: left;
     text-decoration: none;
     font-size: 20px;
+    font-weight: 500;
+    color:  rgb(8,8,8);
+}
+.vSubSmall{
+    padding-top: 1vh;
+    text-align: left;
+    text-decoration: none;
+    font-size: 14px;
     font-weight: 500;
     color:  rgb(8,8,8);
 }
@@ -47,6 +55,13 @@
     text-align: left;
     color: #555555;
     font-size: 12px;
+    width: 20vw;
+}
+.vContentSmall{
+    text-align: left;
+    color: #555555;
+    font-size: 8px;
+    width: 20vw;
 }
 .form{
     width: 20vw;

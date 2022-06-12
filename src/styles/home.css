@@ -128,17 +128,50 @@
 .internalSmall .section{
     width: 60vw;
 }
-.resources{
+.resource{
     background-color:  rgb(239, 239, 240);
     padding-top: 3vh;
     padding-bottom: 4vh;
-}
-.resource{
     display:flex;
     justify-content: space-between;
     margin-top: 2vh;
     padding-left: 7vw;
     padding-right: 10vw;
+}
+.smallResource{
+    background-color:  rgb(239, 239, 240);
+    padding-top: 3vh;
+    padding-bottom: 4vh;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+    padding-left: 7vw;
+    padding-right: 10vw;
+}
+.smallResource .section{
+    font-size: 15px;
+}
+.smallResource .subHeading{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(3, 168, 163);
+}
+.vSmallResource{
+    background-color:  rgb(239, 239, 240);
+    padding-top: 3vh;
+    padding-bottom: 4vh;
+    margin-top: 2vh;
+    padding-left: 20vw;
+    padding-right: 10vw;
+}
+.vSmallResource .section{
+    width: 60vw;
+    font-size: 15px;
+}
+.vSmallResource .subHeading{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(3, 168, 163);
 }
 .tabHead{
     padding-top:2vh;

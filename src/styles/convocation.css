@@ -4,8 +4,8 @@
 }
 .convoCont{
     width: 30vw;
-    height: 50vh;
-    padding-top: 1vh;
+    height: 47vh;
+    padding: 1vh;
     background-color:  rgb(8, 8, 8);
     transition: background-color 1s;
     transition: color 1s;
@@ -15,7 +15,55 @@
     margin-bottom: 8.4vh;
     color:white;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 28px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: transform 0.7s;
+    -moz-transition: transform 0.7s;
+    -ms-transition: transform 0.7s;
+    -o-transition: transform 0.7s;
+}
+.smallConvoCont{
+    width: 30vw;
+    height: 30vh;
+    padding: 1vh;
+    background-color:  rgb(8, 8, 8);
+    transition: background-color 1s;
+    transition: color 1s;
+    opacity: 0.8;
+    margin: 1vw;
+    transition: transform 0.7s;
+    margin-bottom: 8.4vh;
+    color:white;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: transform 0.7s;
+    -moz-transition: transform 0.7s;
+    -ms-transition: transform 0.7s;
+    -o-transition: transform 0.7s;
+}
+.vSmallConvoCont{
+    width: 30vw;
+    height: 22vh;
+    padding: 1vh;
+    background-color:  rgb(8, 8, 8);
+    transition: background-color 1s;
+    transition: color 1s;
+    opacity: 0.8;
+    margin: 1vw;
+    transition: transform 0.7s;
+    margin-bottom: 8.4vh;
+    color:white;
+    font-weight: 600;
+    font-size: 15px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -35,6 +83,27 @@
     -moz-transform: scale(1.08);
     -ms-transform: scale(1.08);
     -o-transform: scale(1.08);
+}
+.smallConvoCont:hover{
+    background-color:rgb(3, 168, 163);
+    color: rgb(8, 8, 8);
+    opacity: 0.8;
+    transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+}
+.vSmallConvoCont:hover{
+    background-color:rgb(3, 168, 163);
+    color: rgb(8, 8, 8);
+    opacity: 0.8;
+    transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+
 }
 .prev{
     padding-top: 2vh;

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Parallax } from 'react-scroll-parallax';
+import '../styles/faculty.css'
 
 const Faculty = () => {
 
@@ -31,9 +32,11 @@ const Faculty = () => {
                     ]}
 
                 >
-                    <div className="section">
-                        <div className="subHeading">Teaching & Learning</div>
-                        <a className="projectLinks" href="https://iiitd.ac.in/iqac">IQAC</a>
+                    <div className={size > 800 ? 'faculty' : size > 500 ? 'smallFaculty' : 'vSmallFaculty'}>
+                        <div className="section">
+                            <div className="subHeading">Teaching & Learning</div>
+                            <a className="projectLinks" href="https://iiitd.ac.in/iqac">IQAC</a>
+                        </div>
                     </div>
                 </Parallax>
 
@@ -49,9 +52,11 @@ const Faculty = () => {
                         2
                     ]}
                 >
-                    <div className="section">
-                        <div className="subHeading">Important Guidelines</div>
-                        <a className="projectLinks" href="https://academics.iiitd.edu.in/iiitdfaculty.html">SOP</a>
+                    <div className={size > 800 ? 'faculty' : size > 500 ? 'smallFaculty' : 'vSmallFaculty'}>
+                        <div className="section">
+                            <div className="subHeading"> Guidelines</div>
+                            <a className="projectLinks" href="https://academics.iiitd.edu.in/iiitdfaculty.html">SOP</a>
+                        </div>
                     </div>
                 </Parallax>
 
@@ -67,9 +72,11 @@ const Faculty = () => {
                         2
                     ]}
                 >
-                    <div className="section">
-                        <div className="subHeading">Academic Regulations</div>
-                        <a className="projectLinks" href="https://iiitd.ac.in/academics/resources">Regulations</a>
+                    <div className={size > 800 ? 'faculty' : size > 500 ? 'smallFaculty' : 'vSmallFaculty'}>
+                        <div className="section">
+                            <div className="subHeading">Academic Regulations</div>
+                            <a className="projectLinks" href="https://iiitd.ac.in/academics/resources">Regulations</a>
+                        </div>
                     </div>
                 </Parallax>
             </div>
@@ -86,9 +93,11 @@ const Faculty = () => {
                         2
                     ]}
                 >
-                    <div className="section">
-                        <div className="subHeading">Meeting Minutes</div>
-                        <a className="projectLinks" href="https://academics.iiitd.edu.in/meetings/list.php">Minutes</a>
+                    <div className={size > 800 ? 'faculty' : size > 500 ? 'smallFaculty' : 'vSmallFaculty'}>
+                        <div className="section">
+                            <div className="subHeading">Meeting Minutes</div>
+                            <a className="projectLinks" href="https://academics.iiitd.edu.in/meetings/list.php">Minutes</a>
+                        </div>
                     </div>
                 </Parallax>
 
@@ -103,9 +112,11 @@ const Faculty = () => {
                         2
                     ]}
                 >
-                    <div className="section">
-                        <div className="subHeading">Important Point of Contact</div>
-                        <a className="projectLinks" href="https://academics.iiitd.edu.in/iiitd-acad-team.html">Academic Team</a>
+                    <div className={size > 800 ? 'faculty' : size > 500 ? 'smallFaculty' : 'vSmallFaculty'}>
+                        <div className="section">
+                            <div className="subHeading"> Point of Contact</div>
+                            <a className="projectLinks" href="https://academics.iiitd.edu.in/iiitd-acad-team.html">Academic Team</a>
+                        </div>
                     </div>
                 </Parallax>
 
@@ -120,9 +131,11 @@ const Faculty = () => {
                         2
                     ]}
                 >
-                    <div className="section">
-                        <div className="subHeading">Awards</div>
-                        <a className="projectLinks" href="https://awards.iiitd.edu.in/">Awards</a>
+                    <div className={size > 800 ? 'faculty' : size > 500 ? 'smallFaculty' : 'vSmallFaculty'}>
+                        <div className="section">
+                            <div className="subHeading">Awards</div>
+                            <a className="projectLinks" href="https://awards.iiitd.edu.in/">Awards</a>
+                        </div>
                     </div>
                 </Parallax>
             </div>
@@ -138,9 +151,11 @@ const Faculty = () => {
                         2
                     ]}
                 >
-                    <div className="section">
-                        <div className="subHeading">FAQs</div>
-                        <a className="projectLinks" href="https://academics.iiitd.edu.in/iiitdfaculty.html#">FAQ</a>
+                    <div className={size > 800 ? 'faculty' : size > 500 ? 'smallFaculty' : 'vSmallFaculty'}>
+                        <div className="section">
+                            <div className="subHeading">FAQs</div>
+                            <a className="projectLinks" href="https://academics.iiitd.edu.in/iiitdfaculty.html#">FAQ</a>
+                        </div>
                     </div>
                 </Parallax>
             </div>
