@@ -69,11 +69,8 @@ const Home = () => {
                             <div className="section">
                                 <div to="/academicTeam" style={{ textDecoration: 'none', color: 'white' }}
                                     onClick={() => { setAcademicTeam(true) }}>
-                                    <div className="team">
-                                        <img style={{
-                                            maxWidth: '100%',
-                                            height: 'auto'
-                                        }} src='./group.png' alt="" />
+                                    <div className={size > 800 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                                        <img src='./group.png' alt="" />
                                     </div>
                                     Academic Team
                                 </div>
@@ -81,11 +78,8 @@ const Home = () => {
                             <div className="section">
                                 <a href='https://iiitd.ac.in/academics/academic-administration' style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
                                     <div className="">
-                                        <div className="team">
-                                            <img style={{
-                                                maxWidth: '100%',
-                                                height: 'auto'
-                                            }} src='./team.png' alt="" />
+                                        <div className={size > 800 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                                            <img src='./team.png' alt="" />
                                         </div>
                                         Academic Administration
                                     </div>
@@ -94,11 +88,8 @@ const Home = () => {
                             <div className="section">
                                 <a href='https://iiitd.ac.in/academics/issue-resolution' style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
                                     <div className="">
-                                        <div className="team">
-                                            <img style={{
-                                                maxWidth: '100%',
-                                                height: 'auto'
-                                            }} src='./question.png' alt="" />
+                                        <div className={size > 800 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                                            <img src='./question.png' alt="" />
                                         </div>
                                         Issue Resolution
                                     </div>
@@ -107,11 +98,8 @@ const Home = () => {
                             <div className="section">
                                 <a href="https://iiitd.ac.in/academics/resources" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
                                     <div className="">
-                                        <div className="team">
-                                            <img style={{
-                                                maxWidth: '100%',
-                                                height: 'auto'
-                                            }} src='./document.png' alt="" />
+                                        <div className={size > 800 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                                            <img src='./document.png' alt="" />
                                         </div>
                                         Regulations
                                     </div>
@@ -216,11 +204,8 @@ const Home = () => {
                             <div className="section">
                                 <a href="https://iiitd.ac.in/form_docs" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
                                     <div className="">
-                                        <div className="team">
-                                            <img style={{
-                                                maxWidth: '100%',
-                                                height: 'auto'
-                                            }} src='./form.png' alt="" />
+                                        <div className={size > 800 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                                            <img src='./form.png' alt="" />
                                         </div>
                                         Internal Forms
                                     </div>
@@ -241,11 +226,8 @@ const Home = () => {
                             <div className="section">
                                 <a href="https://erp.iiitd.edu.in/" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
                                     <div className="">
-                                        <div className="team">
-                                            <img style={{
-                                                maxWidth: '100%',
-                                                height: 'auto'
-                                            }} src='./graduate-cap.png' alt="" />
+                                        <div className={size > 800 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                                            <img src='./graduate-cap.png' alt="" />
                                         </div>
                                         ERP
                                     </div>
@@ -266,11 +248,8 @@ const Home = () => {
                             <div className="section">
                                 <a href="http://academics.iiitd.edu.in/meetings/list.php" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
                                     <div className="">
-                                        <div className="team">
-                                            <img style={{
-                                                maxWidth: '100%',
-                                                height: 'auto'
-                                            }} src='./online-meeting.png' alt="" />
+                                        <div className={size > 800 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                                            <img src='./online-meeting.png' alt="" />
                                         </div>
                                         Important Minutes
                                     </div>

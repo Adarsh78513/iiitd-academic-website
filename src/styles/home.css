@@ -113,7 +113,26 @@
     padding-top: 2vh;
     padding-bottom: 2vh;
 }
-
+.team img{
+    max-width: 100%;
+    height: auto
+}
+.smallTeam{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.smallTeam img{
+    max-width: 40%;
+    height: auto
+}
+.vSmallTeam{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.vSmallTeam img{
+    max-width: 40%;
+    height: auto
+}
 .internal{
     padding-top: 3vh;
     padding-bottom: 4vh;
