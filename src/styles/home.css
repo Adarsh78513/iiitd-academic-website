@@ -2,8 +2,8 @@ body{
     overflow-x: hidden;
 }
 .aboutUsContainer{
-    padding-top: 4vh;
-    padding-bottom: 4vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
     padding-left: 15vw;
     padding-right: 15vw;
     position: absolute;
@@ -13,8 +13,8 @@ body{
     text-align: center;
 }
 .smallAbout{
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     padding-left: 10vw;
     padding-right: 10vw;
     position: absolute;
@@ -23,7 +23,7 @@ body{
     text-align: center;
 }
 .vSmallAbout{
-    padding-bottom: 2vh;
+    padding-bottom: 1vh;
     padding-left: 10vw;
     padding-right: 10vw;
     position: absolute;
@@ -33,38 +33,38 @@ body{
 }
 
 .vParaSmall{
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 500;
     color: #ffffff;
     padding-top: 1vh;
     padding-bottom: 1vh;
 }
 .para{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: #ffffff;
     padding-top: 1vh;
     padding-bottom: 1vh;
 }
 .paraSmall{
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 500;
     color: #ffffff;
     padding-top: 1vh;
     padding-bottom: 1vh;
 }
 .heading{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
     color: rgb(3, 168, 163);
 }
 .smallHeading{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     color: rgb(3, 168, 163);
 }
 .vSmallHeading{
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 600;
     color: rgb(3, 168, 163);
 }
@@ -76,10 +76,10 @@ body{
 .academic{
     position: relative;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 2vh;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 .academicSmall{
     padding-left: 20vw;
@@ -112,29 +112,40 @@ body{
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
-.team{
+.team .section{
     padding-top: 2vh;
     padding-bottom: 2vh;
+    font-size: 20px;
+    width: 20vw;
+    color: white;
 }
 .team img{
-    max-width: 100%;
-    height: auto
+    max-width: 60%;
+    margin-bottom: 2vh;
 }
-.smallTeam{
+.smallTeam .section{
     padding-top: 2vh;
     padding-bottom: 2vh;
+    margin-left: 15vw;
+    font-size: 15px;
+    width: 30vw;
+    color: white;
 }
 .smallTeam img{
     max-width: 40%;
-    height: auto
+    margin-bottom: 2vh;
 }
-.vSmallTeam{
+.vSmallTeam .section{
     padding-top: 2vh;
     padding-bottom: 2vh;
+    font-size: 10px;
+    width: 30vw;
+    margin-left:15vw ;
+    color: white;
 }
 .vSmallTeam img{
-    max-width: 40%;
-    height: auto
+    max-width: 30%;
+    margin-bottom: 2vh;
 }
 .internal{
     padding-top: 3vh;
@@ -145,7 +156,7 @@ body{
     padding-left: 6vw;
 }
 .internalSmall{
-    padding-left: 20vw;
+    padding-left: 6vw;
 }
 .internalSmall .section{
     width: 60vw;

@@ -16,6 +16,7 @@ import Contact from './Contact'
 import { Parallax, ParallaxBanner } from 'react-scroll-parallax';
 import AcademicTeam from './AcademicTeam'
 import Certificates from './Certificates'
+import BeforeYouArrive from './BeforeYouArrive'
 
 
 const Home = () => {
@@ -31,6 +32,8 @@ const Home = () => {
     const [size, setSize] = useState(window.innerWidth)
     const [academicTeam, setAcademicTeam] = useState(false)
     const [certificate, setCertificate] = useState(false)
+    const [beforeArrive, setBeforeArrive] = useState(false)
+
     useEffect(() => {
         const updateWindowDimensions = () => {
             setSize(window.innerWidth)
@@ -42,13 +45,13 @@ const Home = () => {
     return (
         <div className='homepage'>
             <Marquee />
-            <Navbar home={home} student={student} faculty={faculty} alumni={alumni} projects={projects} report={report} convocation={convocation} classroom={classroom} contact={contact} academicTeam={academicTeam} setAcademicTeam={setAcademicTeam} certificate={certificate} setCertificate={setCertificate} />
-            {academicTeam ? <AcademicTeam /> : certificate ? <Certificates /> :
+            <Navbar home={home} student={student} faculty={faculty} alumni={alumni} projects={projects} report={report} convocation={convocation} classroom={classroom} contact={contact} academicTeam={academicTeam} setAcademicTeam={setAcademicTeam} certificate={certificate} setCertificate={setCertificate} beforeArrive={beforeArrive} setBeforeArrive={setBeforeArrive} />
+            {academicTeam ? <AcademicTeam /> : certificate ? <Certificates /> : beforeArrive ? <BeforeYouArrive /> :
                 <div className='homepage-container'>
                     <div ref={home}></div>
                     <AdCarousel />
                     <ParallaxBanner
-                        style={{ height: size > 800 ? '400px' : size > 500 ? '300px' : '200px', paddingTop: '5vh' }}
+                        style={{ height: size > 800 ? '350px' : size > 500 ? '250px' : '180px', paddingTop: '5vh' }}
                         layers={[
                             {
                                 image: '/IIITD_building.jpg',
@@ -66,45 +69,47 @@ const Home = () => {
 
                     <div className="academics">
                         <div className={size > 885 ? "academic" : "academicSmall"}>
-                            <div className="section">
-                                <div to="/academicTeam" style={{ textDecoration: 'none', color: 'white' }}
-                                    onClick={() => { setAcademicTeam(true) }}>
-                                    <div className={size > 800 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                            <div className={size > 885 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                                <div className="section">
+                                    <div to="/academicTeam" style={{ textDecoration: 'none', color: 'white' }}
+                                        onClick={() => { setAcademicTeam(true) }}>
                                         <img src='./group.png' alt="" />
                                     </div>
                                     Academic Team
                                 </div>
                             </div>
-                            <div className="section">
-                                <a href='https://iiitd.ac.in/academics/academic-administration' style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
-                                    <div className="">
-                                        <div className={size > 800 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                            <div className={size > 885 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                                <div className="section">
+                                    <a href='https://iiitd.ac.in/academics/academic-administration' style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                                        <div className="">
                                             <img src='./team.png' alt="" />
                                         </div>
                                         Administration
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
-                            <div className="section">
-                                <a href='https://iiitd.ac.in/academics/issue-resolution' style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
-                                    <div className="">
-                                        <div className={size > 800 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                            <div className={size > 885 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                                <div className="section">
+                                    <a href='https://iiitd.ac.in/academics/issue-resolution' style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                                        <div className="">
                                             <img src='./question.png' alt="" />
                                         </div>
                                         Issue Resolution
-                                    </div>
-                                </a>
+
+                                    </a>
+                                </div>
                             </div>
-                            <div className="section">
-                                <a href="https://iiitd.ac.in/academics/resources" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
-                                    <div className="">
-                                        <div className={size > 800 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                            <div className={size > 885 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                                <div className="section">
+                                    <a href="https://iiitd.ac.in/academics/resources" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                                        <div className="">
                                             <img src='./document.png' alt="" />
                                         </div>
                                         Regulations
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                     <ParallaxBanner
@@ -134,10 +139,10 @@ const Home = () => {
                                     <div className="subHeading">Academic Calendar</div>
                                     <div className="links">
                                         <div>
-                                            <a href="https://iiitd.ac.in/sites/default/files/docs/education/2021/Academic%20Calendar%20Winter%202022_Final.pdf" style={{ textDecoration: 'none' }}>Winter 2022</a>
+                                            <a className="projectLinks" href="https://iiitd.ac.in/sites/default/files/docs/education/2021/Academic%20Calendar%20Winter%202022_Final.pdf" style={{ textDecoration: 'none' }}>Winter 2022</a>
                                         </div>
                                         <div>
-                                            <a href="https://iiitd.ac.in/sites/default/files/docs/education/2021/Academic%20Calendar%20B.Tech.%201st%20Sem%20(2021-22%20Batch).pdf" style={{ textDecoration: 'none' }}>B.Tech First Semester (2021-22 Batch)</a>
+                                            <a className="projectLinks" href="https://iiitd.ac.in/sites/default/files/docs/education/2021/Academic%20Calendar%20B.Tech.%201st%20Sem%20(2021-22%20Batch).pdf" style={{ textDecoration: 'none' }}>B.Tech First Semester (2021-22 Batch)</a>
                                         </div>
                                     </div>
                                 </div>
@@ -158,7 +163,7 @@ const Home = () => {
                                     <div className="subHeading">Timetable</div>
                                     <div className="links">
                                         <div>
-                                            <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/Add_Drop_TT_Winter%202022%20&%20BTech%201st%20Year_V3.pdf" style={{ textDecoration: 'none' }}>Winter 2022 & BTech First Semester</a>
+                                            <a className="projectLinks" href="https://iiitd.ac.in/sites/default/files/docs/education/2022/Add_Drop_TT_Winter%202022%20&%20BTech%201st%20Year_V3.pdf" style={{ textDecoration: 'none' }}>Winter 2022 & BTech First Semester</a>
                                         </div>
                                     </div>
                                 </div>
@@ -178,10 +183,10 @@ const Home = () => {
                                     <div className="subHeading">Examinations</div>
                                     <div className="links">
                                         <div>
-                                            <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/Mid%20Sem_UG%201st%20Year%20M21_V1.pdf" style={{ textDecoration: 'none' }}>Schedule for BTech First Semester</a>
+                                            <a className="projectLinks" href="https://iiitd.ac.in/sites/default/files/docs/education/2022/Mid%20Sem_UG%201st%20Year%20M21_V1.pdf" style={{ textDecoration: 'none' }}>Schedule for BTech First Semester</a>
                                         </div>
                                         <div>
-                                            <a href="https://iiitd.ac.in/sites/default/files/docs/education/2022/MidSemExamSchedule_BtechIISeniorUGPG.pdf" style={{ textDecoration: 'none' }}>Schedule for BTech Second Year, Senior UG/PG</a>
+                                            <a className="projectLinks" href="https://iiitd.ac.in/sites/default/files/docs/education/2022/MidSemExamSchedule_BtechIISeniorUGPG.pdf" style={{ textDecoration: 'none' }}>Schedule for BTech Second Year, Senior UG/PG</a>
                                         </div>
                                     </div>
                                 </div>
@@ -202,17 +207,18 @@ const Home = () => {
                             ]}
 
                         >
+                            <div className={size > 800 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
 
-                            <div className="section">
-                                <a href="https://iiitd.ac.in/form_docs" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
-                                    <div className="">
-                                        <div className={size > 800 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                                <div className="section">
+                                    <a href="https://iiitd.ac.in/form_docs" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                                        <div className="">
                                             <img src='./form.png' alt="" />
                                         </div>
                                         Internal Forms
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
+
                         </Parallax>
                         <Parallax
                             className="Parallax-module__smallLinear--MqSo+"
@@ -226,16 +232,15 @@ const Home = () => {
                             ]}
 
                         >
-
-                            <div className="section">
-                                <a href="https://erp.iiitd.edu.in/" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
-                                    <div className="">
-                                        <div className={size > 800 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                            <div className={size > 800 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                                <div className="section">
+                                    <a href="https://erp.iiitd.edu.in/" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                                        <div className="">
                                             <img src='./graduate-cap.png' alt="" />
                                         </div>
                                         ERP
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                         </Parallax>
 
@@ -251,20 +256,20 @@ const Home = () => {
                             ]}
 
                         >
+                            <div className={size > 800 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
 
-                            <div className="section">
-                                <a href="http://academics.iiitd.edu.in/meetings/list.php" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
-                                    <div className="">
-                                        <div className={size > 800 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                                <div className="section">
+                                    <a href="http://academics.iiitd.edu.in/meetings/list.php" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                                        <div className="">
                                             <img src='./online-meeting.png' alt="" />
                                         </div>
                                         Important Minutes
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                         </Parallax>
                     </div>
-                    <div ref={student}><Student /></div>
+                    <div ref={student}><Student setBeforeArrive={setBeforeArrive} setAcademicTeam={setAcademicTeam} /></div>
                     <div ref={faculty}><Faculty /></div>
                     <div ref={alumni} ><Alumni certificate={certificate} setCertificate={setCertificate} /></div>
                     <div ref={projects}><StudentProjects /></div>
@@ -274,7 +279,7 @@ const Home = () => {
                     {/* <br /> */}
                     <div ref={contact} ><Contact /></div>
                     <Footer />
-                </div>}
+                </div >}
         </div >
     )
 }

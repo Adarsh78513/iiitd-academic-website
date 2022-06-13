@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 import { Link as LINK } from 'react-router-dom'
 import { Collapse } from 'react-collapse';
 
-const Navbar = ({ home, student, faculty, alumni, projects, report, convocation, classroom, contact, academicTeam, setAcademicTeam, certificate, setCertificate }) => {
+const Navbar = ({ home, student, faculty, alumni, projects, report, convocation, classroom, contact, academicTeam, setAcademicTeam, certificate, setCertificate, beforeArrive, setBeforeArrive }) => {
     const [size, setSize] = useState(window.innerWidth)
     const [isOpened, setIsOpened] = useState(false)
     const [navbarHome, setNavbarHome] = useState('navbarHomeChange');
@@ -130,7 +130,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
     return (
         <div className='navContainer'>
             <div className="navbar">
-                {size < 590 ?
+                {size < 1000 ?
                     <div>
                         <a href='/' style={{ cursor: 'pointer' }}>
                             <img width="100vw" src="https://www.sarkarijobalert.co.in/wp-content/uploads/2021/02/logo-of-iiit-delhi-Recruitmentlogo.jpg"></img>
@@ -142,12 +142,12 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             <img width="400vw" src="https://www.iiitd.ac.in/sites/default/files/style3colorsmall.png"></img>
                         </a>
                     </div>}
-                {(size < 1490 ?
+                {(size < 1000 ?
                     <div>
                         <img src="./more.png" onClick={(ee) => { console.log(isOpened); isOpened ? setIsOpened(false) : setIsOpened(true) }} width="50vw" alt="" />
                     </div> : null)
                 }
-                {size > 1490 ?
+                {size > 1000 ?
                     <Link
                         onClick={(e) => {
                             if (academicTeam) {
@@ -155,6 +155,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             }
                             if (certificate) {
                                 setCertificate(false);
+                            }
+                            if (beforeArrive) {
+                                setBeforeArrive(false);
                             } scrollDown(e, home)
                         }}
                         className={navbarHome}
@@ -167,7 +170,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         }}>
                         HOME
                     </Link> : null}
-                {size > 1490 ?
+                {size > 1000 ?
                     <Link
                         onClick={(e) => {
                             if (academicTeam) {
@@ -176,7 +179,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             if (certificate) {
                                 setCertificate(false);
                             }
-                            scrollDown(e, student)
+                            if (beforeArrive) {
+                                setBeforeArrive(false);
+                            } scrollDown(e, student)
                         }}
                         className={navbarStudent}
                         style={{
@@ -188,7 +193,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         }}>
                         STUDENTS
                     </Link> : null}
-                {size > 1490 ?
+                {size > 1000 ?
                     <Link
                         onClick={(e) => {
                             if (academicTeam) {
@@ -197,7 +202,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             if (certificate) {
                                 setCertificate(false);
                             }
-                            scrollDown(e, faculty)
+                            if (beforeArrive) {
+                                setBeforeArrive(false);
+                            } scrollDown(e, faculty)
                         }}
                         className={navbarFaculty}
                         style={{
@@ -209,7 +216,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         }}>
                         FACULTY
                     </Link> : null}
-                {size > 1490 ?
+                {size > 1000 ?
                     <Link
                         onClick={(e) => {
                             if (academicTeam) {
@@ -218,7 +225,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             if (certificate) {
                                 setCertificate(false);
                             }
-                            scrollDown(e, alumni)
+                            if (beforeArrive) {
+                                setBeforeArrive(false);
+                            } scrollDown(e, alumni)
                         }}
                         className={navbarAlumni}
                         style={{
@@ -230,7 +239,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         }}>
                         ALUMNI
                     </Link> : null}
-                {size > 1490 ?
+                {size > 1000 ?
                     <Link
                         onClick={(e) => {
                             if (academicTeam) {
@@ -239,7 +248,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             if (certificate) {
                                 setCertificate(false);
                             }
-                            scrollDown(e, projects)
+                            if (beforeArrive) {
+                                setBeforeArrive(false);
+                            } scrollDown(e, projects)
                         }}
                         className={navbarProjects}
                         style={{
@@ -251,7 +262,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         }}>
                         STUDENT'S PROJECTS
                     </Link> : null}
-                {size > 1490 ?
+                {size > 1000 ?
                     <Link
                         onClick={(e) => {
                             if (academicTeam) {
@@ -260,7 +271,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             if (certificate) {
                                 setCertificate(false);
                             }
-                            scrollDown(e, report)
+                            if (beforeArrive) {
+                                setBeforeArrive(false);
+                            } scrollDown(e, report)
                         }}
                         className={navbarReport}
                         style={{
@@ -272,7 +285,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         }}>
                         REPORT & STATISTICS
                     </Link> : null}
-                {size > 1490 ?
+                {size > 1000 ?
                     <Link
                         onClick={(e) => {
                             if (academicTeam) {
@@ -281,7 +294,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             if (certificate) {
                                 setCertificate(false);
                             }
-                            scrollDown(e, convocation)
+                            if (beforeArrive) {
+                                setBeforeArrive(false);
+                            } scrollDown(e, convocation)
                         }}
                         className={navbarConvocation}
                         style={{
@@ -293,7 +308,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         }}>
                         CONVOCATION
                     </Link> : null}
-                {size > 1490 ?
+                {size > 1000 ?
                     <Link
                         onClick={(e) => {
                             if (academicTeam) {
@@ -302,7 +317,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             if (certificate) {
                                 setCertificate(false);
                             }
-                            scrollDown(e, classroom)
+                            if (beforeArrive) {
+                                setBeforeArrive(false);
+                            } scrollDown(e, classroom)
                         }}
                         className={navbarClassroom}
                         style={{
@@ -314,7 +331,7 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                         }}>
                         CLASSROOMS
                     </Link> : null}
-                {size > 1490 ?
+                {size > 1000 ?
                     <Link
                         onClick={(e) => {
                             if (academicTeam) {
@@ -323,7 +340,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             if (certificate) {
                                 setCertificate(false);
                             }
-                            scrollDown(e, contact)
+                            if (beforeArrive) {
+                                setBeforeArrive(false);
+                            } scrollDown(e, contact)
                         }}
                         className={navbarContact}
                         style={{
@@ -347,7 +366,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 if (certificate) {
                                     setCertificate(false);
                                 }
-                                scrollDown(e, home)
+                                if (beforeArrive) {
+                                    setBeforeArrive(false);
+                                } scrollDown(e, home)
                             }}
                             style={{
                                 transition: 'background-color 1s',
@@ -369,7 +390,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 if (certificate) {
                                     setCertificate(false);
                                 }
-                                scrollDown(e, student)
+                                if (beforeArrive) {
+                                    setBeforeArrive(false);
+                                } scrollDown(e, student)
                             }}
                             className={navbarStudent}
                             style={{
@@ -393,7 +416,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 if (certificate) {
                                     setCertificate(false);
                                 }
-                                scrollDown(e, faculty)
+                                if (beforeArrive) {
+                                    setBeforeArrive(false);
+                                } scrollDown(e, faculty)
                             }}
                             className={navbarFaculty}
                             style={{
@@ -416,7 +441,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 } if (certificate) {
                                     setCertificate(false);
                                 }
-                                scrollDown(e, alumni)
+                                if (beforeArrive) {
+                                    setBeforeArrive(false);
+                                } scrollDown(e, alumni)
                             }}
                             className={navbarAlumni}
                             style={{
@@ -440,7 +467,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 if (certificate) {
                                     setCertificate(false);
                                 }
-                                scrollDown(e, projects)
+                                if (beforeArrive) {
+                                    setBeforeArrive(false);
+                                } scrollDown(e, projects)
                             }}
                             className={navbarProjects}
                             style={{
@@ -464,7 +493,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 if (certificate) {
                                     setCertificate(false);
                                 }
-                                scrollDown(e, report)
+                                if (beforeArrive) {
+                                    setBeforeArrive(false);
+                                } scrollDown(e, report)
                             }}
                             className={navbarReport}
                             style={{
@@ -488,7 +519,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 if (certificate) {
                                     setCertificate(false);
                                 }
-                                scrollDown(e, convocation)
+                                if (beforeArrive) {
+                                    setBeforeArrive(false);
+                                } scrollDown(e, convocation)
                             }}
                             className={navbarConvocation}
                             style={{
@@ -512,7 +545,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 if (certificate) {
                                     setCertificate(false);
                                 }
-                                scrollDown(e, classroom)
+                                if (beforeArrive) {
+                                    setBeforeArrive(false);
+                                } scrollDown(e, classroom)
                             }}
                             className={navbarClassroom}
                             style={{
@@ -536,7 +571,9 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 if (certificate) {
                                     setCertificate(false);
                                 }
-                                scrollDown(e, contact)
+                                if (beforeArrive) {
+                                    setBeforeArrive(false);
+                                } scrollDown(e, contact)
                             }}
                             className={navbarContact}
                             style={{

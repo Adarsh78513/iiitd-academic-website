@@ -1,10 +1,11 @@
 .navbar{
-    padding-left: 1vw;
-    padding-right: 2vw;
+    font-size: 0.84vw;
+    font-weight: bold;
+    padding-left: 0.6vw;
+    padding-right: 0.6vw;
     justify-content: space-between;
     background-color: white;
     display: flex;
-    align-items: center;
     border-bottom: 2px solid #dbdada;
     text-decoration: none;
     position: sticky; top: 0;
