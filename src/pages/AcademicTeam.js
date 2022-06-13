@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Footer from '../components/Footer'
 import '../styles/academicTeam.css'
 
-import { Parallax } from 'react-scroll-parallax';
+import { ParallaxBanner, Parallax } from 'react-scroll-parallax';
 
 const AcademicTeam = () => {
     const [size, setSize] = useState(window.innerWidth)
@@ -18,23 +18,19 @@ const AcademicTeam = () => {
     return (
         <div>
             <div className={size > 800 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'}>Academic Team</div>
-            <hr></hr>
-            <div className="containerTeam">
-                <div className="dean">
-                    <Parallax
-                        className="Parallax-module__smallLinear--MqSo+"
-                        translateY={[
-                            '30%',
-                            '-40%'
-                        ]}
-                        opacity={[
-                            0,
-                            2.5
-                        ]}
-                    >
-                        <div className="subTeam">DoAA, Registrar</div>
-                    </Parallax>
-                    <div className="cardContainer">
+            <ParallaxBanner
+                style={{ height: size > 800 ? '450px' : size > 500 ? '300px' : '200px', paddingTop: '5vh' }}
+                layers={[
+                    {
+                        image: '/IIITD_building.jpg',
+                        speed: -30,
+                    },
+                ]}
+            >
+                <div className="containerTeam">
+
+                    <div className="dean">
+
                         <Parallax
                             className="Parallax-module__smallLinear--MqSo+"
                             translateY={[
@@ -46,14 +42,50 @@ const AcademicTeam = () => {
                                 2.5
                             ]}
                         >
-                            <div className="card">
-                                <img className="img" src="https://www.iiitd.ac.in/sites/default/files/images/faculty/puspendra.jpg" alt="" />
-                                <div className="designation">
-                                    <div className="name">PROF. PUSHPENDRA SINGH</div>
-                                    <div className="des">Dean of Academic Affairs(DoAA)</div>
-                                </div>
-                            </div>
+                            <div className="subTeam" style={{ color: 'rgb(3,168,163)' }}>DoAA, Registrar</div>
                         </Parallax>
+                        <div className="cardContainer">
+                            <Parallax
+                                className="Parallax-module__smallLinear--MqSo+"
+                                translateY={[
+                                    '30%',
+                                    '-40%'
+                                ]}
+                                opacity={[
+                                    0,
+                                    2.5
+                                ]}
+                            >
+                                <div className="card">
+                                    <img className="img" src="https://www.iiitd.ac.in/sites/default/files/images/faculty/puspendra.jpg" alt="" />
+                                    <div className="designation">
+                                        <div className="name">PROF. PUSHPENDRA SINGH</div>
+                                        <div className="des">Dean of Academic Affairs(DoAA)</div>
+                                    </div>
+                                </div>
+                            </Parallax>
+                            <Parallax
+                                className="Parallax-module__smallLinear--MqSo+"
+                                translateY={[
+                                    '30%',
+                                    '-40%'
+                                ]}
+                                opacity={[
+                                    0,
+                                    2.5
+                                ]}
+                            >
+                                <div className="card">
+                                    <img className="img" src="https://iiitd.ac.in/sites/default/files/images/admin/staff/registrar-asolanki.jpg" alt="" />
+                                    <div className="designation">
+                                        <div className="name">DR. ASHOK KUMAR SOLANKI</div>
+                                        <div className="des">Registrar</div>
+                                    </div>
+                                </div>
+                            </Parallax>
+                        </div>
+                    </div>
+                    <div className="adminAcademic">
                         <Parallax
                             className="Parallax-module__smallLinear--MqSo+"
                             translateY={[
@@ -65,72 +97,51 @@ const AcademicTeam = () => {
                                 2.5
                             ]}
                         >
-                            <div className="card">
-                                <img className="img" src="https://iiitd.ac.in/sites/default/files/images/admin/staff/registrar-asolanki.jpg" alt="" />
-                                <div className="designation">
-                                    <div className="name">DR. ASHOK KUMAR SOLANKI</div>
-                                    <div className="des">Registrar</div>
-                                </div>
-                            </div>
+                            <div className="subTeam" style={{ color: 'rgb(3,168,163)' }}>Admin Academic</div>
                         </Parallax>
+                        <div className="cardContainer">
+                            <Parallax
+                                className="Parallax-module__smallLinear--MqSo+"
+                                translateY={[
+                                    '30%',
+                                    '-40%'
+                                ]}
+                                opacity={[
+                                    0,
+                                    2.5
+                                ]}
+                            >
+                                <div className="card">
+                                    <img className="img" src="https://iiitd.ac.in/sites/default/files/images/admin/staff/asutosh.jpg" alt="" />
+                                    <div className="designation">
+                                        <div className="name">ASHUTOSH BRAHMA</div>
+                                        <div className="des">Deputy Manager (Academics)</div>
+                                    </div>
+                                </div>
+                            </Parallax>
+                            <Parallax
+                                className="Parallax-module__smallLinear--MqSo+"
+                                translateY={[
+                                    '30%',
+                                    '-40%'
+                                ]}
+                                opacity={[
+                                    0,
+                                    2.5
+                                ]}
+                            >
+                                <div className="card">
+                                    <img className="img" src="https://iiitd.ac.in/sites/default/files/images/admin/staff/kpsingh.jpg" alt="" />
+                                    <div className="designation">
+                                        <div className="name">K P SINGH</div>
+                                        <div className="des">Consultant (Academics)</div>
+                                    </div>
+                                </div>
+                            </Parallax>
+                        </div>
                     </div>
                 </div>
-                <div className="adminAcademic">
-                    <Parallax
-                        className="Parallax-module__smallLinear--MqSo+"
-                        translateY={[
-                            '30%',
-                            '-40%'
-                        ]}
-                        opacity={[
-                            0,
-                            2.5
-                        ]}
-                    >
-                        <div className="subTeam">Admin Academic</div>
-                    </Parallax>
-                    <div className="cardContainer">
-                        <Parallax
-                            className="Parallax-module__smallLinear--MqSo+"
-                            translateY={[
-                                '30%',
-                                '-40%'
-                            ]}
-                            opacity={[
-                                0,
-                                2.5
-                            ]}
-                        >
-                            <div className="card">
-                                <img className="img" src="https://iiitd.ac.in/sites/default/files/images/admin/staff/asutosh.jpg" alt="" />
-                                <div className="designation">
-                                    <div className="name">ASHUTOSH BRAHMA</div>
-                                    <div className="des">Deputy Manager (Academics)</div>
-                                </div>
-                            </div>
-                        </Parallax>
-                        <Parallax
-                            className="Parallax-module__smallLinear--MqSo+"
-                            translateY={[
-                                '30%',
-                                '-40%'
-                            ]}
-                            opacity={[
-                                0,
-                                2.5
-                            ]}
-                        >
-                            <div className="card">
-                                <img className="img" src="https://iiitd.ac.in/sites/default/files/images/admin/staff/kpsingh.jpg" alt="" />
-                                <div className="designation">
-                                    <div className="name">K P SINGH</div>
-                                    <div className="des">Consultant (Academics)</div>
-                                </div>
-                            </div>
-                        </Parallax>
-                    </div>
-                </div>
-            </div>
+            </ParallaxBanner>
             <div className="containerTeam">
                 <div className="adminBTech">
                     <Parallax
@@ -226,22 +237,17 @@ const AcademicTeam = () => {
                     </div>
                 </div>
             </div>
-            <div className="containerTeam">
-                <div className="adminMTech">
-                    <Parallax
-                        className="Parallax-module__smallLinear--MqSo+"
-                        translateY={[
-                            '30%',
-                            '-40%'
-                        ]}
-                        opacity={[
-                            0,
-                            2.5
-                        ]}
-                    >
-                        <div className="subTeam">Admin M.Tech</div>
-                    </Parallax>
-                    <div className="cardContainer">
+            <ParallaxBanner
+                style={{ height: size > 800 ? '450px' : size > 500 ? '300px' : '200px', paddingTop: '5vh' }}
+                layers={[
+                    {
+                        image: '/IIITD_night.jpg',
+                        speed: -30,
+                    },
+                ]}
+            >
+                <div className="containerTeam">
+                    <div className="adminMTech">
                         <Parallax
                             className="Parallax-module__smallLinear--MqSo+"
                             translateY={[
@@ -253,14 +259,51 @@ const AcademicTeam = () => {
                                 2.5
                             ]}
                         >
-                            <div className="card">
-                                <img className="img" src="https://iiitd.ac.in/sites/default/files/images/admin/staff/asutosh.jpg" alt="" />
-                                <div className="designation">
-                                    <div className="name">ASHUTOSH BRAHMA</div>
-                                    <div className="des">Deputy Manager (Academics)</div>
-                                </div>
-                            </div>
+                            <div className="subTeam" style={{ color: 'rgb(3,168,163)' }}>Admin M.Tech</div>
                         </Parallax>
+
+                        <div className="cardContainer">
+                            <Parallax
+                                className="Parallax-module__smallLinear--MqSo+"
+                                translateY={[
+                                    '30%',
+                                    '-40%'
+                                ]}
+                                opacity={[
+                                    0,
+                                    2.5
+                                ]}
+                            >
+                                <div className="card">
+                                    <img className="img" src="https://iiitd.ac.in/sites/default/files/images/admin/staff/asutosh.jpg" alt="" />
+                                    <div className="designation">
+                                        <div className="name">ASHUTOSH BRAHMA</div>
+                                        <div className="des">Deputy Manager (Academics)</div>
+                                    </div>
+                                </div>
+                            </Parallax>
+                            <Parallax
+                                className="Parallax-module__smallLinear--MqSo+"
+                                translateY={[
+                                    '30%',
+                                    '-40%'
+                                ]}
+                                opacity={[
+                                    0,
+                                    2.5
+                                ]}
+                            >
+                                <div className="card">
+                                    <img className="img" src="https://iiitd.ac.in/sites/default/files/images/admin/staff/mohit.jpg" alt="" />
+                                    <div className="designation">
+                                        <div className="name">MOHIT KUMAR</div>
+                                        <div className="des">Junior Manager (Academics)</div>
+                                    </div>
+                                </div>
+                            </Parallax>
+                        </div>
+                    </div>
+                    <div className="adminPhD">
                         <Parallax
                             className="Parallax-module__smallLinear--MqSo+"
                             translateY={[
@@ -272,72 +315,51 @@ const AcademicTeam = () => {
                                 2.5
                             ]}
                         >
-                            <div className="card">
-                                <img className="img" src="https://iiitd.ac.in/sites/default/files/images/admin/staff/mohit.jpg" alt="" />
-                                <div className="designation">
-                                    <div className="name">MOHIT KUMAR</div>
-                                    <div className="des">Junior Manager (Academics)</div>
-                                </div>
-                            </div>
+                            <div className="subTeam" style={{ color: 'rgb(3,168,163)' }}>Admin Ph.D</div>
                         </Parallax>
+                        <div className="cardContainer">
+                            <Parallax
+                                className="Parallax-module__smallLinear--MqSo+"
+                                translateY={[
+                                    '30%',
+                                    '-40%'
+                                ]}
+                                opacity={[
+                                    0,
+                                    2.5
+                                ]}
+                            >
+                                <div className="card">
+                                    <img className="img" src="https://iiitd.ac.in/sites/default/files/images/admin/staff/anshu.jpg" alt="" />
+                                    <div className="designation">
+                                        <div className="name">ANSHU DUREJA</div>
+                                        <div className="des">Deputy Manager (Academics)</div>
+                                    </div>
+                                </div>
+                            </Parallax>
+                            <Parallax
+                                className="Parallax-module__smallLinear--MqSo+"
+                                translateY={[
+                                    '30%',
+                                    '-40%'
+                                ]}
+                                opacity={[
+                                    0,
+                                    2.5
+                                ]}
+                            >
+                                <div className="card">
+                                    <img className="img" src="https://iiitd.ac.in/sites/default/files/images/admin/staff/raju.jpg" alt="" />
+                                    <div className="designation">
+                                        <div className="name">RAJU BISWAS</div>
+                                        <div className="des">Junior Manager (Academics)</div>
+                                    </div>
+                                </div>
+                            </Parallax>
+                        </div>
                     </div>
                 </div>
-                <div className="adminPhD">
-                    <Parallax
-                        className="Parallax-module__smallLinear--MqSo+"
-                        translateY={[
-                            '30%',
-                            '-40%'
-                        ]}
-                        opacity={[
-                            0,
-                            2.5
-                        ]}
-                    >
-                        <div className="subTeam">Admin Ph.D</div>
-                    </Parallax>
-                    <div className="cardContainer">
-                        <Parallax
-                            className="Parallax-module__smallLinear--MqSo+"
-                            translateY={[
-                                '30%',
-                                '-40%'
-                            ]}
-                            opacity={[
-                                0,
-                                2.5
-                            ]}
-                        >
-                            <div className="card">
-                                <img className="img" src="https://iiitd.ac.in/sites/default/files/images/admin/staff/anshu.jpg" alt="" />
-                                <div className="designation">
-                                    <div className="name">ANSHU DUREJA</div>
-                                    <div className="des">Deputy Manager (Academics)</div>
-                                </div>
-                            </div>
-                        </Parallax>
-                        <Parallax
-                            className="Parallax-module__smallLinear--MqSo+"
-                            translateY={[
-                                '30%',
-                                '-40%'
-                            ]}
-                            opacity={[
-                                0,
-                                2.5
-                            ]}
-                        >
-                            <div className="card">
-                                <img className="img" src="https://iiitd.ac.in/sites/default/files/images/admin/staff/raju.jpg" alt="" />
-                                <div className="designation">
-                                    <div className="name">RAJU BISWAS</div>
-                                    <div className="des">Junior Manager (Academics)</div>
-                                </div>
-                            </div>
-                        </Parallax>
-                    </div>
-                </div>
-            </div>
+            </ParallaxBanner>
             <div className="containerTeam">
                 <div className="adminInternational">
                     <Parallax
@@ -433,7 +455,7 @@ const AcademicTeam = () => {
                 </div>
             </div>
             <Footer />
-        </div>
+        </div >
     )
 }
 
