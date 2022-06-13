@@ -18,7 +18,7 @@ const Classrooms = () => {
   return (
     <ParallaxBanner
       style={{
-        height: '100vh',
+        height: size > 1200 ? '700px' : size > 800 ? '500px' : size > 500 ? '400px' : '350px',
         width: 'auto'
       }}
       layers={[
@@ -31,8 +31,8 @@ const Classrooms = () => {
                 position: 'absolute',
                 top: 0,
                 left: 0,
-                width: '100%',
-                height: '100%'
+                paddingLeft: '7vw',
+                width: '95%',
               }}
               preload="auto"
               muted
@@ -46,20 +46,20 @@ const Classrooms = () => {
         <div className={size > 800 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'} style={{ marginBottom: "35vh" }}>Classrooms</div>
         <div className="classContainer">
           <a style={{ textDecoration: 'none' }} href='./Old.jpg'>
-            <div className="cell">
-              <img className="old" src="https://www.highereducationdigest.com/wp-content/uploads/2020/02/IIIT-D-768x461.jpg" alt="" />
+            <div className={size > 1200 ? "cell" : size > 900 ? "smallCell" : "vSmallCell"}>
+              <img className={size > 1200 ? "old" : size > 900 ? "smallOld" : "vSmallOld"} src="https://www.highereducationdigest.com/wp-content/uploads/2020/02/IIIT-D-768x461.jpg" alt="" />
               <div>Academic Building</div>
             </div>
           </a>
           <a style={{ textDecoration: 'none' }} href="./Lhc.jpg">
-            <div className="cell">
-              <img className='lhc' src="https://iiitd.ac.in/gallery/assets/img/Institute/institute19-1.jpg" alt="" />
+            <div className={size > 1200 ? "cell" : size > 900 ? "smallCell" : "vSmallCell"}>
+              <img className={size > 1200 ? "lhc" : size > 900 ? "smallLhc" : "vSmallLhc"} src="https://iiitd.ac.in/gallery/assets/img/Institute/institute19-1.jpg" alt="" />
               <div>Lecture Hall Complex</div>
             </div>
           </a>
           <a style={{ textDecoration: 'none' }} href="./R&d.jpg">
-            <div className="cell">
-              <img className="lhc" src="https://images.shiksha.com/mediadata/images/articles/1607484338php8JZWhd.jpeg" alt="" />
+            <div className={size > 1200 ? "cell" : size > 900 ? "smallCell" : "vSmallCell"}>
+              <img className={size > 1200 ? "lhc" : size > 900 ? "smallLhc" : "vSmallLhc"} src="https://images.shiksha.com/mediadata/images/articles/1607484338php8JZWhd.jpeg" alt="" />
               <div>R & D Building</div>
             </div>
           </a>

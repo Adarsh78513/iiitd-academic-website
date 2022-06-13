@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import '../styles/Student.css'
+import '../styles/alumni.css'
 import { ParallaxBanner } from 'react-scroll-parallax';
 import { Link } from 'react-router-dom'
 
@@ -17,7 +17,7 @@ const Alumni = ({ certificate, setCertificate }) => {
     return (
         <div className='page'>
             <ParallaxBanner
-                style={{ height: '80vh' }}
+                style={{ height: size > 800 ? '550px' : size > 600 ? '450px' : '400px' }}
                 layers={[
                     {
                         image:
@@ -26,34 +26,36 @@ const Alumni = ({ certificate, setCertificate }) => {
                     },
                 ]}
             >
-                <div className={size > 800 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'} style={{ margin: "3vh" }}>Alumni</div>
-                <div className="rows">
+                <div className={size > 820 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'}>Alumni</div>
+                <div className={size > 820 ? 'alumni' : size > 600 ? 'smallAlumni' : 'vSmallAlumni'}>
+                    <div className="rows">
 
-                    <div className="section">
-                        <div className="subHeading">Issue of Various Certificates</div>
-                        <div className="projectLinks" style={{ cursor: 'pointer' }} onClick={() => { setCertificate(true) }}>Transcript, Duplicate Degree, Other Certificates</div>
+                        <div className="section">
+                            <div className="subHeading">Issue of Various Certificates</div>
+                            <div className="projectLinks" style={{ cursor: 'pointer' }} onClick={() => { setCertificate(true) }}>Transcript, Duplicate Degree, Other Certificates</div>
+                        </div>
+
+                        <div className="section">
+                            <div className="subHeading">Alumni Networking</div>
+                            <a className="projectLinks" href="https://alumni.iiitd.ac.in/">Alumni website</a>
+                            <a className="projectLinks" href="https://iiitdelhi.almaconnect.com/">Join Alumni Community</a>
+                            <a className="projectLinks" href="https://www.iiitd.ac.in/sites/default/files/alumnifaq.html">FAQs</a>
+                        </div>
+                    </div >
+
+                    <div className="rows">
+
+                        <div className="section">
+                            <div className="subHeading">Mentoring Students</div>
+                            <a className="projectLinks" href="https://awards.iiitd.edu.in/">SMP Website</a>
+                        </div>
+
+                        <div className="section">
+                            <div className="subHeading">Academic Experience</div>
+                            <a className="projectLinks" href="https://www.iiitd.ac.in/shareacademicexperiences/">Share Your Experiennce</a>
+                        </div>
+
                     </div>
-
-                    <div className="section">
-                        <div className="subHeading">Connect with Alumni Network</div>
-                        <a className="projectLinks" href="https://alumni.iiitd.ac.in/">Alumni website</a>
-                        <a className="projectLinks" href="https://iiitdelhi.almaconnect.com/">Join Alumni Community</a>
-                        <a className="projectLinks" href="https://www.iiitd.ac.in/sites/default/files/alumnifaq.html">FAQs</a>
-                    </div>
-                </div >
-
-                <div className="rows">
-
-                    <div className="section">
-                        <div className="subHeading">Mentoring IIIT-D's Students</div>
-                        <a className="projectLinks" href="https://awards.iiitd.edu.in/">SMP Website</a>
-                    </div>
-
-                    <div className="section">
-                        <div className="subHeading">Share Experience of Academics@IIIT-Delhi</div>
-                        <a className="projectLinks" href="https://www.iiitd.ac.in/shareacademicexperiences/">Share Your Experiennce</a>
-                    </div>
-
                 </div>
             </ParallaxBanner >
         </div >

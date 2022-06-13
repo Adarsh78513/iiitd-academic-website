@@ -17,7 +17,7 @@ const Faculty = () => {
     return (
         <div className='page' style={{ backgroundColor: " rgb(239, 239, 240)" }}>
 
-            <div className={size > 800 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'}>For IIITD Faculty</div>
+            <div className={size > 820 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'}>For IIITD Faculty</div>
             <div className="rows">
 
                 <Parallax
@@ -32,7 +32,7 @@ const Faculty = () => {
                     ]}
 
                 >
-                    <div className={size > 800 ? 'faculty' : size > 500 ? 'smallFaculty' : 'vSmallFaculty'}>
+                    <div className={size > 820 ? 'faculty' : size > 500 ? 'smallFaculty' : 'vSmallFaculty'}>
                         <div className="section">
                             <div className="subHeading">Teaching & Learning</div>
                             <a className="projectLinks" href="https://iiitd.ac.in/iqac">IQAC</a>
@@ -52,7 +52,7 @@ const Faculty = () => {
                         2
                     ]}
                 >
-                    <div className={size > 800 ? 'faculty' : size > 500 ? 'smallFaculty' : 'vSmallFaculty'}>
+                    <div className={size > 820 ? 'faculty' : size > 500 ? 'smallFaculty' : 'vSmallFaculty'}>
                         <div className="section">
                             <div className="subHeading"> Guidelines</div>
                             <a className="projectLinks" href="https://academics.iiitd.edu.in/iiitdfaculty.html">SOP</a>
@@ -72,7 +72,7 @@ const Faculty = () => {
                         2
                     ]}
                 >
-                    <div className={size > 800 ? 'faculty' : size > 500 ? 'smallFaculty' : 'vSmallFaculty'}>
+                    <div className={size > 820 ? 'faculty' : size > 500 ? 'smallFaculty' : 'vSmallFaculty'}>
                         <div className="section">
                             <div className="subHeading">Academic Regulations</div>
                             <a className="projectLinks" href="https://iiitd.ac.in/academics/resources">Regulations</a>
@@ -93,7 +93,7 @@ const Faculty = () => {
                         2
                     ]}
                 >
-                    <div className={size > 800 ? 'faculty' : size > 500 ? 'smallFaculty' : 'vSmallFaculty'}>
+                    <div className={size > 820 ? 'faculty' : size > 500 ? 'smallFaculty' : 'vSmallFaculty'}>
                         <div className="section">
                             <div className="subHeading">Meeting Minutes</div>
                             <a className="projectLinks" href="https://academics.iiitd.edu.in/meetings/list.php">Minutes</a>
@@ -112,7 +112,7 @@ const Faculty = () => {
                         2
                     ]}
                 >
-                    <div className={size > 800 ? 'faculty' : size > 500 ? 'smallFaculty' : 'vSmallFaculty'}>
+                    <div className={size > 820 ? 'faculty' : size > 500 ? 'smallFaculty' : 'vSmallFaculty'}>
                         <div className="section">
                             <div className="subHeading"> Point of Contact</div>
                             <a className="projectLinks" href="https://academics.iiitd.edu.in/iiitd-acad-team.html">Academic Team</a>
@@ -131,7 +131,7 @@ const Faculty = () => {
                         2
                     ]}
                 >
-                    <div className={size > 800 ? 'faculty' : size > 500 ? 'smallFaculty' : 'vSmallFaculty'}>
+                    <div className={size > 820 ? 'faculty' : size > 500 ? 'smallFaculty' : 'vSmallFaculty'}>
                         <div className="section">
                             <div className="subHeading">Awards</div>
                             <a className="projectLinks" href="https://awards.iiitd.edu.in/">Awards</a>
@@ -151,7 +151,7 @@ const Faculty = () => {
                         2
                     ]}
                 >
-                    <div className={size > 800 ? 'faculty' : size > 500 ? 'smallFaculty' : 'vSmallFaculty'}>
+                    <div className={size > 820 ? 'faculty' : size > 500 ? 'smallFaculty' : 'vSmallFaculty'}>
                         <div className="section">
                             <div className="subHeading">FAQs</div>
                             <a className="projectLinks" href="https://academics.iiitd.edu.in/iiitdfaculty.html#">FAQ</a>

@@ -1,0 +1,21 @@
+.smallAlumni .subHeading{
+    font-size: 20px;
+}
+.smallAlumni .projectLinks{
+    font-size: 15px;
+}
+.vSmallAlumni .rows{
+    display: block;
+    padding-left: 20vw;
+    padding-top: 0;
+    margin-top: 0;
+}
+.vSmallAlumni .section{
+    width: 60vw;
+}
+.vSmallAlumni .subHeading{
+    font-size: 15px;
+}
+.vSmallAlumni .projectLinks{
+    font-size: 10px;
+}

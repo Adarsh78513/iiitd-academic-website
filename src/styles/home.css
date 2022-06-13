@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 .aboutUsContainer{
     padding-top: 4vh;
     padding-bottom: 4vh;
@@ -168,10 +171,10 @@
     padding-right: 10vw;
 }
 .smallResource .section{
-    font-size: 15px;
+    font-size: 18px;
 }
 .smallResource .subHeading{
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 600;
     color: rgb(3, 168, 163);
 }
@@ -185,10 +188,10 @@
 }
 .vSmallResource .section{
     width: 60vw;
-    font-size: 15px;
+    font-size: 13px;
 }
 .vSmallResource .subHeading{
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 600;
     color: rgb(3, 168, 163);
 }

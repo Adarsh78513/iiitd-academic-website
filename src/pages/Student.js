@@ -17,7 +17,7 @@ const Student = () => {
     return (
         <div className='page' style={{ backgroundImage: '/IIITD_building.jpg' }}>
             <ParallaxBanner
-                style={{ height: size > 930 ? '650px' : size > 690 ? '500px' : '1000px' }}
+                style={{ height: size > 930 ? '650px' : size > 690 ? '500px' : size > 500 ? '1000px' : '750px' }}
                 layers={[
                     {
                         image:
@@ -26,7 +26,7 @@ const Student = () => {
                     },
                 ]}
             >
-                <div className={size > 800 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'}>Students</div>
+                <div className={size > 820 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'}>Students</div>
                 <div className={size > 690 ? "rows" : "smallRow"}>
 
                     <Parallax

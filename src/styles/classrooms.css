@@ -1,23 +1,64 @@
 .classContainer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 90vw;
+    padding-left: 10vw;
     /* margin-bottom: 1.5vh; */
 }
 .cell{
     background-color: rgba(8, 8, 8, 0);
-    margin: 1vw;
-    width: 26vw;
-    height: 50vh;
     transition: transform .5s;
     text-decoration: none;
     color:white;
-    font-size: 2vw;
+    font-size: 30px;
     font-weight: 700;
     -webkit-transition: transform .5s;
     -moz-transition: transform .5s;
     -ms-transition: transform .5s;
     -o-transition: transform .5s;
-    position: relative;
+    position:relative;
+}
+.smallCell{
+    background-color: rgba(8, 8, 8, 0);
+    transition: transform .5s;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-weight: 700;
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -ms-transition: transform .5s;
+    -o-transition: transform .5s;
+    position:relative;
+}
+.vSmallCell{
+    background-color: rgba(8, 8, 8, 0);
+    transition: transform .5s;
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+    font-weight: 700;
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -ms-transition: transform .5s;
+    -o-transition: transform .5s;
+    position:relative;
+}
+.smallCell:hover{
+    background-color:rgba(178, 222, 220, 0);
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+}
+.vSmallCell:hover{
+    background-color:rgba(178, 222, 220, 0);
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
 }
 .cell:hover{
     background-color:rgba(178, 222, 220, 0);
@@ -31,8 +72,27 @@
     position: relative;
 }
 .old{
-    width: 15vw;
-    margin-top: 20vh;
+    width: 16vw;
+    margin-top: 140px;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.smallOld{
+    width: 16vw;
+    margin-top: 40px;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.vSmallOld{
+    width: 16vw;
     margin-bottom: 2vh;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -42,7 +102,26 @@
 }
 .lhc{
     width: 15vw;
-    margin-top: 20vh;
+    margin-top: 140px;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.smallLhc{
+    width: 15vw;
+    margin-top: 40px;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.vSmallLhc{
+    width: 15vw;
     margin-bottom: 2vh;
     border-radius: 10px;
     -webkit-border-radius: 10px;

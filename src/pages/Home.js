@@ -81,7 +81,7 @@ const Home = () => {
                                         <div className={size > 800 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
                                             <img src='./team.png' alt="" />
                                         </div>
-                                        Academic Administration
+                                        Administration
                                     </div>
                                 </a>
                             </div>
@@ -108,7 +108,7 @@ const Home = () => {
                         </div>
                     </div>
                     <ParallaxBanner
-                        style={{ height: size > 700 ? '40vh' : '70vh', paddingTop: '1vh' }}
+                        style={{ height: size > 1000 ? '300px' : size > 700 ? '280px' : '400px', paddingTop: '1vh' }}
                         layers={[
                             {
                                 image:
@@ -121,10 +121,10 @@ const Home = () => {
 
                             <Parallax
                                 className="Parallax-module__smallLinear--MqSo+"
-                                // translateX={[
-                                //     '40%',
-                                //     '-30%'
-                                // ]}
+                                translateX={[
+                                    '-20%',
+                                    '15%'
+                                ]}
                                 opacity={[
                                     0,
                                     2.5
@@ -144,10 +144,10 @@ const Home = () => {
                             </Parallax>
                             <Parallax
                                 className="Parallax-module__smallLinear--MqSo+"
-                                // translateX={[
-                                //     '-0%',
-                                //     '0%'
-                                // ]}
+                                translateX={[
+                                    '-0%',
+                                    '0%'
+                                ]}
                                 opacity={[
                                     0,
                                     2.5
@@ -165,10 +165,10 @@ const Home = () => {
                             </Parallax>
                             <Parallax
                                 className="Parallax-module__smallLinear--MqSo+"
-                                // translateX={[
-                                //     '-40%',
-                                //     '20%'
-                                // ]}
+                                translateX={[
+                                    '20%',
+                                    '-15%'
+                                ]}
                                 opacity={[
                                     0,
                                     2.5
@@ -192,15 +192,17 @@ const Home = () => {
                     <div className={size > 680 ? "internal" : "internalSmall"}>
                         <Parallax
                             className="Parallax-module__smallLinear--MqSo+"
-                            translateX={[
-                                '-20%',
-                                '15%'
-                            ]}
+                            // translateX={[
+                            //     '-0%',
+                            //     '0%'
+                            // ]}
                             opacity={[
                                 0,
                                 2.5
                             ]}
+
                         >
+
                             <div className="section">
                                 <a href="https://iiitd.ac.in/form_docs" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
                                     <div className="">
@@ -214,15 +216,17 @@ const Home = () => {
                         </Parallax>
                         <Parallax
                             className="Parallax-module__smallLinear--MqSo+"
-                            translateX={[
-                                '0%',
-                                '0%'
-                            ]}
+                            // translateX={[
+                            //     '-0%',
+                            //     '0%'
+                            // ]}
                             opacity={[
                                 0,
                                 2.5
                             ]}
+
                         >
+
                             <div className="section">
                                 <a href="https://erp.iiitd.edu.in/" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
                                     <div className="">
@@ -234,17 +238,20 @@ const Home = () => {
                                 </a>
                             </div>
                         </Parallax>
+
                         <Parallax
                             className="Parallax-module__smallLinear--MqSo+"
-                            translateX={[
-                                '20%',
-                                '-15%'
-                            ]}
+                            // translateX={[
+                            //     '-0%',
+                            //     '0%'
+                            // ]}
                             opacity={[
                                 0,
                                 2.5
                             ]}
+
                         >
+
                             <div className="section">
                                 <a href="http://academics.iiitd.edu.in/meetings/list.php" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
                                     <div className="">
