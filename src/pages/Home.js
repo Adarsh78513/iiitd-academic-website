@@ -69,47 +69,99 @@ const Home = () => {
 
                     <div className="academics">
                         <div className={size > 885 ? "academic" : "academicSmall"}>
-                            <div className={size > 885 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
-                                <div className="section">
-                                    <div to="/academicTeam" style={{ textDecoration: 'none', color: 'white' }}
-                                        onClick={() => { setAcademicTeam(true) }}>
-                                        <img src='./group.png' alt="" />
+                            <Parallax
+                                className="Parallax-module__smallLinear--MqSo+"
+                                // translateX={[
+                                //     '-0%',
+                                //     '0%'
+                                // ]}
+                                opacity={[
+                                    0.5,
+                                    2.5
+                                ]}
+
+                            >
+
+                                <div className={size > 885 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                                    <div className="section">
+                                        <div to="/academicTeam" style={{ textDecoration: 'none', color: 'white' }}
+                                            onClick={() => { setAcademicTeam(true) }}>
+                                            <img src='./group.png' alt="" />
+                                        </div>
+                                        Academic Team
                                     </div>
-                                    Academic Team
                                 </div>
-                            </div>
-                            <div className={size > 885 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
-                                <div className="section">
-                                    <a href='https://iiitd.ac.in/academics/academic-administration' style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
-                                        <div className="">
-                                            <img src='./team.png' alt="" />
-                                        </div>
-                                        Administration
-                                    </a>
-                                </div>
-                            </div>
-                            <div className={size > 885 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
-                                <div className="section">
-                                    <a href='https://iiitd.ac.in/academics/issue-resolution' style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
-                                        <div className="">
-                                            <img src='./question.png' alt="" />
-                                        </div>
-                                        Issue Resolution
+                            </Parallax>
+                            <Parallax
+                                className="Parallax-module__smallLinear--MqSo+"
+                                // translateX={[
+                                //     '-0%',
+                                //     '0%'
+                                // ]}
+                                opacity={[
+                                    0.5,
+                                    2.5
+                                ]}
 
-                                    </a>
+                            >
+                                <div className={size > 885 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                                    <div className="section">
+                                        <a href='https://iiitd.ac.in/academics/academic-administration' style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                                            <div className="">
+                                                <img src='./team.png' alt="" />
+                                            </div>
+                                            Administration
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className={size > 885 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
-                                <div className="section">
-                                    <a href="https://iiitd.ac.in/academics/resources" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
-                                        <div className="">
-                                            <img src='./document.png' alt="" />
-                                        </div>
-                                        Regulations
-                                    </a>
-                                </div>
-                            </div>
+                            </Parallax>
+                            <Parallax
+                                className="Parallax-module__smallLinear--MqSo+"
+                                // translateX={[
+                                //     '-0%',
+                                //     '0%'
+                                // ]}
+                                opacity={[
+                                    0.5,
+                                    2.5
+                                ]}
 
+                            >
+                                <div className={size > 885 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                                    <div className="section">
+                                        <a href='https://iiitd.ac.in/academics/issue-resolution' style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                                            <div className="">
+                                                <img src='./question.png' alt="" />
+                                            </div>
+                                            Issue Resolution
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </Parallax>
+                            <Parallax
+                                className="Parallax-module__smallLinear--MqSo+"
+                                // translateX={[
+                                //     '-0%',
+                                //     '0%'
+                                // ]}
+                                opacity={[
+                                    0.5,
+                                    2.5
+                                ]}
+
+                            >
+                                <div className={size > 885 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                                    <div className="section">
+                                        <a href="https://iiitd.ac.in/academics/resources" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
+                                            <div className="">
+                                                <img src='./document.png' alt="" />
+                                            </div>
+                                            Regulations
+                                        </a>
+                                    </div>
+                                </div>
+                            </Parallax>
                         </div>
                     </div>
                     <ParallaxBanner
@@ -207,7 +259,7 @@ const Home = () => {
                             ]}
 
                         >
-                            <div className={size > 800 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                            <div className={size > 700 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
 
                                 <div className="section">
                                     <a href="https://iiitd.ac.in/form_docs" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
@@ -232,7 +284,7 @@ const Home = () => {
                             ]}
 
                         >
-                            <div className={size > 800 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                            <div className={size > 700 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
                                 <div className="section">
                                     <a href="https://erp.iiitd.edu.in/" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">
                                         <div className="">
@@ -256,7 +308,7 @@ const Home = () => {
                             ]}
 
                         >
-                            <div className={size > 800 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
+                            <div className={size > 700 ? "team" : size > 500 ? "smallTeam" : "vSmallTeam"}>
 
                                 <div className="section">
                                     <a href="http://academics.iiitd.edu.in/meetings/list.php" style={{ textDecoration: 'none', color: 'white' }} target="_blank" rel="noreferrer">

@@ -87,35 +87,10 @@ body{
 .academicSmall .section{
     width: 60vw;
 }
-.academicTeam{
-    background-color: rgb(10, 1, 61);
-    color:white;
-    height: 30vh;
-    font-size: 20px;
-    font-weight: 500;
-    width: 15vw;
-    transition: transform .2s;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    -webkit-transition: transform .2s;
-    -moz-transition: transform .2s;
-    -ms-transition: transform .2s;
-    -o-transition: transform .2s;
-}
-.academicTeam:hover{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
 .team .section{
     padding-top: 2vh;
     padding-bottom: 2vh;
-    font-size: 20px;
+    /* font-size: 20px; */
     width: 20vw;
     color: white;
 }
@@ -127,23 +102,22 @@ body{
     padding-top: 2vh;
     padding-bottom: 2vh;
     margin-left: 15vw;
-    font-size: 15px;
     width: 30vw;
     color: white;
 }
-.smallTeam img{
+.smallTeam .section img{
     max-width: 40%;
     margin-bottom: 2vh;
 }
 .vSmallTeam .section{
     padding-top: 2vh;
     padding-bottom: 2vh;
-    font-size: 10px;
+    font-size: 12px;
     width: 30vw;
     margin-left:15vw ;
     color: white;
 }
-.vSmallTeam img{
+.vSmallTeam .section img{
     max-width: 30%;
     margin-bottom: 2vh;
 }
@@ -153,13 +127,21 @@ body{
     display:flex;
     justify-content: space-between;
     width: 90vw;
-    padding-left: 6vw;
+    padding-left: 10vw;
+}
+.internal .section{
+    margin: 2vw;
 }
 .internalSmall{
-    padding-left: 6vw;
+    padding-top: 3vh;
+    padding-bottom: 4vh;
+    display:flex;
+    justify-content: space-evenly;
+    width: 90vw;
+    padding-left: 8vw;
 }
 .internalSmall .section{
-    width: 60vw;
+    margin: 1vw;
 }
 .resource{
     background-color:  rgb(239, 239, 240);
@@ -168,7 +150,7 @@ body{
     display:flex;
     justify-content: space-between;
     margin-top: 2vh;
-    padding-left: 7vw;
+    padding-left: 6vw;
     padding-right: 10vw;
 }
 .smallResource{
@@ -178,7 +160,7 @@ body{
     display:flex;
     justify-content: space-between;
     margin-top: 2vh;
-    padding-left: 7vw;
+    padding-left: 6vw;
     padding-right: 10vw;
 }
 .smallResource .section{
