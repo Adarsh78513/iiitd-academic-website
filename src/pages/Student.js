@@ -43,8 +43,8 @@ const Student = ({ setBeforeArrive, setAcademicTeam }) => {
                         <div className={size > 930 ? 'student' : size > 500 ? 'smallStudent' : 'vSmallStudent'}>
                             <div className="section">
                                 <div className="subHeading">New Students</div>
-                                <div className="projectLinks" onClick={() => { setAcademicTeam(true) }} style={{ cursor: 'pointer' }}>Primary Contact</div>
-                                <div className="projectLinks" onClick={() => { setBeforeArrive(true) }} style={{ cursor: 'pointer' }}>Before you arrive</div>
+                                <a className="projectLinks" onClick={() => { setAcademicTeam(true) }} style={{ cursor: 'pointer' }}>Primary Contact</a>
+                                <a className="projectLinks" onClick={() => { setBeforeArrive(true) }} style={{ cursor: 'pointer' }}>Before you arrive</a>
                                 <a className="projectLinks" href="http://online.fliphtml5.com/npkwf/zpfc/#p=1">Student Handbook</a>
                             </div>
                         </div>
