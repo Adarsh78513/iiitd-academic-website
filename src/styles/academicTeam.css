@@ -12,35 +12,47 @@
     color: black;
     text-align: left;
     padding-left: 1vw;
+    padding-bottom: 1.5vh;
+}
+.smallSubTeam{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    text-align: left;
+    padding-left: 1vw;
+    padding-bottom: 1.5vh;
+    
+}
+.vSmallSubTeam{
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    text-align: left;
+    padding-left: 1vw;
+    padding-bottom: 1.5vh;
 }
 .dean{
-    width: 40vw;
     height: 52vh;
     margin: 1vw;
 }
 .adminAcademic{
-    width: 40vw;
     height: 52vh;
     margin: 1vw;
 }
 .adminBTech{
-    width: 82vw;
     height: 52vh;
     margin: 1vw;
 }
 .adminMTech{
-    width: 40vw;
     height: 52vh;
     margin: 1vw;
 }
 .adminPhD{
-    width: 40vw;
     height: 52vh;
     margin: 1vw;
 }
 
 .adminInternational{
-    width: 30vw;
     height: 52vh;
     margin: 1vw;
 }
@@ -51,12 +63,10 @@
     text-align: left;
 }
 .support{
-    width: 50vw;
     height: 52vh;
     margin: 1vw;
 }
 .card{
-    width: 18vw;
     height: 42vh;
     padding-top: 1vh;
     margin: 1vw;
@@ -68,6 +78,60 @@
     -ms-transition: transform .2s;
     -o-transition: transform .2s;
 }
+.smallCard{
+    height: 200px;
+    padding-top: 1vh;
+    margin: 1vw;
+    background-color: rgb(8, 8, 8);
+    align-items: center;
+    transition: transform .2s;
+    -webkit-transition: transform .2s;
+    -moz-transition: transform .2s;
+    -ms-transition: transform .2s;
+    -o-transition: transform .2s;
+}
+.smallCard .img{
+    height: 20vh;
+    width: 70%;
+}
+.smallCard .name{
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+}
+.smallCard .designation{
+    width: 18vw;
+    padding-top: 1vh;
+    color: white;
+    font-size: 10px;
+}
+.vSmallCard{
+    height: 106px;
+    padding-top: 1vh;
+    margin: 1vw;
+    background-color: rgb(8, 8, 8);
+    align-items: center;
+    transition: transform .2s;
+    -webkit-transition: transform .2s;
+    -moz-transition: transform .2s;
+    -ms-transition: transform .2s;
+    -o-transition: transform .2s;
+}
+.vSmallCard .img{
+    height: 10vh;
+    width: 70%;
+}
+.vSmallCard .name{
+    text-align: center;
+    font-weight: 600;
+    font-size: 6px;
+}
+.vSmallCard .designation{
+    width: 18vw;
+    padding-top: 1vh;
+    color: white;
+    font-size: 4px;
+}
 .card:hover{
     transform: scale(1.1);
     background-color:  rgb(3, 168, 163);
@@ -76,9 +140,9 @@
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
-.cardContainer img{
+.card .img{
     height: 30vh;
-    width: 15vw;
+    width: 70%;
     margin-top: 1vh;
     border: 2px;
     border-top: 10px;
@@ -86,8 +150,8 @@
 .designation{
     width: 18vw;
     padding-top: 1vh;
-    color: white;;
-    height: 12vh;
+    color: white;
+    font-size: 15px;
 }
 .name{
     text-align: center;
