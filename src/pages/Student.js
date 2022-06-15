@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import '../styles/Student.css'
 import { Parallax, ParallaxBanner } from 'react-scroll-parallax';
 
-const Student = ({ setBeforeArrive, setAcademicTeam }) => {
+const Student = ({ setBeforeArrive, setAcademicTeam, setFAQ }) => {
 
     const [size, setSize] = useState(window.innerWidth)
 
@@ -159,9 +159,9 @@ const Student = ({ setBeforeArrive, setAcademicTeam }) => {
                         <div className={size > 930 ? 'student' : size > 500 ? 'smallStudent' : 'vSmallStudent'}>
                             <div className="section">
                                 <div className="subHeading">FAQ</div>
-                                <a className="projectLinks" href="https://academics.iiitd.edu.in/faq-all.html">Ph.D.</a>
-                                <a className="projectLinks" href="https://academics.iiitd.edu.in/faq-all.html">M.Tech.</a>
-                                <a className="projectLinks" href="https://docs.google.com/spreadsheets/d/1w85BGovNseeoUiKojVfF8NYx4NBOw_5UfrIc6ALt4Yo/edit#gid=1213820881">B.Tech.</a>
+                                <a className="projectLinks" style={{ cursor: 'pointer' }} onClick={() => { setFAQ(true) }}>Ph.D.</a>
+                                <a className="projectLinks" style={{ cursor: 'pointer' }} onClick={() => { setFAQ(true) }}>M.Tech.</a>
+                                <a className="projectLinks" style={{ cursor: 'pointer' }} onClick={() => { setFAQ(true) }}>B.Tech.</a>
                             </div>
                         </div>
                     </Parallax >

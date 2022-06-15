@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 import { Link as LINK } from 'react-router-dom'
 import { Collapse } from 'react-collapse';
 
-const Navbar = ({ home, student, faculty, alumni, projects, report, convocation, classroom, contact, academicTeam, setAcademicTeam, certificate, setCertificate, beforeArrive, setBeforeArrive }) => {
+const Navbar = ({ home, student, faculty, alumni, projects, report, convocation, classroom, contact, academicTeam, setAcademicTeam, certificate, setCertificate, beforeArrive, setBeforeArrive, FAQ, setFAQ }) => {
     const [size, setSize] = useState(window.innerWidth)
     const [isOpened, setIsOpened] = useState(false)
     const [navbarHome, setNavbarHome] = useState('navbarHomeChange');
@@ -158,6 +158,8 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             }
                             if (beforeArrive) {
                                 setBeforeArrive(false);
+                            } if (FAQ) {
+                                setFAQ(false);
                             } scrollDown(e, home)
                         }}
                         className={navbarHome}
@@ -181,6 +183,8 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             }
                             if (beforeArrive) {
                                 setBeforeArrive(false);
+                            } if (FAQ) {
+                                setFAQ(false);
                             } scrollDown(e, student)
                         }}
                         className={navbarStudent}
@@ -204,6 +208,8 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             }
                             if (beforeArrive) {
                                 setBeforeArrive(false);
+                            } if (FAQ) {
+                                setFAQ(false);
                             } scrollDown(e, faculty)
                         }}
                         className={navbarFaculty}
@@ -227,6 +233,8 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             }
                             if (beforeArrive) {
                                 setBeforeArrive(false);
+                            } if (FAQ) {
+                                setFAQ(false);
                             } scrollDown(e, alumni)
                         }}
                         className={navbarAlumni}
@@ -250,6 +258,8 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             }
                             if (beforeArrive) {
                                 setBeforeArrive(false);
+                            } if (FAQ) {
+                                setFAQ(false);
                             } scrollDown(e, projects)
                         }}
                         className={navbarProjects}
@@ -273,6 +283,8 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             }
                             if (beforeArrive) {
                                 setBeforeArrive(false);
+                            } if (FAQ) {
+                                setFAQ(false);
                             } scrollDown(e, report)
                         }}
                         className={navbarReport}
@@ -296,6 +308,8 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             }
                             if (beforeArrive) {
                                 setBeforeArrive(false);
+                            } if (FAQ) {
+                                setFAQ(false);
                             } scrollDown(e, convocation)
                         }}
                         className={navbarConvocation}
@@ -319,6 +333,8 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             }
                             if (beforeArrive) {
                                 setBeforeArrive(false);
+                            } if (FAQ) {
+                                setFAQ(false);
                             } scrollDown(e, classroom)
                         }}
                         className={navbarClassroom}
@@ -342,6 +358,8 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                             }
                             if (beforeArrive) {
                                 setBeforeArrive(false);
+                            } if (FAQ) {
+                                setFAQ(false);
                             } scrollDown(e, contact)
                         }}
                         className={navbarContact}
@@ -368,6 +386,8 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 }
                                 if (beforeArrive) {
                                     setBeforeArrive(false);
+                                } if (FAQ) {
+                                    setFAQ(false);
                                 } scrollDown(e, home)
                             }}
                             style={{
@@ -392,6 +412,8 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 }
                                 if (beforeArrive) {
                                     setBeforeArrive(false);
+                                } if (FAQ) {
+                                    setFAQ(false);
                                 } scrollDown(e, student)
                             }}
                             className={navbarStudent}
@@ -418,6 +440,8 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 }
                                 if (beforeArrive) {
                                     setBeforeArrive(false);
+                                } if (FAQ) {
+                                    setFAQ(false);
                                 } scrollDown(e, faculty)
                             }}
                             className={navbarFaculty}
@@ -443,6 +467,8 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 }
                                 if (beforeArrive) {
                                     setBeforeArrive(false);
+                                } if (FAQ) {
+                                    setFAQ(false);
                                 } scrollDown(e, alumni)
                             }}
                             className={navbarAlumni}
@@ -469,6 +495,8 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 }
                                 if (beforeArrive) {
                                     setBeforeArrive(false);
+                                } if (FAQ) {
+                                    setFAQ(false);
                                 } scrollDown(e, projects)
                             }}
                             className={navbarProjects}
@@ -495,6 +523,8 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 }
                                 if (beforeArrive) {
                                     setBeforeArrive(false);
+                                } if (FAQ) {
+                                    setFAQ(false);
                                 } scrollDown(e, report)
                             }}
                             className={navbarReport}
@@ -521,6 +551,8 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 }
                                 if (beforeArrive) {
                                     setBeforeArrive(false);
+                                } if (FAQ) {
+                                    setFAQ(false);
                                 } scrollDown(e, convocation)
                             }}
                             className={navbarConvocation}
@@ -547,6 +579,8 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 }
                                 if (beforeArrive) {
                                     setBeforeArrive(false);
+                                } if (FAQ) {
+                                    setFAQ(false);
                                 } scrollDown(e, classroom)
                             }}
                             className={navbarClassroom}
@@ -573,6 +607,8 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
                                 }
                                 if (beforeArrive) {
                                     setBeforeArrive(false);
+                                } if (FAQ) {
+                                    setFAQ(false);
                                 } scrollDown(e, contact)
                             }}
                             className={navbarContact}

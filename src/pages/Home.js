@@ -17,7 +17,7 @@ import { Parallax, ParallaxBanner } from 'react-scroll-parallax';
 import AcademicTeam from './AcademicTeam'
 import Certificates from './Certificates'
 import BeforeYouArrive from './BeforeYouArrive'
-
+import Faq from './Faq'
 
 const Home = () => {
     const home = useRef(null);
@@ -33,7 +33,7 @@ const Home = () => {
     const [academicTeam, setAcademicTeam] = useState(false)
     const [certificate, setCertificate] = useState(false)
     const [beforeArrive, setBeforeArrive] = useState(false)
-
+    const [FAQ, setFAQ] = useState(false)
     useEffect(() => {
         const updateWindowDimensions = () => {
             setSize(window.innerWidth)
@@ -45,8 +45,8 @@ const Home = () => {
     return (
         <div className='homepage'>
             <Marquee />
-            <Navbar home={home} student={student} faculty={faculty} alumni={alumni} projects={projects} report={report} convocation={convocation} classroom={classroom} contact={contact} academicTeam={academicTeam} setAcademicTeam={setAcademicTeam} certificate={certificate} setCertificate={setCertificate} beforeArrive={beforeArrive} setBeforeArrive={setBeforeArrive} />
-            {academicTeam ? <AcademicTeam /> : certificate ? <Certificates /> : beforeArrive ? <BeforeYouArrive /> :
+            <Navbar home={home} student={student} faculty={faculty} alumni={alumni} projects={projects} report={report} convocation={convocation} classroom={classroom} contact={contact} academicTeam={academicTeam} setAcademicTeam={setAcademicTeam} certificate={certificate} setCertificate={setCertificate} beforeArrive={beforeArrive} setBeforeArrive={setBeforeArrive} FAQ={FAQ} setFAQ={setFAQ} />
+            {academicTeam ? <AcademicTeam /> : certificate ? <Certificates /> : beforeArrive ? <BeforeYouArrive /> : FAQ ? <Faq /> :
                 <div className='homepage-container'>
                     <div ref={home}></div>
                     <AdCarousel />
@@ -321,7 +321,7 @@ const Home = () => {
                             </div>
                         </Parallax>
                     </div>
-                    <div ref={student}><Student setBeforeArrive={setBeforeArrive} setAcademicTeam={setAcademicTeam} /></div>
+                    <div ref={student}><Student setBeforeArrive={setBeforeArrive} setAcademicTeam={setAcademicTeam} setFAQ={setFAQ} /></div>
                     <div ref={faculty}><Faculty /></div>
                     <div ref={alumni} ><Alumni certificate={certificate} setCertificate={setCertificate} /></div>
                     <div ref={projects}><StudentProjects /></div>
