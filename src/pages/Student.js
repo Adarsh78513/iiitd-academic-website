@@ -160,7 +160,9 @@ const Student = ({ setBeforeArrive, setAcademicTeam }) => {
                             <div className="section">
                                 <div className="subHeading">FAQ</div>
                                 <a className="projectLinks" href="https://academics.iiitd.edu.in/faq-all.html">Ph.D.</a>
+                                <a className="projectLinks" href="faq">Ph.D new</a>
                                 <a className="projectLinks" href="https://academics.iiitd.edu.in/faq-all.html">M.Tech.</a>
+                                <a className="projectLinks" href="faq">M.Tech new</a>
                                 <a className="projectLinks" href="https://docs.google.com/spreadsheets/d/1w85BGovNseeoUiKojVfF8NYx4NBOw_5UfrIc6ALt4Yo/edit#gid=1213820881">B.Tech.</a>
                             </div>
                         </div>
