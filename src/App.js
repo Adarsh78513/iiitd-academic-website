@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from './pages/Index';
 import Certificates from './pages/Certificates';
-import FAQ from './pages/FAQ';
+import FAQ from './pages/Faq';
 
 function App() {
   return (
