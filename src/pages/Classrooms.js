@@ -42,29 +42,29 @@ const Classrooms = () => {
         },
       ]}
     >
-      <div className='page classroom'>
-        <div className={size > 800 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'} style={{ marginBottom: "35vh" }}>Classrooms</div>
-        <div className="classContainer">
-          <a style={{ textDecoration: 'none' }} href='./Old.jpg'>
-            <div className={size > 1200 ? "cell" : size > 900 ? "smallCell" : "vSmallCell"}>
-              <img className={size > 1200 ? "old" : size > 900 ? "smallOld" : "vSmallOld"} src="https://www.highereducationdigest.com/wp-content/uploads/2020/02/IIIT-D-768x461.jpg" alt="" />
-              <div>Academic Building</div>
-            </div>
-          </a>
-          <a style={{ textDecoration: 'none' }} href="./Lhc.jpg">
-            <div className={size > 1200 ? "cell" : size > 900 ? "smallCell" : "vSmallCell"}>
-              <img className={size > 1200 ? "lhc" : size > 900 ? "smallLhc" : "vSmallLhc"} src="https://iiitd.ac.in/gallery/assets/img/Institute/institute19-1.jpg" alt="" />
-              <div>Lecture Hall Complex</div>
-            </div>
-          </a>
-          <a style={{ textDecoration: 'none' }} href="./R&d.jpg">
-            <div className={size > 1200 ? "cell" : size > 900 ? "smallCell" : "vSmallCell"}>
-              <img className={size > 1200 ? "lhc" : size > 900 ? "smallLhc" : "vSmallLhc"} src="https://images.shiksha.com/mediadata/images/articles/1607484338php8JZWhd.jpeg" alt="" />
-              <div>R & D Building</div>
-            </div>
-          </a>
-        </div>
+      {/* <div className='page classroom'> */}
+      <div className={size > 800 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'} style={{ marginBottom: "35vh" }}>Classrooms</div>
+      <div className="classContainer">
+        <a style={{ textDecoration: 'none' }} href='./Old.jpg'>
+          <div className={size > 1200 ? "cell" : size > 900 ? "smallCell" : "vSmallCell"}>
+            <img className={size > 1200 ? "old" : size > 900 ? "smallOld" : "vSmallOld"} src="https://www.highereducationdigest.com/wp-content/uploads/2020/02/IIIT-D-768x461.jpg" alt="" />
+            <div>Academic Building</div>
+          </div>
+        </a>
+        <a style={{ textDecoration: 'none' }} href="./Lhc.jpg">
+          <div className={size > 1200 ? "cell" : size > 900 ? "smallCell" : "vSmallCell"}>
+            <img className={size > 1200 ? "lhc" : size > 900 ? "smallLhc" : "vSmallLhc"} src="https://iiitd.ac.in/gallery/assets/img/Institute/institute19-1.jpg" alt="" />
+            <div>Lecture Hall Complex</div>
+          </div>
+        </a>
+        <a style={{ textDecoration: 'none' }} href="./R&d.jpg">
+          <div className={size > 1200 ? "cell" : size > 900 ? "smallCell" : "vSmallCell"}>
+            <img className={size > 1200 ? "lhc" : size > 900 ? "smallLhc" : "vSmallLhc"} src="https://images.shiksha.com/mediadata/images/articles/1607484338php8JZWhd.jpeg" alt="" />
+            <div>R & D Building</div>
+          </div>
+        </a>
       </div>
+      {/* </div> */}
     </ParallaxBanner>
 
   )

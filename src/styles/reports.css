@@ -1,8 +1,8 @@
 .smallReport .subHeading{
-    font-size: 23px;
+    font-size: 20px;
 }
 .smallReport .projectLinks{
-    font-size: 18px;
+    font-size: 15px;
 }
 .vSmallReport .rows{
     padding-top: 0;
@@ -13,8 +13,8 @@
     width: 60vw;
 }
 .vSmallReport .subHeading{
-    font-size: 18px;
+    font-size: 15px;
 }
 .vSmallReport .projectLinks{
-    font-size: 14px;
+    font-size: 10px;
 }

@@ -32,7 +32,7 @@ const Alumni = ({ certificate, setCertificate }) => {
 
                         <div className="section">
                             <div className="subHeading">Issue of Various Certificates</div>
-                            <div className="projectLinks" style={{ cursor: 'pointer' }} onClick={() => { setCertificate(true) }}>Transcript, Duplicate Degree, Other Certificates</div>
+                            <a className="projectLinks" style={{ cursor: 'pointer' }} onClick={() => { setCertificate(true) }}>Transcript, Duplicate Degree, Other Certificates</a>
                         </div>
 
                         <div className="section">

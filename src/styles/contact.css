@@ -171,6 +171,7 @@
 }
 .contactFormSmall .submit{
     width: 55vw;
+    font-size: 15px;
 }
 .submit:hover{
     color: rgb(3, 168, 163);
