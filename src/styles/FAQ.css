@@ -38,9 +38,9 @@ button{
     padding-right: 10vw;
 }
 
-li .question{
+div .question{
     /* font-weight: normal; */
 }
-li .answer{
+div .answer{
     font-weight: normal;
 }
