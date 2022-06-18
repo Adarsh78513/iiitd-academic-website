@@ -16,3 +16,33 @@
 .unselected{
     padding: 5px;
 }
+.faq{
+    transition: color 0.8s;
+    /* background-color: red; */
+}
+/* li{
+    font-weight: normal;
+} */
+.buttons{
+    padding: 5vh;
+    border-radius: 5px;
+    transition: color 0.8s;
+}
+button{
+    border-radius: 3px;
+    padding: 20vw;
+    /* transition: color 0.8s; */
+}
+.que{
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+div .question{
+    /* background-color: ; */
+    color: rgb(3, 168, 163);
+    /* font-weight: normal; */
+}
+div .answer{
+    font-weight: normal;
+}
