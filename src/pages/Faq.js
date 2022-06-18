@@ -71,12 +71,12 @@ const Faq = () => {
     return (
         <div>
             <div>
-                <button onClick={(e) => { switchBar(e, "registration") }}>Course & Registration </button>
-                <button onClick={(e) => { switchBar(e, "specialisation") }}>Specialization </button>
-                <button onClick={(e) => { switchBar(e, "thesis") }}>Thesis/SP/ CapP </button>
-                <button onClick={(e) => { switchBar(e, "intern") }}>Internship</button>
-                <button onClick={(e) => { switchBar(e, "graduation") }}>Graduation Requirement</button>
-                <button onClick={(e) => { switchBar(e, "operation") }}>Operational</button>
+                <button className={registration ? 'selected' : 'unselected'} onClick={(e) => { switchBar(e, "registration") }}>Course & Registration </button>
+                <button className={specialisation ? 'selected' : 'unselected'} onClick={(e) => { switchBar(e, "specialisation") }}>Specialization </button>
+                <button className={thesis ? 'selected' : 'unselected'} onClick={(e) => { switchBar(e, "thesis") }}>Thesis/SP/ CapP </button>
+                <button className={intern ? 'selected' : 'unselected'} onClick={(e) => { switchBar(e, "intern") }}>Internship</button>
+                <button className={graduation ? 'selected' : 'unselected'} onClick={(e) => { switchBar(e, "graduation") }}>Graduation Requirement</button>
+                <button className={operation ? 'selected' : 'unselected'} onClick={(e) => { switchBar(e, "operation") }}>Operational</button>
             </div>
 
             <div>

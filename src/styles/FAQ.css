@@ -1,4 +1,18 @@
-.que{
+.que {
     text-align: left;
     font-weight: bold;
+}
+.selected{
+    padding: 5px;
+    background-color: rgb(3, 168, 163);
+    color: white;
+    transition: color 0.8s;
+    transition: background-color 0.8s;
+    -webkit-transition: color 0.8s;
+    -moz-transition: color 0.8s;
+    -ms-transition: color 0.8s;
+    -o-transition: color 0.8s;
+}
+.unselected{
+    padding: 5px;
 }
