@@ -34,11 +34,13 @@ button{
     /* transition: color 0.8s; */
 }
 .que{
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
 }
 
 div .question{
+    /* background-color: ; */
+    color: rgb(3, 168, 163);
     /* font-weight: normal; */
 }
 div .answer{
