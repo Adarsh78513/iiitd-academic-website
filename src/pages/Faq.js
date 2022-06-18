@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import '../styles/FAQ.css'
+import Footer from '../components/Footer'
 
 const Faq = () => {
     const [size, setSize] = useState(window.innerWidth)
@@ -69,8 +70,8 @@ const Faq = () => {
         return () => window.removeEventListener('resize', updateWindowDimensions)
     }, [window.innerWidth])
     return (
-        <div>
-            <div>
+        <div className='faq'>
+            <div className='buttons'>
                 <button className={registration ? 'selected' : 'unselected'} onClick={(e) => { switchBar(e, "registration") }}>Course & Registration </button>
                 <button className={specialisation ? 'selected' : 'unselected'} onClick={(e) => { switchBar(e, "specialisation") }}>Specialization </button>
                 <button className={thesis ? 'selected' : 'unselected'} onClick={(e) => { switchBar(e, "thesis") }}>Thesis/SP/ CapP </button>
@@ -332,6 +333,7 @@ const Faq = () => {
                         </div>
                     </div> : null}
             </div>
+            <Footer />
         </div>
     )
 }

@@ -16,3 +16,31 @@
 .unselected{
     padding: 5px;
 }
+.faq{
+    transition: color 0.8s;
+    /* background-color: red; */
+}
+/* li{
+    font-weight: normal;
+} */
+.buttons{
+    padding: 5vh;
+    border-radius: 5px;
+    transition: color 0.8s;
+}
+button{
+    border-radius: 3px;
+    padding: 20vw;
+    /* transition: color 0.8s; */
+}
+.que{
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+li .question{
+    /* font-weight: normal; */
+}
+li .answer{
+    font-weight: normal;
+}
