@@ -17,7 +17,7 @@ import { Parallax, ParallaxBanner } from 'react-scroll-parallax';
 import AcademicTeam from './AcademicTeam'
 import Certificates from './Certificates'
 import BeforeYouArrive from './BeforeYouArrive'
-import Faq from './Faq'
+import Faq from './FAQ'
 
 const Home = () => {
     const home = useRef(null);
