@@ -6,7 +6,9 @@ import { ParallaxBanner, Parallax } from 'react-scroll-parallax';
 
 const AcademicTeam = () => {
     const [size, setSize] = useState(window.innerWidth)
-
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
     useEffect(() => {
         const updateWindowDimensions = () => {
             setSize(window.innerWidth)

@@ -10,7 +10,9 @@ const Faq = () => {
     const [intern, setIntern] = useState(false)
     const [graduation, setGraduation] = useState(false)
     const [operation, setOperation] = useState(false)
-
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
     const switchBar = (e, button) => {
         if (button === "registration") {
             setRegistration(true);
@@ -316,7 +318,7 @@ const Faq = () => {
                                     <div className='answer'>30 days per year, refer regulations for more details</div></li>
                                 <li><div className='question'>Do the student without TAship/RA/Fellow need 75% attendance? </ div>
                                     <div className='answer'>No</div></li>
-                                <li><div className='question'>How many leave are we allowed?</ div> 
+                                <li><div className='question'>How many leave are we allowed?</ div>
                                     <div className='answer'>30 days per year</div></li>
                                 <li><div className='question'>What is the maximum period of semester leave? </ div>
                                     <div className='answer'>Maximum of two semester, subject to the approval of the competent authority</div></li>

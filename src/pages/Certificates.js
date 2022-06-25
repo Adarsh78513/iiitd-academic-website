@@ -4,7 +4,9 @@ import '../styles/Certificates.css'
 
 const Certificates = () => {
     const [size, setSize] = useState(window.innerWidth)
-
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
     useEffect(() => {
         const updateWindowDimensions = () => {
             setSize(window.innerWidth)

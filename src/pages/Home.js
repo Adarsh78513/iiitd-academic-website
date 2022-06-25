@@ -34,6 +34,7 @@ const Home = () => {
     const [certificate, setCertificate] = useState(false)
     const [beforeArrive, setBeforeArrive] = useState(false)
     const [FAQ, setFAQ] = useState(false)
+
     useEffect(() => {
         const updateWindowDimensions = () => {
             setSize(window.innerWidth)

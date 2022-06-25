@@ -115,7 +115,6 @@ const Navbar = ({ home, student, faculty, alumni, projects, report, convocation,
     }, []);
     const scrollDown = (e, ref) => {
         setIsOpened(false);
-        window.history.replaceState('', '', '/');
         window.scrollTo({ top: ref.current.offsetTop - 100 });
 
     };

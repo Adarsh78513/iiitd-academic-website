@@ -3,7 +3,9 @@ import '../styles/beforeArrive.css'
 import Footer from '../components/Footer'
 const BeforeYouArrive = () => {
     const [size, setSize] = useState(window.innerWidth)
-
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
     useEffect(() => {
         const updateWindowDimensions = () => {
             setSize(window.innerWidth)
