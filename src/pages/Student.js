@@ -42,7 +42,7 @@ const Student = ({ setBeforeArrive, setAcademicTeam, setFAQ }) => {
                     >
                         <div className={size > 930 ? 'student' : size > 500 ? 'smallStudent' : 'vSmallStudent'}>
                             <div className="section">
-                                <div className="subHeading">New Students</div>
+                                <div className="subHeading">Incoming Students</div>
                                 <a className="projectLinks" onClick={() => { setAcademicTeam(true) }} style={{ cursor: 'pointer' }}>Primary Contact</a>
                                 <a className="projectLinks" onClick={() => { setBeforeArrive(true) }} style={{ cursor: 'pointer' }}>Before you arrive</a>
                                 <a className="projectLinks" href="http://online.fliphtml5.com/npkwf/zpfc/#p=1">Student Handbook</a>
@@ -113,7 +113,7 @@ const Student = ({ setBeforeArrive, setAcademicTeam, setFAQ }) => {
                     >
                         <div className={size > 930 ? 'student' : size > 500 ? 'smallStudent' : 'vSmallStudent'}>
                             <div className="section">
-                                <div className="subHeading">Graduation & Leaving IIIT-D</div>
+                                <div className="subHeading">Graduation Requirement & Leaving IIIT-D</div>
                                 <a className="projectLinks" href="https://academics.iiitd.edu.in/docs/Graduation%20Requirements%20and%20Award%20of%20Degree.pdf">Graduation Requirement</a>
                                 <a className="projectLinks" href="https://academics.iiitd.edu.in/docs/Issue%20of%20Transcript%20&%20Degree.pdf">Accademic Transcript & Degree</a>
                                 <a className="projectLinks" href="https://academics.iiitd.edu.in/docs/Leaving%20IIIT-D.pdf">Preparing to leave</a>
@@ -135,7 +135,7 @@ const Student = ({ setBeforeArrive, setAcademicTeam, setFAQ }) => {
                     >
                         <div className={size > 930 ? 'student' : size > 500 ? 'smallStudent' : 'vSmallStudent'}>
                             <div className="section">
-                                <div className="subHeading">Further Studies</div>
+                                <div className="subHeading">Higher studies at IIITD</div>
                                 <a className="projectLinks" href="https://iiitd.ac.in/sites/default/files/docs/education/2021/2021%20January-%20Dual%20Degree%20Regulations_Final.pdf">Dual Degree(B.Tech. & M.Tech.)</a>
                                 <a className="projectLinks" href="https://academics.iiitd.edu.in/iiitdstudents.html#">B.Tech. to Ph.D.</a>
                                 <a className="projectLinks" href="https://academics.iiitd.edu.in/docs/MTech%20to%20PhD.pdf">M.Tech. to Ph.D.</a>

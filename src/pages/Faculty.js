@@ -17,7 +17,7 @@ const Faculty = () => {
     return (
         <div className='page' style={{ backgroundColor: " rgb(239, 239, 240)" }}>
 
-            <div className={size > 820 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'}>For IIITD Faculty</div>
+            <div className={size > 820 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'}>Faculty</div>
             <div className="rows">
 
                 <Parallax

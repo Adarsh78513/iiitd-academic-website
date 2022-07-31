@@ -61,7 +61,7 @@ const Home = () => {
                         ]}
                     >
                         <div className={size > 800 ? "aboutUsContainer" : size > 500 ? "smallAbout" : "vSmallAbout"}>
-                            <div className={size > 800 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'}>About Academics Office</div>
+                            <div className={size > 800 ? 'heading' : size > 500 ? 'smallHeading' : 'vSmallHeading'}>About Academics</div>
                             <div className={size > 800 ? 'para' : size > 500 ? 'paraSmall' : 'vParaSmall'}>
                                 <p>The Academic Office exists to help facilitate, initiate and co-ordinate the academic work of the Institute starting from admission, course registration, examination, and convocation; basically the teaching and assessment of students. It acts as the repository of grades and academic records of all students, both past and present. It provides administrative support to the Senate, which is the highest academic body of the Institute.</p>
                             </div>
