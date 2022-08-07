@@ -47,7 +47,7 @@ const Home = () => {
         <div className='homepage'>
             <Marquee />
             <Navbar home={home} student={student} faculty={faculty} alumni={alumni} projects={projects} report={report} convocation={convocation} classroom={classroom} contact={contact} academicTeam={academicTeam} setAcademicTeam={setAcademicTeam} certificate={certificate} setCertificate={setCertificate} beforeArrive={beforeArrive} setBeforeArrive={setBeforeArrive} FAQ={FAQ} setFAQ={setFAQ} />
-            {academicTeam ? <AcademicTeam /> : certificate ? <Certificates /> : beforeArrive ? <BeforeYouArrive /> : FAQ ? <Faq /> :
+            {academicTeam ? <AcademicTeam setAcademicTeam={setAcademicTeam} /> : certificate ? <Certificates setCertificate={setCertificate} /> : beforeArrive ? <BeforeYouArrive setBeforeArrive={setBeforeArrive} /> : FAQ ? <Faq setFAQ={setFAQ} /> :
                 <div className='homepage-container'>
                     <div ref={home}></div>
                     <AdCarousel />
